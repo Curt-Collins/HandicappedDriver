@@ -21,6 +21,7 @@
 					"defaultDiagram": true,
 					"ownedViews": [
 						{
+<<<<<<< HEAD
 							"_type": "UMLPackageView",
 							"_id": "AAAAAAFukBN2AbKrVa4=",
 							"_parent": {
@@ -217,6 +218,8 @@
 							}
 						},
 						{
+=======
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuf6mRwKZikfI=",
 							"_parent": {
@@ -599,7 +602,11 @@
 												"$ref": "AAAAAAFuf6nRfKa3wv4="
 											},
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 261,
+=======
+											"left": 293,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 701,
 											"width": 135.84619140625,
 											"height": 13,
@@ -612,7 +619,11 @@
 												"$ref": "AAAAAAFuf6nRfKa3wv4="
 											},
 											"font": "Arial;13;1",
+<<<<<<< HEAD
 											"left": 261,
+=======
+											"left": 293,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 716,
 											"width": 135.84619140625,
 											"height": 13,
@@ -627,7 +638,11 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 48,
+=======
+											"left": 112,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 608,
 											"width": 73.67724609375,
 											"height": 13,
@@ -641,14 +656,22 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 48,
+=======
+											"left": 112,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 608,
 											"horizontalAlignment": 1,
 											"wordWrap": true
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 256,
+=======
+									"left": 288,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 696,
 									"width": 145.84619140625,
 									"height": 38,
@@ -675,7 +698,11 @@
 										"$ref": "AAAAAAFuf6nRfKa0pF0="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 256,
+=======
+									"left": 288,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 734,
 									"width": 145.84619140625,
 									"height": 10
@@ -690,7 +717,11 @@
 										"$ref": "AAAAAAFuf6nRfKa0pF0="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 256,
+=======
+									"left": 288,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 744,
 									"width": 145.84619140625,
 									"height": 10
@@ -706,7 +737,11 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 24,
+=======
+									"left": 56,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 304,
 									"width": 10,
 									"height": 10
@@ -722,7 +757,11 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 24,
+=======
+									"left": 56,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 304,
 									"width": 10,
 									"height": 10
@@ -730,7 +769,11 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 256,
+=======
+							"left": 288,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"top": 696,
 							"width": 145.84619140625,
 							"height": 71,
@@ -778,7 +821,11 @@
 												"$ref": "AAAAAAFuf6q5UKbh/yQ="
 											},
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 525,
+=======
+											"left": 485,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 701,
 											"width": 135.84619140625,
 											"height": 13,
@@ -791,7 +838,11 @@
 												"$ref": "AAAAAAFuf6q5UKbh/yQ="
 											},
 											"font": "Arial;13;1",
+<<<<<<< HEAD
 											"left": 525,
+=======
+											"left": 485,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 716,
 											"width": 135.84619140625,
 											"height": 13,
@@ -806,7 +857,11 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 112,
+=======
+											"left": 32,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 736,
 											"width": 73.67724609375,
 											"height": 13,
@@ -820,14 +875,22 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+<<<<<<< HEAD
 											"left": 112,
+=======
+											"left": 32,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 736,
 											"horizontalAlignment": 1,
 											"wordWrap": true
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 520,
+=======
+									"left": 480,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 696,
 									"width": 145.84619140625,
 									"height": 38,
@@ -854,7 +917,11 @@
 										"$ref": "AAAAAAFuf6q5T6be5h8="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 520,
+=======
+									"left": 480,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 734,
 									"width": 145.84619140625,
 									"height": 10
@@ -869,7 +936,11 @@
 										"$ref": "AAAAAAFuf6q5T6be5h8="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 520,
+=======
+									"left": 480,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 744,
 									"width": 145.84619140625,
 									"height": 10
@@ -885,7 +956,11 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 56,
+=======
+									"left": 16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 368,
 									"width": 10,
 									"height": 10
@@ -901,7 +976,11 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 56,
+=======
+									"left": 16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 368,
 									"width": 10,
 									"height": 10
@@ -909,7 +988,11 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 520,
+=======
+							"left": 480,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"top": 696,
 							"width": 145.84619140625,
 							"height": 71,
@@ -1131,12 +1214,17 @@
 									"visible": false,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 486,
 									"top": 637,
 =======
 									"left": 507,
 									"top": 539,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 486,
+									"top": 637,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1157,12 +1245,17 @@
 									"visible": null,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 473,
 									"top": 644,
 =======
 									"left": 493,
 									"top": 544,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 473,
+									"top": 644,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1183,12 +1276,17 @@
 									"visible": false,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 513,
 									"top": 622,
 =======
 									"left": 536,
 									"top": 528,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 513,
+									"top": 622,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1207,10 +1305,14 @@
 							},
 							"lineStyle": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 							"points": "532:695;468:578",
 =======
 							"points": "579:695;465:386",
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+							"points": "532:695;468:578",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFuf64v26jtaXM="
@@ -1244,12 +1346,17 @@
 									"visible": false,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 393,
 									"top": 623,
 =======
 									"left": 377,
 									"top": 529,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 393,
+									"top": 623,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1270,12 +1377,17 @@
 									"visible": null,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 380,
 									"top": 616,
 =======
 									"left": 363,
 									"top": 524,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 380,
+									"top": 616,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1296,12 +1408,17 @@
 									"visible": false,
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"left": 420,
 									"top": 636,
 =======
 									"left": 406,
 									"top": 538,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"left": 420,
+									"top": 636,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1320,10 +1437,14 @@
 							},
 							"lineStyle": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 							"points": "378:695;437:578",
 =======
 							"points": "340:695;444:386",
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+							"points": "378:695;437:578",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFuf64+7qkrzOI="
@@ -3770,12 +3891,18 @@
 							}
 						},
 						{
+<<<<<<< HEAD
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuf8J94+B2Phs=",
+=======
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFuf7fLSrv8Cd4=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf8J94uB03qI="
 							},
 							"subViews": [
@@ -3908,10 +4035,215 @@
 									"left": 224,
 									"top": 146,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+								"$ref": "AAAAAAFuf7fLSrv41CU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrv9O5Q=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv41CU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 345,
+									"top": 365,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrv++ec=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv41CU="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 345,
+									"top": 380,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrv/oXc=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv41CU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 346,
+									"top": 335,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwAOZ8=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv5Is8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 380,
+									"top": 364,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwBQbk=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv5Is8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 377,
+									"top": 378,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwCx0o=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv5Is8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 384,
+									"top": 337,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwD3Rg=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv6yo4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 312,
+									"top": 364,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwEls8=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv6yo4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 315,
+									"top": 378,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf7fLSrwFCUY=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv6yo4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 308,
+									"top": 337,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									}
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuf7fLS7wG1PU=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv5Is8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -96,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
+<<<<<<< HEAD
 									"_type": "UMLTemplateParameterCompartmentView",
 									"_id": "AAAAAAFuf8J94+B/ozs=",
 									"_parent": {
@@ -3929,11 +4261,26 @@
 									"left": 224,
 									"top": 146,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuf7fLS7wHr90=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fLSrv8Cd4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fLSrv6yo4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -96,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
+<<<<<<< HEAD
 							"containerChangeable": true,
 							"left": 760,
 							"top": 192,
@@ -3953,20 +4300,72 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFuf8J94+B/ozs="
+=======
+							"head": {
+								"$ref": "AAAAAAFuf7H0lq5juPU="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf6mRwKZikfI="
+							},
+							"lineStyle": 1,
+							"points": "406:356;287:356",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFuf7fLSrv9O5Q="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFuf7fLSrv++ec="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFuf7fLSrv/oXc="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFuf7fLSrwAOZ8="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFuf7fLSrwBQbk="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFuf7fLSrwCx0o="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFuf7fLSrwD3Rg="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFuf7fLSrwEls8="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFuf7fLSrwFCUY="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFuf7fLS7wG1PU="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFuf7fLS7wHr90="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFuf8KrS+HCaT0=",
+=======
+							"_id": "AAAAAAFuf7fa77yZFZo=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf8KrS+G+3LM="
+=======
+								"$ref": "AAAAAAFuf7fa7ryVkzY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HDZXU=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -3978,16 +4377,34 @@
 									"font": "Arial;13;0",
 									"left": 632,
 									"top": 137,
+=======
+									"_id": "AAAAAAFuf7fa77yarNo=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryVkzY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 571,
+									"top": 335,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HEpHk=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -3999,16 +4416,34 @@
 									"font": "Arial;13;0",
 									"left": 637,
 									"top": 123,
+=======
+									"_id": "AAAAAAFuf7fa77ybiZc=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryVkzY="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 571,
+									"top": 320,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HFgZQ=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4020,16 +4455,34 @@
 									"font": "Arial;13;0",
 									"left": 623,
 									"top": 166,
+=======
+									"_id": "AAAAAAFuf7fa77ycZ38=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryVkzY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 571,
+									"top": 365,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HGJYE=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4041,16 +4494,34 @@
 									"font": "Arial;13;0",
 									"left": 526,
 									"top": 102,
+=======
+									"_id": "AAAAAAFuf7fa77ydhRE=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryWQ9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 528,
+									"top": 335,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HHfRc=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4062,16 +4533,34 @@
 									"font": "Arial;13;0",
 									"left": 532,
 									"top": 90,
+=======
+									"_id": "AAAAAAFuf7fa77yeZKs=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryWQ9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 531,
+									"top": 321,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HIvEE=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4083,16 +4572,34 @@
 									"font": "Arial;13;0",
 									"left": 513,
 									"top": 126,
+=======
+									"_id": "AAAAAAFuf7fa77yfVcI=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryWQ9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 524,
+									"top": 362,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HJsXI=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4104,15 +4611,33 @@
 									"font": "Arial;13;0",
 									"left": 739,
 									"top": 173,
+=======
+									"_id": "AAAAAAFuf7fa77ygZMA=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryXBF4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 613,
+									"top": 335,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HKVwM=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4124,15 +4649,33 @@
 									"font": "Arial;13;0",
 									"left": 741,
 									"top": 160,
+=======
+									"_id": "AAAAAAFuf7fa77yhD1c=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryXBF4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 610,
+									"top": 321,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HLhgQ=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4144,15 +4687,33 @@
 									"font": "Arial;13;0",
 									"left": 734,
 									"top": 200,
+=======
+									"_id": "AAAAAAFuf7fa77yi9rs=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryXBF4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 617,
+									"top": 362,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
+=======
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrS+HMbnQ=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4169,11 +4730,25 @@
 									"left": 80,
 									"top": 16,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"_id": "AAAAAAFuf7fa77yjpTg=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryWQ9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -96,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf8KrTOHNz8c=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
@@ -4190,12 +4765,26 @@
 									"left": 80,
 									"top": 16,
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+									"_id": "AAAAAAFuf7fa77ykyag=",
+									"_parent": {
+										"$ref": "AAAAAAFuf7fa77yZFZo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf7fa7ryXBF4="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -96,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf8J94+B2Phs="
 							},
 							"tail": {
@@ -4311,25 +4900,86 @@
 						{
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuf/9D7U5ZnMw=",
+=======
+								"$ref": "AAAAAAFuf7HPza3NyTY="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf6mRwKZikfI="
+							},
+							"lineStyle": 1,
+							"points": "503:356;639:356",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFuf7fa77yarNo="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFuf7fa77ybiZc="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFuf7fa77ycZ38="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFuf7fa77ydhRE="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFuf7fa77yeZKs="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFuf7fa77yfVcI="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFuf7fa77ygZMA="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFuf7fa77yhD1c="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFuf7fa77yi9rs="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFuf7fa77yjpTg="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFuf7fa77ykyag="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFuf8J94+B2Phs=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf/9D7E5Xujw="
+=======
+								"$ref": "AAAAAAFuf8J94uB03qI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "UMLNameCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf/9D7U5a2hs=",
 									"_parent": {
 										"$ref": "AAAAAAFuf/9D7U5ZnMw="
 									},
 									"model": {
 										"$ref": "AAAAAAFuf/9D7E5Xujw="
+=======
+									"_id": "AAAAAAFuf8J94+B3dfE=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8J94+B2Phs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8J94uB03qI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"subViews": [
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFuf/9D7U5basw=",
 											"_parent": {
 												"$ref": "AAAAAAFuf/9D7U5a2hs="
@@ -4364,12 +5014,48 @@
 											"font": "Arial;13;0",
 											"left": -208,
 											"top": 64,
+=======
+											"_id": "AAAAAAFuf8J94+B4pqg=",
+											"_parent": {
+												"$ref": "AAAAAAFuf8J94+B3dfE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 448,
+											"top": 292,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuf8J94+B5HvQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuf8J94+B3dfE="
+											},
+											"font": "Arial;13;1",
+											"left": 765,
+											"top": 199,
+											"width": 57.80810546875,
+											"height": 13,
+											"text": "Database"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuf8J94+B62J8=",
+											"_parent": {
+												"$ref": "AAAAAAFuf8J94+B3dfE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 448,
+											"top": 292,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFuf/9D7U5ehjU=",
 											"_parent": {
 												"$ref": "AAAAAAFuf/9D7U5a2hs="
@@ -4378,11 +5064,22 @@
 											"font": "Arial;13;0",
 											"left": -208,
 											"top": 64,
+=======
+											"_id": "AAAAAAFuf8J94+B7xyI=",
+											"_parent": {
+												"$ref": "AAAAAAFuf8J94+B3dfE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 448,
+											"top": 292,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 80,
 									"top": 984,
 									"width": 145,
@@ -4398,10 +5095,28 @@
 									},
 									"propertyLabel": {
 										"$ref": "AAAAAAFuf/9D7U5ehjU="
+=======
+									"left": 760,
+									"top": 192,
+									"width": 67.80810546875,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuf8J94+B4pqg="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuf8J94+B5HvQ="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuf8J94+B62J8="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuf8J94+B7xyI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLAttributeCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf/9D7U5fWXU=",
 									"_parent": {
 										"$ref": "AAAAAAFuf/9D7U5ZnMw="
@@ -4413,10 +5128,24 @@
 									"left": 80,
 									"top": 1022,
 									"width": 145,
+=======
+									"_id": "AAAAAAFuf8J94+B8vL4=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8J94+B2Phs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8J94uB03qI="
+									},
+									"font": "Arial;13;0",
+									"left": 760,
+									"top": 217,
+									"width": 67.80810546875,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf/9D7k5gaDM=",
 									"_parent": {
 										"$ref": "AAAAAAFuf/9D7U5ZnMw="
@@ -4428,10 +5157,24 @@
 									"left": 80,
 									"top": 1032,
 									"width": 145,
+=======
+									"_id": "AAAAAAFuf8J94+B9fmk=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8J94+B2Phs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8J94uB03qI="
+									},
+									"font": "Arial;13;0",
+									"left": 760,
+									"top": 227,
+									"width": 67.80810546875,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf/9D7k5hPr8=",
 									"_parent": {
 										"$ref": "AAAAAAFuf/9D7U5ZnMw="
@@ -4443,11 +5186,25 @@
 									"font": "Arial;13;0",
 									"left": -104,
 									"top": 32,
+=======
+									"_id": "AAAAAAFuf8J94+B+5cA=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8J94+B2Phs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8J94uB03qI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 224,
+									"top": 146,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuf/9D7k5iZoA=",
 									"_parent": {
 										"$ref": "AAAAAAFuf/9D7U5ZnMw="
@@ -4459,12 +5216,26 @@
 									"font": "Arial;13;0",
 									"left": -104,
 									"top": 32,
+=======
+									"_id": "AAAAAAFuf8J94+B/ozs=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8J94+B2Phs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8J94uB03qI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 224,
+									"top": 146,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 80,
 							"top": 984,
 							"width": 145,
@@ -4488,10 +5259,36 @@
 						{
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuf/9juk8BJrs=",
+=======
+							"left": 760,
+							"top": 192,
+							"width": 67.80810546875,
+							"height": 45,
+							"nameCompartment": {
+								"$ref": "AAAAAAFuf8J94+B3dfE="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFuf8J94+B8vL4="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFuf8J94+B9fmk="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFuf8J94+B+5cA="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFuf8J94+B/ozs="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFuf8KrS+HCaT0=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf/9juk7/8eU="
 							},
 							"subViews": [
@@ -4505,6 +5302,62 @@
 										"$ref": "AAAAAAFuf/9juk7/8eU="
 									},
 <<<<<<< HEAD
+=======
+								"$ref": "AAAAAAFuf8KrS+G+3LM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf8KrS+HDZXU=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+G+3LM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 632,
+									"top": 137,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf8KrS+HEpHk=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+G+3LM="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 637,
+									"top": 123,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf8KrS+HFgZQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+G+3LM="
+									},
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 623,
@@ -4591,6 +5444,7 @@
 										"$ref": "AAAAAAFuf8KrS+HAWNQ="
 									},
 									"visible": false,
+<<<<<<< HEAD
 =======
 									"subViews": [
 										{
@@ -4663,6 +5517,47 @@
 										"$ref": "AAAAAAFuf/9ju08Fjl8="
 									},
 <<<<<<< HEAD
+=======
+									"font": "Arial;13;0",
+									"left": 739,
+									"top": 173,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf8KrS+HKVwM=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+HAWNQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 741,
+									"top": 160,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuf8KrS+HLhgQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+HAWNQ="
+									},
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"font": "Arial;13;0",
 									"left": 731,
 									"top": 200,
@@ -4674,6 +5569,7 @@
 										"$ref": "AAAAAAFuf8KrS+HCaT0="
 									},
 									"text": "1"
+<<<<<<< HEAD
 =======
 									"propertyLabel": {
 										"$ref": "AAAAAAFuf/9ju08GVgo="
@@ -4712,6 +5608,36 @@
 									},
 									"font": "Arial;13;0",
 <<<<<<< HEAD
+=======
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuf8KrS+HMbnQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+G/FFI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": 16,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuf8KrTOHNz8c=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8KrS+HCaT0="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf8KrS+HAWNQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"left": -24,
 									"top": 16,
 									"width": 10,
@@ -4824,6 +5750,7 @@
 									"top": 493,
 									"width": 1,
 									"height": 13
+<<<<<<< HEAD
 =======
 									"left": 256,
 									"top": 920,
@@ -4838,6 +5765,15 @@
 										"$ref": "AAAAAAFuf/9juk8BJrs="
 									},
 <<<<<<< HEAD
+=======
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFuf8tUgPg5amg=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8tUf/g3+zo="
+									},
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"font": "Arial;13;1",
 									"left": 77,
 									"top": 493,
@@ -4895,6 +5831,7 @@
 									"_id": "AAAAAAFuf8+VAQAnezI=",
 									"_parent": {
 										"$ref": "AAAAAAFuf8+VAQAmvko="
+<<<<<<< HEAD
 =======
 									"model": {
 										"$ref": "AAAAAAFuf/9juk7/8eU="
@@ -4944,30 +5881,80 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFuf/9ju08K1jo="
+=======
+									},
+									"font": "Arial;13;0",
+									"left": 83,
+									"top": 861,
+									"width": 1,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFuf8+VAQAoq7Q=",
+									"_parent": {
+										"$ref": "AAAAAAFuf8+VAQAmvko="
+									},
+									"font": "Arial;13;1",
+									"left": 77,
+									"top": 861,
+									"width": 1,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 72,
+							"top": 856,
+							"width": 760,
+							"height": 281,
+							"nameLabel": {
+								"$ref": "AAAAAAFuf8+VAQAnezI="
+							},
+							"frameTypeLabel": {
+								"$ref": "AAAAAAFuf8+VAQAoq7Q="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLClassView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugAJW+lAVPK4=",
+=======
+							"_id": "AAAAAAFuf/9D7U5ZnMw=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAJW+lATNbg="
+=======
+								"$ref": "AAAAAAFuf/9D7E5Xujw="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "UMLNameCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAJW+lAWzeI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAJW+lAVPK4="
 									},
 									"model": {
 										"$ref": "AAAAAAFugAJW+lATNbg="
+=======
+									"_id": "AAAAAAFuf/9D7U5a2hs=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9D7U5ZnMw="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9D7E5Xujw="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"subViews": [
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugAJW+lAX8x4=",
 											"_parent": {
 												"$ref": "AAAAAAFugAJW+lAWzeI="
@@ -4976,11 +5963,22 @@
 											"left": 525,
 											"top": 877,
 											"width": 127.91162109375,
+=======
+											"_id": "AAAAAAFuf/9D7U5basw=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9D7U5a2hs="
+											},
+											"font": "Arial;13;0",
+											"left": 85,
+											"top": 949,
+											"width": 135,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"height": 13,
 											"text": "«concreteabstraction»"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugAJW+lAYg5M=",
 											"_parent": {
 												"$ref": "AAAAAAFugAJW+lAWzeI="
@@ -5002,12 +6000,36 @@
 											"font": "Arial;13;0",
 											"left": 16,
 											"top": -176,
+=======
+											"_id": "AAAAAAFuf/9D7U5c+bQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9D7U5a2hs="
+											},
+											"font": "Arial;13;1",
+											"left": 85,
+											"top": 964,
+											"width": 135,
+											"height": 13,
+											"text": "Driver"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuf/9D7U5d6eg=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9D7U5a2hs="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -208,
+											"top": -16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugAJW+lAafKI=",
 											"_parent": {
 												"$ref": "AAAAAAFugAJW+lAWzeI="
@@ -5016,11 +6038,22 @@
 											"font": "Arial;13;0",
 											"left": 16,
 											"top": -176,
+=======
+											"_id": "AAAAAAFuf/9D7U5ehjU=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9D7U5a2hs="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -208,
+											"top": -16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 520,
 									"top": 872,
 									"width": 137.91162109375,
@@ -5036,10 +6069,28 @@
 									},
 									"propertyLabel": {
 										"$ref": "AAAAAAFugAJW+lAafKI="
+=======
+									"left": 80,
+									"top": 944,
+									"width": 145,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuf/9D7U5basw="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuf/9D7U5c+bQ="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuf/9D7U5d6eg="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuf/9D7U5ehjU="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLAttributeCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAJW+lAb9LI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAJW+lAVPK4="
@@ -5051,10 +6102,24 @@
 									"left": 520,
 									"top": 910,
 									"width": 137.91162109375,
+=======
+									"_id": "AAAAAAFuf/9D7U5fWXU=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9D7U5ZnMw="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9D7E5Xujw="
+									},
+									"font": "Arial;13;0",
+									"left": 80,
+									"top": 982,
+									"width": 145,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAJW+lAcRzI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAJW+lAVPK4="
@@ -5066,10 +6131,24 @@
 									"left": 520,
 									"top": 920,
 									"width": 137.91162109375,
+=======
+									"_id": "AAAAAAFuf/9D7k5gaDM=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9D7U5ZnMw="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9D7E5Xujw="
+									},
+									"font": "Arial;13;0",
+									"left": 80,
+									"top": 992,
+									"width": 145,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAJW+lAd/as=",
 									"_parent": {
 										"$ref": "AAAAAAFugAJW+lAVPK4="
@@ -5081,11 +6160,25 @@
 									"font": "Arial;13;0",
 									"left": 8,
 									"top": -88,
+=======
+									"_id": "AAAAAAFuf/9D7k5hPr8=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9D7U5ZnMw="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9D7E5Xujw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -104,
+									"top": -8,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAJW+lAe8DA=",
 									"_parent": {
 										"$ref": "AAAAAAFugAJW+lAVPK4="
@@ -5097,12 +6190,26 @@
 									"font": "Arial;13;0",
 									"left": 8,
 									"top": -88,
+=======
+									"_id": "AAAAAAFuf/9D7k5iZoA=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9D7U5ZnMw="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9D7E5Xujw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -104,
+									"top": -8,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 520,
 							"top": 872,
 							"width": 137.91162109375,
@@ -5121,30 +6228,68 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFugAJW+lAe8DA="
+=======
+							"left": 80,
+							"top": 944,
+							"width": 145,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAFuf/9D7U5a2hs="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFuf/9D7U5fWXU="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFuf/9D7k5gaDM="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFuf/9D7k5hPr8="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFuf/9D7k5iZoA="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLClassView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugALFclEp6F8=",
+=======
+							"_id": "AAAAAAFuf/9juk8BJrs=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugALFcVEnaxo="
+=======
+								"$ref": "AAAAAAFuf/9juk7/8eU="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "UMLNameCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugALFclEql3U=",
 									"_parent": {
 										"$ref": "AAAAAAFugALFclEp6F8="
 									},
 									"model": {
 										"$ref": "AAAAAAFugALFcVEnaxo="
+=======
+									"_id": "AAAAAAFuf/9ju08CzCE=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9juk8BJrs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9juk7/8eU="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"subViews": [
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugALFclErCLw=",
 											"_parent": {
 												"$ref": "AAAAAAFugALFclEql3U="
@@ -5152,12 +6297,22 @@
 											"font": "Arial;13;0",
 											"left": 685,
 											"top": 989,
+=======
+											"_id": "AAAAAAFuf/9ju08DPZQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9ju08CzCE="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 949,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"width": 127.91162109375,
 											"height": 13,
 											"text": "«concreteabstraction»"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugALFclEsLR8=",
 											"_parent": {
 												"$ref": "AAAAAAFugALFclEql3U="
@@ -5179,12 +6334,36 @@
 											"font": "Arial;13;0",
 											"left": -16,
 											"top": -32,
+=======
+											"_id": "AAAAAAFuf/9ju08EIzg=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9ju08CzCE="
+											},
+											"font": "Arial;13;1",
+											"left": 293,
+											"top": 964,
+											"width": 127.91162109375,
+											"height": 13,
+											"text": "Reservation"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuf/9ju08Fjl8=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9ju08CzCE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -192,
+											"top": -160,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugALFclEudmI=",
 											"_parent": {
 												"$ref": "AAAAAAFugALFclEql3U="
@@ -5193,11 +6372,22 @@
 											"font": "Arial;13;0",
 											"left": -16,
 											"top": -32,
+=======
+											"_id": "AAAAAAFuf/9ju08GVgo=",
+											"_parent": {
+												"$ref": "AAAAAAFuf/9ju08CzCE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -192,
+											"top": -160,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 680,
 									"top": 984,
 									"width": 137.91162109375,
@@ -5213,10 +6403,28 @@
 									},
 									"propertyLabel": {
 										"$ref": "AAAAAAFugALFclEudmI="
+=======
+									"left": 288,
+									"top": 944,
+									"width": 137.91162109375,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuf/9ju08DPZQ="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuf/9ju08EIzg="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuf/9ju08Fjl8="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuf/9ju08GVgo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLAttributeCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugALFclEv2eI=",
 									"_parent": {
 										"$ref": "AAAAAAFugALFclEp6F8="
@@ -5227,11 +6435,24 @@
 									"font": "Arial;13;0",
 									"left": 680,
 									"top": 1022,
+=======
+									"_id": "AAAAAAFuf/9ju08HnA0=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9juk8BJrs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9juk7/8eU="
+									},
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 982,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 137.91162109375,
 									"height": 10
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugALFclEwsXA=",
 									"_parent": {
 										"$ref": "AAAAAAFugALFclEp6F8="
@@ -5242,11 +6463,24 @@
 									"font": "Arial;13;0",
 									"left": 680,
 									"top": 1032,
+=======
+									"_id": "AAAAAAFuf/9ju08I9LM=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9juk8BJrs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9juk7/8eU="
+									},
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 992,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 137.91162109375,
 									"height": 10
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugALFclExaNk=",
 									"_parent": {
 										"$ref": "AAAAAAFugALFclEp6F8="
@@ -5258,11 +6492,25 @@
 									"font": "Arial;13;0",
 									"left": -8,
 									"top": -16,
+=======
+									"_id": "AAAAAAFuf/9ju08J9k8=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9juk8BJrs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9juk7/8eU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -96,
+									"top": -80,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugALFclEyFOY=",
 									"_parent": {
 										"$ref": "AAAAAAFugALFclEp6F8="
@@ -5274,12 +6522,26 @@
 									"font": "Arial;13;0",
 									"left": -8,
 									"top": -16,
+=======
+									"_id": "AAAAAAFuf/9ju08K1jo=",
+									"_parent": {
+										"$ref": "AAAAAAFuf/9juk8BJrs="
+									},
+									"model": {
+										"$ref": "AAAAAAFuf/9juk7/8eU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -96,
+									"top": -80,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 680,
 							"top": 984,
 							"width": 137.91162109375,
@@ -5298,30 +6560,68 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFugALFclEyFOY="
+=======
+							"left": 288,
+							"top": 944,
+							"width": 137.91162109375,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAFuf/9ju08CzCE="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFuf/9ju08HnA0="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFuf/9ju08I9LM="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFuf/9ju08J9k8="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFuf/9ju08K1jo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLClassView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugAPkT1eHypk=",
+=======
+							"_id": "AAAAAAFugAJW+lAVPK4=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAPkT1eF2pw="
+=======
+								"$ref": "AAAAAAFugAJW+lATNbg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "UMLNameCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAPkT1eIPpU=",
 									"_parent": {
 										"$ref": "AAAAAAFugAPkT1eHypk="
 									},
 									"model": {
 										"$ref": "AAAAAAFugAPkT1eF2pw="
+=======
+									"_id": "AAAAAAFugAJW+lAWzeI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAJW+lAVPK4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAJW+lATNbg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"subViews": [
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugAPkT1eJNAM=",
 											"_parent": {
 												"$ref": "AAAAAAFugAPkT1eIPpU="
@@ -5351,30 +6651,76 @@
 											"_id": "AAAAAAFugAPkT1eLPE0=",
 											"_parent": {
 												"$ref": "AAAAAAFugAPkT1eIPpU="
+=======
+											"_id": "AAAAAAFugAJW+lAX8x4=",
+											"_parent": {
+												"$ref": "AAAAAAFugAJW+lAWzeI="
+											},
+											"font": "Arial;13;0",
+											"left": 493,
+											"top": 949,
+											"width": 127.91162109375,
+											"height": 13,
+											"text": "«concreteabstraction»"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAJW+lAYg5M=",
+											"_parent": {
+												"$ref": "AAAAAAFugAJW+lAWzeI="
+											},
+											"font": "Arial;13;1",
+											"left": 493,
+											"top": 964,
+											"width": 127.91162109375,
+											"height": 13,
+											"text": "ParkingSpace"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAJW+lAZDLE=",
+											"_parent": {
+												"$ref": "AAAAAAFugAJW+lAWzeI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											},
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -48,
+<<<<<<< HEAD
 											"top": 80,
+=======
+											"top": -32,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
 										},
 										{
 											"_type": "LabelView",
+<<<<<<< HEAD
 											"_id": "AAAAAAFugAPkT1eMBTY=",
 											"_parent": {
 												"$ref": "AAAAAAFugAPkT1eIPpU="
+=======
+											"_id": "AAAAAAFugAJW+lAafKI=",
+											"_parent": {
+												"$ref": "AAAAAAFugAJW+lAWzeI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											},
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -48,
+<<<<<<< HEAD
 											"top": 80,
+=======
+											"top": -32,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 360,
 									"top": 1064,
 									"width": 172.54443359375,
@@ -5390,10 +6736,28 @@
 									},
 									"propertyLabel": {
 										"$ref": "AAAAAAFugAPkT1eMBTY="
+=======
+									"left": 488,
+									"top": 944,
+									"width": 137.91162109375,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFugAJW+lAX8x4="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFugAJW+lAYg5M="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFugAJW+lAZDLE="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFugAJW+lAafKI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLAttributeCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAPkT1eNcis=",
 									"_parent": {
 										"$ref": "AAAAAAFugAPkT1eHypk="
@@ -5405,10 +6769,24 @@
 									"left": 360,
 									"top": 1102,
 									"width": 172.54443359375,
+=======
+									"_id": "AAAAAAFugAJW+lAb9LI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAJW+lAVPK4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAJW+lATNbg="
+									},
+									"font": "Arial;13;0",
+									"left": 488,
+									"top": 982,
+									"width": 137.91162109375,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAPkUFeOBek=",
 									"_parent": {
 										"$ref": "AAAAAAFugAPkT1eHypk="
@@ -5420,43 +6798,83 @@
 									"left": 360,
 									"top": 1112,
 									"width": 172.54443359375,
+=======
+									"_id": "AAAAAAFugAJW+lAcRzI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAJW+lAVPK4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAJW+lATNbg="
+									},
+									"font": "Arial;13;0",
+									"left": 488,
+									"top": 992,
+									"width": 137.91162109375,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 10
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAPkUFeP78o=",
 									"_parent": {
 										"$ref": "AAAAAAFugAPkT1eHypk="
 									},
 									"model": {
 										"$ref": "AAAAAAFugAPkT1eF2pw="
+=======
+									"_id": "AAAAAAFugAJW+lAd/as=",
+									"_parent": {
+										"$ref": "AAAAAAFugAJW+lAVPK4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAJW+lATNbg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -24,
+<<<<<<< HEAD
 									"top": 40,
+=======
+									"top": -16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAPkUFeQu+Y=",
 									"_parent": {
 										"$ref": "AAAAAAFugAPkT1eHypk="
 									},
 									"model": {
 										"$ref": "AAAAAAFugAPkT1eF2pw="
+=======
+									"_id": "AAAAAAFugAJW+lAe8DA=",
+									"_parent": {
+										"$ref": "AAAAAAFugAJW+lAVPK4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAJW+lATNbg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": -24,
+<<<<<<< HEAD
 									"top": 40,
+=======
+									"top": -16,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
+<<<<<<< HEAD
 							"left": 360,
 							"top": 1064,
 							"width": 172.54443359375,
@@ -5480,10 +6898,36 @@
 						{
 							"_type": "UMLGeneralizationView",
 							"_id": "AAAAAAFugAfk9Fm+lV4=",
+=======
+							"left": 488,
+							"top": 944,
+							"width": 137.91162109375,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAFugAJW+lAWzeI="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFugAJW+lAb9LI="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFugAJW+lAcRzI="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFugAJW+lAd/as="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFugAJW+lAe8DA="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFugALFclEp6F8=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAfk9Fm8kYo="
 							},
 							"subViews": [
@@ -5667,10 +7111,186 @@
 						{
 							"_type": "UMLGeneralizationView",
 							"_id": "AAAAAAFugAf9PVqU7hY=",
+=======
+								"$ref": "AAAAAAFugALFcVEnaxo="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFugALFclEql3U=",
+									"_parent": {
+										"$ref": "AAAAAAFugALFclEp6F8="
+									},
+									"model": {
+										"$ref": "AAAAAAFugALFcVEnaxo="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugALFclErCLw=",
+											"_parent": {
+												"$ref": "AAAAAAFugALFclEql3U="
+											},
+											"font": "Arial;13;0",
+											"left": 685,
+											"top": 949,
+											"width": 127.91162109375,
+											"height": 13,
+											"text": "«concreteabstraction»"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugALFclEsLR8=",
+											"_parent": {
+												"$ref": "AAAAAAFugALFclEql3U="
+											},
+											"font": "Arial;13;1",
+											"left": 685,
+											"top": 964,
+											"width": 127.91162109375,
+											"height": 13,
+											"text": "ParkingLot"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugALFclEtuBw=",
+											"_parent": {
+												"$ref": "AAAAAAFugALFclEql3U="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -16,
+											"top": -112,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugALFclEudmI=",
+											"_parent": {
+												"$ref": "AAAAAAFugALFclEql3U="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -16,
+											"top": -112,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 680,
+									"top": 944,
+									"width": 137.91162109375,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFugALFclErCLw="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFugALFclEsLR8="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFugALFclEtuBw="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFugALFclEudmI="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFugALFclEv2eI=",
+									"_parent": {
+										"$ref": "AAAAAAFugALFclEp6F8="
+									},
+									"model": {
+										"$ref": "AAAAAAFugALFcVEnaxo="
+									},
+									"font": "Arial;13;0",
+									"left": 680,
+									"top": 982,
+									"width": 137.91162109375,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFugALFclEwsXA=",
+									"_parent": {
+										"$ref": "AAAAAAFugALFclEp6F8="
+									},
+									"model": {
+										"$ref": "AAAAAAFugALFcVEnaxo="
+									},
+									"font": "Arial;13;0",
+									"left": 680,
+									"top": 992,
+									"width": 137.91162109375,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFugALFclExaNk=",
+									"_parent": {
+										"$ref": "AAAAAAFugALFclEp6F8="
+									},
+									"model": {
+										"$ref": "AAAAAAFugALFcVEnaxo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -56,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFugALFclEyFOY=",
+									"_parent": {
+										"$ref": "AAAAAAFugALFclEp6F8="
+									},
+									"model": {
+										"$ref": "AAAAAAFugALFcVEnaxo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -8,
+									"top": -56,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 680,
+							"top": 944,
+							"width": 137.91162109375,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAFugALFclEql3U="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFugALFclEv2eI="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFugALFclEwsXA="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFugALFclExaNk="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFugALFclEyFOY="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFugAPkT1eHypk=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAf9PFqSQlU="
 							},
 							"subViews": [
@@ -5854,15 +7474,195 @@
 						{
 							"_type": "UMLAssociationView",
 							"_id": "AAAAAAFugAre+mwwsjg=",
+=======
+								"$ref": "AAAAAAFugAPkT1eF2pw="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFugAPkT1eIPpU=",
+									"_parent": {
+										"$ref": "AAAAAAFugAPkT1eHypk="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAPkT1eF2pw="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAPkT1eJNAM=",
+											"_parent": {
+												"$ref": "AAAAAAFugAPkT1eIPpU="
+											},
+											"font": "Arial;13;0",
+											"left": 365,
+											"top": 1069,
+											"width": 162.54443359375,
+											"height": 13,
+											"text": "«abstraction»"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAPkT1eK8cw=",
+											"_parent": {
+												"$ref": "AAAAAAFugAPkT1eIPpU="
+											},
+											"font": "Arial;13;3",
+											"left": 365,
+											"top": 1084,
+											"width": 162.54443359375,
+											"height": 13,
+											"text": "HandicappedDriver_Entity"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAPkT1eLPE0=",
+											"_parent": {
+												"$ref": "AAAAAAFugAPkT1eIPpU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -48,
+											"top": 80,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFugAPkT1eMBTY=",
+											"_parent": {
+												"$ref": "AAAAAAFugAPkT1eIPpU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -48,
+											"top": 80,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 360,
+									"top": 1064,
+									"width": 172.54443359375,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFugAPkT1eJNAM="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFugAPkT1eK8cw="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFugAPkT1eLPE0="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFugAPkT1eMBTY="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFugAPkT1eNcis=",
+									"_parent": {
+										"$ref": "AAAAAAFugAPkT1eHypk="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAPkT1eF2pw="
+									},
+									"font": "Arial;13;0",
+									"left": 360,
+									"top": 1102,
+									"width": 172.54443359375,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFugAPkUFeOBek=",
+									"_parent": {
+										"$ref": "AAAAAAFugAPkT1eHypk="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAPkT1eF2pw="
+									},
+									"font": "Arial;13;0",
+									"left": 360,
+									"top": 1112,
+									"width": 172.54443359375,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFugAPkUFeP78o=",
+									"_parent": {
+										"$ref": "AAAAAAFugAPkT1eHypk="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAPkT1eF2pw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": 40,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFugAPkUFeQu+Y=",
+									"_parent": {
+										"$ref": "AAAAAAFugAPkT1eHypk="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAPkT1eF2pw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": 40,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 360,
+							"top": 1064,
+							"width": 172.54443359375,
+							"height": 58,
+							"nameCompartment": {
+								"$ref": "AAAAAAFugAPkT1eIPpU="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFugAPkT1eNcis="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFugAPkUFeOBek="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFugAPkUFeP78o="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFugAPkUFeQu+Y="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAFugAfk9Fm+lV4=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAre+mwscDA="
+=======
+								"$ref": "AAAAAAFugAfk9Fm8kYo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAre+mwxiZA=",
 									"_parent": {
 										"$ref": "AAAAAAFugAre+mwwsjg="
@@ -5874,16 +7674,34 @@
 									"font": "Arial;13;0",
 									"left": 137,
 									"top": 868,
+=======
+									"_id": "AAAAAAFugAfk9Fm/3hw=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfk9Fm8kYo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 304,
+									"top": 1012,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAre+mwwsjg="
+=======
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAre+mwyvsk=",
 									"_parent": {
 										"$ref": "AAAAAAFugAre+mwwsjg="
@@ -5895,10 +7713,24 @@
 									"font": "Arial;13;0",
 									"left": 122,
 									"top": 868,
+=======
+									"_id": "AAAAAAFugAfk9FnANJs=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfk9Fm8kYo="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 310,
+									"top": 998,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAre+mwwsjg="
 									},
 									"edgePosition": 1
@@ -5921,11 +7753,15 @@
 									"distance": 15,
 									"hostEdge": {
 										"$ref": "AAAAAAFugAre+mwwsjg="
+=======
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAre+mw0yWs=",
 									"_parent": {
 										"$ref": "AAAAAAFugAre+mwwsjg="
@@ -6074,16 +7910,41 @@
 									"font": "Arial;13;0",
 									"width": 10,
 									"height": 10
+=======
+									"_id": "AAAAAAFugAfk9FnB2KQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfk9Fm8kYo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 293,
+									"top": 1039,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAfk9Fm+lV4="
+									},
+									"edgePosition": 1
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6m6jaaM//4="
+=======
+								"$ref": "AAAAAAFugAPkT1eHypk="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"tail": {
 								"$ref": "AAAAAAFuf/9D7U5ZnMw="
 							},
 							"lineStyle": 1,
+<<<<<<< HEAD
 							"points": "152:983;152:767",
 							"showVisibility": true,
 							"nameLabel": {
@@ -6123,15 +7984,37 @@
 						{
 							"_type": "UMLAssociationView",
 							"_id": "AAAAAAFugArspGz6NSQ=",
+=======
+							"points": "225:1002;374:1063",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAfk9Fm/3hw="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAfk9FnANJs="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAfk9FnB2KQ="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAFugAfyGlopjOE=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugArspGz2u7A="
+=======
+								"$ref": "AAAAAAFugAfyGlonWL8="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugArspGz7ZaI=",
 									"_parent": {
 										"$ref": "AAAAAAFugArspGz6NSQ="
@@ -6143,16 +8026,34 @@
 									"font": "Arial;13;0",
 									"left": 311,
 									"top": 812,
+=======
+									"_id": "AAAAAAFugAfyGloqSwY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfyGlopjOE="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfyGlonWL8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 412,
+									"top": 1017,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugArspGz6NSQ="
+=======
+										"$ref": "AAAAAAFugAfyGlopjOE="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugArspGz861g=",
 									"_parent": {
 										"$ref": "AAAAAAFugArspGz6NSQ="
@@ -6164,16 +8065,34 @@
 									"font": "Arial;13;0",
 									"left": 296,
 									"top": 812,
+=======
+									"_id": "AAAAAAFugAfyGlorLbg=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfyGlopjOE="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfyGlonWL8="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 424,
+									"top": 1008,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugArspGz6NSQ="
+=======
+										"$ref": "AAAAAAFugAfyGlopjOE="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugArspGz99PY=",
 									"_parent": {
 										"$ref": "AAAAAAFugArspGz6NSQ="
@@ -6185,10 +8104,24 @@
 									"font": "Arial;13;0",
 									"left": 340,
 									"top": 813,
+=======
+									"_id": "AAAAAAFugAfyGloslZ0=",
+									"_parent": {
+										"$ref": "AAAAAAFugAfyGlopjOE="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAfyGlonWL8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 387,
+									"top": 1034,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugArspGz6NSQ="
 									},
 									"edgePosition": 1
@@ -6343,10 +8276,204 @@
 									"font": "Arial;13;0",
 									"width": 10,
 									"height": 10
+=======
+										"$ref": "AAAAAAFugAfyGlopjOE="
+									},
+									"edgePosition": 1
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+								"$ref": "AAAAAAFugAPkT1eHypk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf/9juk8BJrs="
+							},
+							"lineStyle": 1,
+							"points": "378:1002;423:1063",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAfyGloqSwY="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAfyGlorLbg="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAfyGloslZ0="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAFugAf9PVqU7hY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFugAf9PFqSQlU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAf9PVqVSdo=",
+									"_parent": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAf9PFqSQlU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 511,
+									"top": 1036,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAf9PVqWiuw=",
+									"_parent": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAf9PFqSQlU="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 522,
+									"top": 1046,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAf9PVqXidA=",
+									"_parent": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAf9PFqSQlU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 488,
+									"top": 1015,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAf9PVqU7hY="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFugAPkT1eHypk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugAJW+lAVPK4="
+							},
+							"lineStyle": 1,
+							"points": "528:1002;472:1063",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAf9PVqVSdo="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAf9PVqWiuw="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAf9PVqXidA="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAFugAgJclr/Q1k=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFugAgJclr93oM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAgJclsA8O4=",
+									"_parent": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAgJclr93oM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 603,
+									"top": 1038,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAgJclsBsRk=",
+									"_parent": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAgJclr93oM="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 609,
+									"top": 1052,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAgJclsCzLY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAgJclr93oM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 592,
+									"top": 1011,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFugAgJclr/Q1k="
+									},
+									"edgePosition": 1
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6nRfKa2IHU="
 							},
 							"tail": {
@@ -6387,20 +8514,47 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFugArspG0FfyY="
+=======
+								"$ref": "AAAAAAFugAPkT1eHypk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugALFclEp6F8="
+							},
+							"lineStyle": 1,
+							"points": "679:999;518:1063",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAgJclsA8O4="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAgJclsBsRk="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAgJclsCzLY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugAr37G3Tess=",
+=======
+							"_id": "AAAAAAFugAoao2YZEXY=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAr37G3PxQA="
+=======
+								"$ref": "AAAAAAFugAoao2YVdfE="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37G3U/8Q=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6412,16 +8566,34 @@
 									"font": "Arial;13;0",
 									"left": 575,
 									"top": 812,
+=======
+									"_id": "AAAAAAFugAoao2YayQY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YVdfE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 651,
+									"top": 981,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37G3VnDI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6433,16 +8605,34 @@
 									"font": "Arial;13;0",
 									"left": 560,
 									"top": 812,
+=======
+									"_id": "AAAAAAFugAoao2YbYPo=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YVdfE="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 651,
+									"top": 996,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37G3Wf5Q=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6454,16 +8644,34 @@
 									"font": "Arial;13;0",
 									"left": 604,
 									"top": 813,
+=======
+									"_id": "AAAAAAFugAoao2Yc0cQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YVdfE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 652,
+									"top": 951,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37G3XTdg=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6475,16 +8683,34 @@
 									"font": "Arial;13;0",
 									"left": 574,
 									"top": 838,
+=======
+									"_id": "AAAAAAFugAoao2Yd4Q4=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YWpcg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 653,
+									"top": 980,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37G3Y1gE=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6496,16 +8722,34 @@
 									"font": "Arial;13;0",
 									"left": 561,
 									"top": 836,
+=======
+									"_id": "AAAAAAFugAoao2YeDxI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YWpcg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 650,
+									"top": 994,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3Z9S0=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6517,16 +8761,34 @@
 									"font": "Arial;13;0",
 									"left": 601,
 									"top": 843,
+=======
+									"_id": "AAAAAAFugAoao2YfGpA=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YWpcg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 657,
+									"top": 953,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3aUIE=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6538,15 +8800,33 @@
 									"font": "Arial;13;0",
 									"left": 575,
 									"top": 786,
+=======
+									"_id": "AAAAAAFugAoao2YgJ3M=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YXhCs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 651,
+									"top": 980,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3bbZI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6558,15 +8838,33 @@
 									"font": "Arial;13;0",
 									"left": 562,
 									"top": 788,
+=======
+									"_id": "AAAAAAFugAoao2Yh3PY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YXhCs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 654,
+									"top": 994,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3cK/Y=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6578,15 +8876,33 @@
 									"font": "Arial;13;0",
 									"left": 603,
 									"top": 782,
+=======
+									"_id": "AAAAAAFugAoao2YiD8M=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YXhCs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 647,
+									"top": 953,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAr37G3Tess="
+=======
+										"$ref": "AAAAAAFugAoao2YZEXY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3dpxE=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6596,11 +8912,24 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugAoao2YjoTc=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YWpcg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAr37W3exOo=",
 									"_parent": {
 										"$ref": "AAAAAAFugAr37G3Tess="
@@ -6610,12 +8939,25 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugAoao2YkAuo=",
+									"_parent": {
+										"$ref": "AAAAAAFugAoao2YZEXY="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAoao2YXhCs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6q5UKbg5EY="
 							},
 							"tail": {
@@ -6656,20 +8998,71 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFugAr37W3exOo="
+=======
+								"$ref": "AAAAAAFugAJW+lAVPK4="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugALFclEp6F8="
+							},
+							"lineStyle": 1,
+							"points": "679:972;626:972",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAoao2YayQY="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAoao2YbYPo="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAoao2Yc0cQ="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugAoao2Yd4Q4="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugAoao2YeDxI="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugAoao2YfGpA="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugAoao2YgJ3M="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugAoao2Yh3PY="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugAoao2YiD8M="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugAoao2YjoTc="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugAoao2YkAuo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugAsDum67uB0=",
+=======
+							"_id": "AAAAAAFugAo0Ima2TtI=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAsDum63164="
+=======
+								"$ref": "AAAAAAFugAo0ImaybUM="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDum68zxs=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6681,16 +9074,34 @@
 									"font": "Arial;13;0",
 									"left": 734,
 									"top": 868,
+=======
+									"_id": "AAAAAAFugAo0Ima35yY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImaybUM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 455,
+									"top": 981,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDum69+Ac=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6702,16 +9113,34 @@
 									"font": "Arial;13;0",
 									"left": 719,
 									"top": 868,
+=======
+									"_id": "AAAAAAFugAo0Ima4Hg0=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImaybUM="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 455,
+									"top": 996,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDum6+rfQ=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6723,16 +9152,34 @@
 									"font": "Arial;13;0",
 									"left": 763,
 									"top": 869,
+=======
+									"_id": "AAAAAAFugAo0Ima55AY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImaybUM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 456,
+									"top": 951,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu26/In8=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6744,16 +9191,34 @@
 									"font": "Arial;13;0",
 									"left": 733,
 									"top": 950,
+=======
+									"_id": "AAAAAAFugAo0Ima6zWs=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImazI68="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 461,
+									"top": 980,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27ANSQ=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6765,16 +9230,34 @@
 									"font": "Arial;13;0",
 									"left": 720,
 									"top": 948,
+=======
+									"_id": "AAAAAAFugAo0Ima7wfo=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImazI68="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 458,
+									"top": 994,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27BFdE=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6786,16 +9269,34 @@
 									"font": "Arial;13;0",
 									"left": 760,
 									"top": 955,
+=======
+									"_id": "AAAAAAFugAo0Ima8+6c=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImazI68="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 465,
+									"top": 953,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27CuIs=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6807,15 +9308,33 @@
 									"font": "Arial;13;0",
 									"left": 735,
 									"top": 786,
+=======
+									"_id": "AAAAAAFugAo0Ima9Zso=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0Ima0Wh8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 451,
+									"top": 980,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27D/G0=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6827,15 +9346,33 @@
 									"font": "Arial;13;0",
 									"left": 722,
 									"top": 788,
+=======
+									"_id": "AAAAAAFugAo0Ima+EoE=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0Ima0Wh8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 454,
+									"top": 994,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27EDMg=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6847,15 +9384,33 @@
 									"font": "Arial;13;0",
 									"left": 763,
 									"top": 782,
+=======
+									"_id": "AAAAAAFugAo0Ima/LJY=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0Ima0Wh8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 447,
+									"top": 953,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFugAsDum67uB0="
+=======
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27FsgI=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6865,11 +9420,24 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugAo0ImbA39U=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0ImazI68="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFugAsDu27GHQk=",
 									"_parent": {
 										"$ref": "AAAAAAFugAsDum67uB0="
@@ -6879,12 +9447,25 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugAo0ImbBG5Y=",
+									"_parent": {
+										"$ref": "AAAAAAFugAo0Ima2TtI="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAo0Ima0Wh8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6r02acK5/k="
 							},
 							"tail": {
@@ -6943,15 +9524,67 @@
 						{
 							"_type": "UMLAssociationView",
 							"_id": "AAAAAAFukA5AkYD5qCc=",
+=======
+								"$ref": "AAAAAAFuf/9juk8BJrs="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugAJW+lAVPK4="
+							},
+							"lineStyle": 1,
+							"points": "487:972;426:972",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAo0Ima35yY="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAo0Ima4Hg0="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAo0Ima55AY="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugAo0Ima6zWs="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugAo0Ima7wfo="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugAo0Ima8+6c="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugAo0Ima9Zso="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugAo0Ima+EoE="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugAo0Ima/LJY="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugAo0ImbA39U="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugAo0ImbBG5Y="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFugApC/WdiGCo=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFukA5AkYD1jMQ="
+=======
+								"$ref": "AAAAAAFugApC/GdehFQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkYD63Wk=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -6963,16 +9596,34 @@
 									"font": "Arial;13;0",
 									"left": 245,
 									"top": 962,
+=======
+									"_id": "AAAAAAFugApC/Wdjhic=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdehFQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 256,
+									"top": 951,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoD7UeE=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -6984,16 +9635,34 @@
 									"font": "Arial;13;0",
 									"left": 253,
 									"top": 974,
+=======
+									"_id": "AAAAAAFugApC/WdkJws=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdehFQ="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 256,
+									"top": 936,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoD86/A=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7005,16 +9674,34 @@
 									"font": "Arial;13;0",
 									"left": 228,
 									"top": 937,
+=======
+									"_id": "AAAAAAFugApC/Wdl/Cc=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdehFQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 256,
+									"top": 981,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoD9qZs=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7026,16 +9713,34 @@
 									"font": "Arial;13;0",
 									"left": 264,
 									"top": 950,
+=======
+									"_id": "AAAAAAFugApC/WdmXlI=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdfdUY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 250,
+									"top": 951,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoD+XtM=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7047,16 +9752,34 @@
 									"font": "Arial;13;0",
 									"left": 269,
 									"top": 963,
+=======
+									"_id": "AAAAAAFugApC/WdnIeA=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdfdUY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 253,
+									"top": 937,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoD/HjI=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7090,15 +9813,54 @@
 									"font": "Arial;13;0",
 									"left": 226,
 									"top": 975,
+=======
+									"_id": "AAAAAAFugApC/WdoJTs=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdfdUY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 246,
+									"top": 978,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugApC/WdpJjk=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/Gdg6LU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 261,
+									"top": 951,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoEB6XM=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7110,15 +9872,33 @@
 									"font": "Arial;13;0",
 									"left": 236,
 									"top": 985,
+=======
+									"_id": "AAAAAAFugApC/Wdqc44=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/Gdg6LU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 258,
+									"top": 937,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoECmr8=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7130,15 +9910,33 @@
 									"font": "Arial;13;0",
 									"left": 208,
 									"top": 954,
+=======
+									"_id": "AAAAAAFugApC/WdrHpc=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/Gdg6LU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 265,
+									"top": 978,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5AkYD5qCc="
+=======
+										"$ref": "AAAAAAFugApC/WdiGCo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoEDCQw=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7148,11 +9946,24 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugApC/WdsKeQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/GdfdUY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5AkoEEvVA=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5AkYD5qCc="
@@ -7162,12 +9973,25 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFugApC/WdtBA0=",
+									"_parent": {
+										"$ref": "AAAAAAFugApC/WdiGCo="
+									},
+									"model": {
+										"$ref": "AAAAAAFugApC/Gdg6LU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 48,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf/9D7U5ZnMw="
 							},
 							"tail": {
@@ -7208,20 +10032,71 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFukA5AkoEEvVA="
+=======
+								"$ref": "AAAAAAFuf/9juk8BJrs="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf/9D7U5ZnMw="
+							},
+							"lineStyle": 1,
+							"points": "225:972;287:972",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugApC/Wdjhic="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugApC/WdkJws="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugApC/Wdl/Cc="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugApC/WdmXlI="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugApC/WdnIeA="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugApC/WdoJTs="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugApC/WdpJjk="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugApC/Wdqc44="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugApC/WdrHpc="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugApC/WdsKeQ="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugApC/WdtBA0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFukA5TlYHS5uM=",
+=======
+							"_id": "AAAAAAFugAre+mwwsjg=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFukA5TlYHO33Y="
+=======
+								"$ref": "AAAAAAFugAre+mwscDA="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TlYHT1dg=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7233,16 +10108,34 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 879,
+=======
+									"_id": "AAAAAAFugAre+mwxiZA=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwscDA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 137,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TlYHUXnw=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7254,16 +10147,34 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 864,
+=======
+									"_id": "AAAAAAFugAre+mwyvsk=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwscDA="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 122,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TlYHVo+I=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7275,16 +10186,34 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 909,
+=======
+									"_id": "AAAAAAFugAre+mwzye0=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwscDA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 166,
+									"top": 849,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TlYHW7R0=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7296,16 +10225,34 @@
 									"font": "Arial;13;0",
 									"left": 419,
 									"top": 879,
+=======
+									"_id": "AAAAAAFugAre+mw0yWs=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwt4FI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 137,
+									"top": 911,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TlYHXxSQ=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7317,16 +10264,34 @@
 									"font": "Arial;13;0",
 									"left": 422,
 									"top": 865,
+=======
+									"_id": "AAAAAAFugAre+2w1Rng=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwt4FI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 123,
+									"top": 908,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TloHYYuo=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7338,10 +10303,24 @@
 									"left": 413,
 									"top": 906,
 									"width": 5.05908203125,
+=======
+									"_id": "AAAAAAFugAre+2w22I4=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwt4FI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 164,
+									"top": 915,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
 									},
 									"edgePosition": 2,
@@ -7360,15 +10339,39 @@
 									"font": "Arial;13;0",
 									"left": 493,
 									"top": 879,
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAre+2w37ik=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwuB1I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 137,
+									"top": 786,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TloHarKw=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7380,15 +10383,33 @@
 									"font": "Arial;13;0",
 									"left": 490,
 									"top": 865,
+=======
+									"_id": "AAAAAAFugAre+2w49cw=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwuB1I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 123,
+									"top": 789,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TloHbNNA=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
@@ -7400,21 +10421,47 @@
 									"font": "Arial;13;0",
 									"left": 497,
 									"top": 906,
+=======
+									"_id": "AAAAAAFugAre+2w5EYk=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwuB1I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 164,
+									"top": 782,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA5TlYHS5uM="
+=======
+										"$ref": "AAAAAAFugAre+mwwsjg="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TloHcwiA=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
 									},
 									"model": {
 										"$ref": "AAAAAAFukA5TlYHPYRo="
+=======
+									"_id": "AAAAAAFugAre+2w66lg=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwt4FI="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7423,12 +10470,21 @@
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA5TloHd+z0=",
 									"_parent": {
 										"$ref": "AAAAAAFukA5TlYHS5uM="
 									},
 									"model": {
 										"$ref": "AAAAAAFukA5TlYHQwxw="
+=======
+									"_id": "AAAAAAFugAre+2w76wM=",
+									"_parent": {
+										"$ref": "AAAAAAFugAre+mwwsjg="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAre+mwuB1I="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7438,6 +10494,7 @@
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugAJW+lAVPK4="
 							},
 							"tail": {
@@ -7478,20 +10535,71 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFukA5TloHd+z0="
+=======
+								"$ref": "AAAAAAFuf6m6jaaM//4="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf/9D7U5ZnMw="
+							},
+							"lineStyle": 1,
+							"points": "152:943;152:767",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAre+mwxiZA="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAre+mwyvsk="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAre+mwzye0="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugAre+mw0yWs="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugAre+2w1Rng="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugAre+2w22I4="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugAre+2w37ik="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugAre+2w49cw="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugAre+2w5EYk="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugAre+2w66lg="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugAre+2w76wM="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFukA6TGIMmFEk=",
+=======
+							"_id": "AAAAAAFugArspGz6NSQ=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFukA6TF4Miw8w="
+=======
+								"$ref": "AAAAAAFugArspGz2u7A="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMnp3Y=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7503,16 +10611,34 @@
 									"font": "Arial;13;0",
 									"left": 677,
 									"top": 937,
+=======
+									"_id": "AAAAAAFugArspGz7ZaI=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz2u7A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 342,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMoQ/g=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7524,16 +10650,34 @@
 									"font": "Arial;13;0",
 									"left": 686,
 									"top": 925,
+=======
+									"_id": "AAAAAAFugArspGz861g=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz2u7A="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 327,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMpSjY=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7545,16 +10689,34 @@
 									"font": "Arial;13;0",
 									"left": 660,
 									"top": 962,
+=======
+									"_id": "AAAAAAFugArspGz99PY=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz2u7A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 371,
+									"top": 849,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMqbaA=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7566,16 +10728,34 @@
 									"font": "Arial;13;0",
 									"left": 660,
 									"top": 926,
+=======
+									"_id": "AAAAAAFugArspGz+0+E=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz350U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 341,
+									"top": 910,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMraDU=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7587,16 +10767,34 @@
 									"font": "Arial;13;0",
 									"left": 670,
 									"top": 916,
+=======
+									"_id": "AAAAAAFugArspGz/lMo=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz350U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 328,
+									"top": 908,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGIMsrI4=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7630,15 +10828,54 @@
 									"font": "Arial;13;0",
 									"left": 694,
 									"top": 949,
+=======
+									"_id": "AAAAAAFugArspG0ArhE=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz350U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 915,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugArspG0BMNw=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz4ULM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 343,
+									"top": 786,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGYMuayY=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7650,15 +10887,33 @@
 									"font": "Arial;13;0",
 									"left": 699,
 									"top": 937,
+=======
+									"_id": "AAAAAAFugArspG0CpuA=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz4ULM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 330,
+									"top": 788,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGYMvRJ4=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
@@ -7670,21 +10925,47 @@
 									"font": "Arial;13;0",
 									"left": 682,
 									"top": 974,
+=======
+									"_id": "AAAAAAFugArspG0Df6E=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz4ULM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 371,
+									"top": 782,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukA6TGIMmFEk="
+=======
+										"$ref": "AAAAAAFugArspGz6NSQ="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TGYMwghQ=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
 									},
 									"model": {
 										"$ref": "AAAAAAFukA6TGIMjWMs="
+=======
+									"_id": "AAAAAAFugArspG0EwxQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz350U="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7693,12 +10974,21 @@
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukA6TG4Mxnok=",
 									"_parent": {
 										"$ref": "AAAAAAFukA6TGIMmFEk="
 									},
 									"model": {
 										"$ref": "AAAAAAFukA6TGIMkoLc="
+=======
+									"_id": "AAAAAAFugArspG0FfyY=",
+									"_parent": {
+										"$ref": "AAAAAAFugArspGz6NSQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFugArspGz4ULM="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7708,6 +10998,7 @@
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFugALFclEp6F8="
 							},
 							"tail": {
@@ -7748,20 +11039,71 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFukA6TG4Mxnok="
+=======
+								"$ref": "AAAAAAFuf6nRfKa2IHU="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuf/9juk8BJrs="
+							},
+							"lineStyle": 1,
+							"points": "356:943;359:767",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugArspGz7ZaI="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugArspGz861g="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugArspGz99PY="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugArspGz+0+E="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugArspGz/lMo="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugArspG0ArhE="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugArspG0BMNw="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugArspG0CpuA="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugArspG0Df6E="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugArspG0EwxQ="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugArspG0FfyY="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFukBTdBrzumBA=",
+=======
+							"_id": "AAAAAAFugAr37G3Tess=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFukBTdBbzqNfo="
+=======
+								"$ref": "AAAAAAFugAr37G3PxQA="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrzvGv4=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7773,16 +11115,34 @@
 									"font": "Arial;13;0",
 									"left": 346,
 									"top": 335,
+=======
+									"_id": "AAAAAAFugAr37G3U/8Q=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3PxQA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 539,
+									"top": 849,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrzwHZU=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7794,16 +11154,34 @@
 									"font": "Arial;13;0",
 									"left": 346,
 									"top": 320,
+=======
+									"_id": "AAAAAAFugAr37G3VnDI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3PxQA="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 524,
+									"top": 849,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrzxvpA=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7815,16 +11193,34 @@
 									"font": "Arial;13;0",
 									"left": 346,
 									"top": 365,
+=======
+									"_id": "AAAAAAFugAr37G3Wf5Q=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3PxQA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 568,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrzyBO4=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7836,16 +11232,34 @@
 									"font": "Arial;13;0",
 									"left": 312,
 									"top": 335,
+=======
+									"_id": "AAAAAAFugAr37G3XTdg=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3QOr0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 540,
+									"top": 911,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrzzCRs=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7857,16 +11271,34 @@
 									"font": "Arial;13;0",
 									"left": 315,
 									"top": 321,
+=======
+									"_id": "AAAAAAFugAr37G3Y1gE=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3QOr0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 527,
+									"top": 909,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrz0JLQ=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7878,10 +11310,24 @@
 									"left": 306,
 									"top": 362,
 									"width": 5.05908203125,
+=======
+									"_id": "AAAAAAFugAr37W3Z9S0=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3QOr0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 568,
+									"top": 915,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
 									},
 									"edgePosition": 2,
@@ -7900,15 +11346,39 @@
 									"font": "Arial;13;0",
 									"left": 380,
 									"top": 335,
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAr37W3aUIE=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3RRs0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 538,
+									"top": 787,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrz22/Y=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7920,15 +11390,33 @@
 									"font": "Arial;13;0",
 									"left": 377,
 									"top": 321,
+=======
+									"_id": "AAAAAAFugAr37W3bbZI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3RRs0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 525,
+									"top": 789,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrz3MG0=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
@@ -7940,21 +11428,47 @@
 									"font": "Arial;13;0",
 									"left": 384,
 									"top": 362,
+=======
+									"_id": "AAAAAAFugAr37W3cK/Y=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3RRs0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 565,
+									"top": 782,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBTdBrzumBA="
+=======
+										"$ref": "AAAAAAFugAr37G3Tess="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrz4m30=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
 									},
 									"model": {
 										"$ref": "AAAAAAFukBTdBbzr7e8="
+=======
+									"_id": "AAAAAAFugAr37W3dpxE=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3QOr0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7963,12 +11477,21 @@
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBTdBrz5dA4=",
 									"_parent": {
 										"$ref": "AAAAAAFukBTdBrzumBA="
 									},
 									"model": {
 										"$ref": "AAAAAAFukBTdBbzsak4="
+=======
+									"_id": "AAAAAAFugAr37W3exOo=",
+									"_parent": {
+										"$ref": "AAAAAAFugAr37G3Tess="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAr37G3RRs0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -7978,6 +11501,7 @@
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6mRwKZikfI="
 							},
 							"tail": {
@@ -8018,20 +11542,71 @@
 							},
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFukBTdBrz5dA4="
+=======
+								"$ref": "AAAAAAFuf6q5UKbg5EY="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugAJW+lAVPK4="
+							},
+							"lineStyle": 1,
+							"points": "556:943;553:767",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAr37G3U/8Q="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAr37G3VnDI="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAr37G3Wf5Q="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugAr37G3XTdg="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugAr37G3Y1gE="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugAr37W3Z9S0="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugAr37W3aUIE="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugAr37W3bbZI="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugAr37W3cK/Y="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugAr37W3dpxE="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugAr37W3exOo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociationView",
+<<<<<<< HEAD
 							"_id": "AAAAAAFukBV6H7/ynp8=",
+=======
+							"_id": "AAAAAAFugAsDum67uB0=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFukBV6H7/u474="
+=======
+								"$ref": "AAAAAAFugAsDum63164="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							},
 							"subViews": [
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6IL/zE0U=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8043,16 +11618,34 @@
 									"font": "Arial;13;0",
 									"left": 570,
 									"top": 365,
+=======
+									"_id": "AAAAAAFugAsDum68zxs=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum63164="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 734,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6IL/0C70=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8064,16 +11657,34 @@
 									"font": "Arial;13;0",
 									"left": 570,
 									"top": 380,
+=======
+									"_id": "AAAAAAFugAsDum69+Ac=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum63164="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 719,
+									"top": 848,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6IL/12RY=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8085,16 +11696,34 @@
 									"font": "Arial;13;0",
 									"left": 571,
 									"top": 335,
+=======
+									"_id": "AAAAAAFugAsDum6+rfQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum63164="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 763,
+									"top": 849,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 1
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6IL/2rxw=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8106,16 +11735,34 @@
 									"font": "Arial;13;0",
 									"left": 613,
 									"top": 364,
+=======
+									"_id": "AAAAAAFugAsDu26/In8=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum64Ylo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 733,
+									"top": 910,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/3loE=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8127,16 +11774,34 @@
 									"font": "Arial;13;0",
 									"left": 610,
 									"top": 378,
+=======
+									"_id": "AAAAAAFugAsDu27ANSQ=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum64Ylo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 720,
+									"top": 908,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/4Tts=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8148,10 +11813,24 @@
 									"left": 615,
 									"top": 337,
 									"width": 5.05908203125,
+=======
+									"_id": "AAAAAAFugAsDu27BFdE=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum64Ylo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 760,
+									"top": 915,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
 									},
 									"edgePosition": 2,
@@ -8170,15 +11849,39 @@
 									"font": "Arial;13;0",
 									"left": 528,
 									"top": 364,
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFugAsDu27CuIs=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum65pR8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 735,
+									"top": 786,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/6Kdg=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8190,15 +11893,33 @@
 									"font": "Arial;13;0",
 									"left": 531,
 									"top": 378,
+=======
+									"_id": "AAAAAAFugAsDu27D/G0=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum65pR8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 722,
+									"top": 788,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/7y1g=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
@@ -8210,21 +11931,47 @@
 									"font": "Arial;13;0",
 									"left": 524,
 									"top": 337,
+=======
+									"_id": "AAAAAAFugAsDu27EDMg=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum65pR8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 763,
+									"top": 782,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFukBV6H7/ynp8="
+=======
+										"$ref": "AAAAAAFugAsDum67uB0="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/8phU=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
 									},
 									"model": {
 										"$ref": "AAAAAAFukBV6H7/v880="
+=======
+									"_id": "AAAAAAFugAsDu27FsgI=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum64Ylo="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -8233,12 +11980,21 @@
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFukBV6Ib/9nW4=",
 									"_parent": {
 										"$ref": "AAAAAAFukBV6H7/ynp8="
 									},
 									"model": {
 										"$ref": "AAAAAAFukBV6H7/waSw="
+=======
+									"_id": "AAAAAAFugAsDu27GHQk=",
+									"_parent": {
+										"$ref": "AAAAAAFugAsDum67uB0="
+									},
+									"model": {
+										"$ref": "AAAAAAFugAsDum65pR8="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"visible": false,
 									"font": "Arial;13;0",
@@ -8248,6 +12004,7 @@
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuf6mRwKZikfI="
 							},
 							"tail": {
@@ -8290,6 +12047,49 @@
 								"$ref": "AAAAAAFukBV6Ib/9nW4="
 							}
 <<<<<<< HEAD
+=======
+								"$ref": "AAAAAAFuf6r02acK5/k="
+							},
+							"tail": {
+								"$ref": "AAAAAAFugALFclEp6F8="
+							},
+							"lineStyle": 1,
+							"points": "748:943;751:767",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFugAsDum68zxs="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFugAsDum69+Ac="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFugAsDum6+rfQ="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFugAsDu26/In8="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFugAsDu27ANSQ="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFugAsDu27BFdE="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFugAsDu27CuIs="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFugAsDu27D/G0="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFugAsDu27EDMg="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFugAsDu27FsgI="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFugAsDu27GHQk="
+							}
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 						},
 						{
 							"_type": "UMLTextView",
@@ -8587,8 +12387,11 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAFulCVOg92U1/o="
 							}
+<<<<<<< HEAD
 =======
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 						}
 					]
 				},
@@ -8599,6 +12402,67 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
 					"name": "DataTable",
+<<<<<<< HEAD
+=======
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuf7fLSrv41CU=",
+							"_parent": {
+								"$ref": "AAAAAAFuf6mRvqZgGkY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuf7fLSrv5Is8=",
+								"_parent": {
+									"$ref": "AAAAAAFuf7fLSrv41CU="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf6mRvqZgGkY="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuf7fLSrv6yo4=",
+								"_parent": {
+									"$ref": "AAAAAAFuf7fLSrv41CU="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf7H0la5hb2o="
+								},
+								"aggregation": "composite"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuf7fa7ryVkzY=",
+							"_parent": {
+								"$ref": "AAAAAAFuf6mRvqZgGkY="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuf7fa7ryWQ9Q=",
+								"_parent": {
+									"$ref": "AAAAAAFuf7fa7ryVkzY="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf6mRvqZgGkY="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuf7fa7ryXBF4=",
+								"_parent": {
+									"$ref": "AAAAAAFuf7fa7ryVkzY="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf7HPza3LUHE="
+								},
+								"aggregation": "composite"
+							}
+						}
+					],
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 					"stereotype": "implementor"
 				},
 				{
@@ -8759,6 +12623,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
+<<<<<<< HEAD
 					"name": "DataRow",
 					"ownedElements": [
 						{
@@ -8791,6 +12656,9 @@
 							}
 						}
 					]
+=======
+					"name": "DataRow"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 				},
 				{
 					"_type": "UMLClass",
@@ -8798,6 +12666,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
+<<<<<<< HEAD
 					"name": "DataColumn",
 					"ownedElements": [
 						{
@@ -8830,6 +12699,9 @@
 							}
 						}
 					]
+=======
+					"name": "DataColumn"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 				},
 				{
 					"_type": "UMLClass",
@@ -9033,6 +12905,37 @@
 						},
 						{
 							"_type": "UMLAssociation",
+<<<<<<< HEAD
+=======
+							"_id": "AAAAAAFugApC/GdehFQ=",
+							"_parent": {
+								"$ref": "AAAAAAFuf/9D7E5Xujw="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugApC/GdfdUY=",
+								"_parent": {
+									"$ref": "AAAAAAFugApC/GdehFQ="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf/9D7E5Xujw="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugApC/Gdg6LU=",
+								"_parent": {
+									"$ref": "AAAAAAFugApC/GdehFQ="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf/9juk7/8eU="
+								},
+								"aggregation": "shared"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_id": "AAAAAAFugAqW0GmrCL0=",
 							"_parent": {
 								"$ref": "AAAAAAFuf/9D7E5Xujw="
@@ -9166,6 +13069,7 @@
 									"$ref": "AAAAAAFuf6nRfKa0pF0="
 								}
 							}
+<<<<<<< HEAD
 						},
 						{
 							"_type": "UMLAssociation",
@@ -9224,6 +13128,8 @@
 								},
 								"aggregation": "composite"
 							}
+=======
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 						}
 					],
 					"stereotype": "concreteabstraction"
@@ -9279,12 +13185,17 @@
 						},
 						{
 							"_type": "UMLAssociation",
+<<<<<<< HEAD
 							"_id": "AAAAAAFugAr37G3PxQA=",
+=======
+							"_id": "AAAAAAFugAo0ImaybUM=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFugAJW+lATNbg="
 							},
 							"end1": {
 								"_type": "UMLAssociationEnd",
+<<<<<<< HEAD
 								"_id": "AAAAAAFugAr37G3QOr0=",
 								"_parent": {
 									"$ref": "AAAAAAFugAr37G3PxQA="
@@ -9303,23 +13214,54 @@
 								"reference": {
 									"$ref": "AAAAAAFuf6q5T6be5h8="
 								}
+=======
+								"_id": "AAAAAAFugAo0ImazI68=",
+								"_parent": {
+									"$ref": "AAAAAAFugAo0ImaybUM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFugAJW+lATNbg="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugAo0Ima0Wh8=",
+								"_parent": {
+									"$ref": "AAAAAAFugAo0ImaybUM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf/9juk7/8eU="
+								},
+								"aggregation": "shared"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						},
 						{
 							"_type": "UMLAssociation",
+<<<<<<< HEAD
 							"_id": "AAAAAAFukA6TF4Miw8w=",
+=======
+							"_id": "AAAAAAFugAr37G3PxQA=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFugAJW+lATNbg="
 							},
 							"end1": {
 								"_type": "UMLAssociationEnd",
+<<<<<<< HEAD
 								"_id": "AAAAAAFukA6TGIMjWMs=",
 								"_parent": {
 									"$ref": "AAAAAAFukA6TF4Miw8w="
+=======
+								"_id": "AAAAAAFugAr37G3QOr0=",
+								"_parent": {
+									"$ref": "AAAAAAFugAr37G3PxQA="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 								},
 								"reference": {
 									"$ref": "AAAAAAFugAJW+lATNbg="
 								},
+<<<<<<< HEAD
 								"multiplicity": "*"
 							},
 							"end2": {
@@ -9332,6 +13274,19 @@
 									"$ref": "AAAAAAFugALFcVEnaxo="
 								},
 								"aggregation": "shared"
+=======
+								"navigable": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugAr37G3RRs0=",
+								"_parent": {
+									"$ref": "AAAAAAFugAr37G3PxQA="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuf6q5T6be5h8="
+								}
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							}
 						}
 					],
@@ -9360,6 +13315,37 @@
 						},
 						{
 							"_type": "UMLAssociation",
+<<<<<<< HEAD
+=======
+							"_id": "AAAAAAFugAoao2YVdfE=",
+							"_parent": {
+								"$ref": "AAAAAAFugALFcVEnaxo="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugAoao2YWpcg=",
+								"_parent": {
+									"$ref": "AAAAAAFugAoao2YVdfE="
+								},
+								"reference": {
+									"$ref": "AAAAAAFugALFcVEnaxo="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFugAoao2YXhCs=",
+								"_parent": {
+									"$ref": "AAAAAAFugAoao2YVdfE="
+								},
+								"reference": {
+									"$ref": "AAAAAAFugAJW+lATNbg="
+								},
+								"aggregation": "composite"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_id": "AAAAAAFugAsDum63164=",
 							"_parent": {
 								"$ref": "AAAAAAFugALFcVEnaxo="
@@ -9390,6 +13376,17 @@
 					"stereotype": "concreteabstraction"
 				},
 				{
+<<<<<<< HEAD
+=======
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFugAPCUFZ++MI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Interface1"
+				},
+				{
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 					"_type": "UMLClass",
 					"_id": "AAAAAAFugAPkT1eF2pw=",
 					"_parent": {
@@ -9401,6 +13398,9 @@
 				},
 				{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 					"_type": "UMLClass",
 					"_id": "AAAAAAFulB+t7caaXrY=",
 					"_parent": {
@@ -9423,6 +13423,7 @@
 						}
 					],
 					"stereotype": "implementor"
+<<<<<<< HEAD
 =======
 					"_type": "UMLPackage",
 					"_id": "AAAAAAFukBJoiaVMVRQ=",
@@ -9437,6 +13438,8 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					}
 >>>>>>> 6946e392f00a0bb2bb012c21a47efc9e983b06b2
+=======
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 				}
 			]
 		}

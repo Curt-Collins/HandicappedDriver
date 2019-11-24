@@ -9,7 +9,11 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
+<<<<<<< HEAD
 			"name": "Facade",
+=======
+			"name": "Model",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 			"ownedElements": [
 				{
 					"_type": "UMLClassDiagram",
@@ -22,6 +26,275 @@
 					"ownedViews": [
 						{
 							"_type": "UMLClassView",
+<<<<<<< HEAD
+=======
+							"_id": "AAAAAAFuapgT+aMwOQk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFuapgT+qMxqtc=",
+									"_parent": {
+										"$ref": "AAAAAAFuapgT+aMwOQk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuapgT96MurcU="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuapgT+qMycJc=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qMxqtc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 1301,
+											"top": 77,
+											"width": 157.16162109375,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuapgT+qMzkxY=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qMxqtc="
+											},
+											"font": "Arial;13;1",
+											"left": 864,
+											"top": 135,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "ParkingLot"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuapgT+qM077g=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qMxqtc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 912,
+											"top": -80,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuapgT+qM1+SE=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qMxqtc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 912,
+											"top": -80,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 859,
+									"top": 128,
+									"width": 232.9296875,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuapgT+qMycJc="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuapgT+qMzkxY="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuapgT+qM077g="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuapgT+qM1+SE="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFuapgT+qM2PCM=",
+									"_parent": {
+										"$ref": "AAAAAAFuapgT+aMwOQk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuapgT96MurcU="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaphA7qNbJ1E=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qM2PCM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaphAnKNY6qI="
+											},
+											"font": "Arial;13;0",
+											"left": 864,
+											"top": 158,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "-name: string",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaqKHuKSqBes=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qM2PCM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaqKHc6SnTis="
+											},
+											"font": "Arial;13;0",
+											"left": 864,
+											"top": 173,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "-id: integer {id}",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 859,
+									"top": 153,
+									"width": 232.9296875,
+									"height": 38
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFuapgT+qM32QU=",
+									"_parent": {
+										"$ref": "AAAAAAFuapgT+aMwOQk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuapgT96MurcU="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFuaqcpOKaMEDs=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qM32QU="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaqco66aJaKk="
+											},
+											"font": "Arial;13;0",
+											"left": 864,
+											"top": 196,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "+ParkingLot(l: integer)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFuapj4iKNtq9Y=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qM32QU="
+											},
+											"model": {
+												"$ref": "AAAAAAFuapj4RKNqcvw="
+											},
+											"font": "Arial;13;0",
+											"left": 864,
+											"top": 211,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "+GetAvailableSpaces()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFuatB5I9UXE74=",
+											"_parent": {
+												"$ref": "AAAAAAFuapgT+qM32QU="
+											},
+											"model": {
+												"$ref": "AAAAAAFuatB44NUUrTA="
+											},
+											"font": "Arial;13;0",
+											"left": 864,
+											"top": 226,
+											"width": 222.9296875,
+											"height": 13,
+											"text": "-LoadInfo()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 859,
+									"top": 191,
+									"width": 232.9296875,
+									"height": 53
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFuapgT+qM44is=",
+									"_parent": {
+										"$ref": "AAAAAAFuapgT+aMwOQk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuapgT96MurcU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 456,
+									"top": -40,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFuapgT+6M5gKg=",
+									"_parent": {
+										"$ref": "AAAAAAFuapgT+aMwOQk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuapgT96MurcU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 456,
+									"top": -40,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 859,
+							"top": 128,
+							"width": 232.9296875,
+							"height": 116,
+							"nameCompartment": {
+								"$ref": "AAAAAAFuapgT+qMxqtc="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFuapgT+qM2PCM="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFuapgT+qM32QU="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFuapgT+qM44is="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFuapgT+6M5gKg="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_id": "AAAAAAFuapl++KN1MKk=",
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
@@ -75,9 +348,15 @@
 											"font": "Arial;13;0",
 											"left": 176,
 											"top": -16,
+<<<<<<< HEAD
 											"width": 113.40087890625,
 											"height": 13,
 											"text": "(from Core System)"
+=======
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 										},
 										{
 											"_type": "LabelView",
@@ -371,12 +650,18 @@
 							}
 						},
 						{
+<<<<<<< HEAD
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuaqRXTaVRH14=",
+=======
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFuaqEqvaO+TUI=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuaqQmYaVDf+g="
 							},
 							"subViews": [
@@ -428,6 +713,434 @@
 											"width": 113.40087890625,
 											"height": 13,
 											"text": "(from Core System)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuaqRXTaVWYh4=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVSPHI="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 788,
+											"top": 62,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 784,
+									"top": 648,
+									"width": 382.7646484375,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuaqRXTaVTvHU="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuaqRXTaVUAAU="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuaqRXTaVVpX8="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuaqRXTaVWYh4="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFuaqRXTaVXuXY=",
+=======
+								"$ref": "AAAAAAFuaqEqu6O6RM0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaO/GcI=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O6RM0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 959,
+									"top": 290,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPA0iI=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O6RM0="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 944,
+									"top": 290,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPBN/Y=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O6RM0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 988,
+									"top": 291,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPCjDk=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O7Ln8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 959,
+									"top": 319,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPDAmA=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O7Ln8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 945,
+									"top": 316,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPEycw=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O7Ln8="
+									},
+									"font": "Arial;13;0",
+									"left": 984,
+									"top": 323,
+									"width": 5.05908203125,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"edgePosition": 2,
+									"text": "*"
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPFKxM=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O8DG0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 959,
+									"top": 263,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPGfRk=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O8DG0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 945,
+									"top": 266,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuaqEqvaPHBF4=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O8DG0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 984,
+									"top": 259,
+									"width": 5.05908203125,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"text": "*"
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuaqEqvaPIwUc=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O7Ln8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 304,
+									"top": 88,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuaqEqvqPJVLc=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqEqvaO+TUI="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqEqu6O8DG0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 304,
+									"top": 88,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFuapgT+aMwOQk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuapl++KN1MKk="
+							},
+							"lineStyle": 1,
+							"points": "974:351;974:244",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFuaqEqvaO/GcI="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFuaqEqvaPA0iI="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFuaqEqvaPBN/Y="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFuaqEqvaPCjDk="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFuaqEqvaPDAmA="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFuaqEqvaPEycw="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFuaqEqvaPFKxM="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFuaqEqvaPGfRk="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFuaqEqvaPHBF4="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFuaqEqvaPIwUc="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFuaqEqvqPJVLc="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFuaqRXTaVRH14=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFuaqRXTaVSPHI=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+									"_parent": {
+										"$ref": "AAAAAAFuaqRXTaVRH14="
+									},
+									"model": {
+										"$ref": "AAAAAAFuaqQmYaVDf+g="
+									},
+									"subViews": [
+										{
+<<<<<<< HEAD
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaqgIRabpRfc=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVXuXY="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaqgH+KbjrrI="
+											},
+											"font": "Arial;13;0",
+											"left": 789,
+											"top": 678,
+											"width": 372.7646484375,
+											"height": 13,
+											"text": "-id: integer {id}",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaqkZIqdwi/s=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVXuXY="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaqkY1adqjHs="
+											},
+											"font": "Arial;13;0",
+											"left": 789,
+											"top": 693,
+											"width": 372.7646484375,
+											"height": 13,
+											"text": "-startTime: datetime",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaql/a6e1HKA=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVXuXY="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaql/JaevhU4="
+											},
+											"font": "Arial;13;0",
+											"left": 789,
+											"top": 708,
+											"width": 372.7646484375,
+											"height": 13,
+											"text": "-endTime: datetime",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFuaqoPrqgYTaE=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVXuXY="
+											},
+											"model": {
+												"$ref": "AAAAAAFuaqoPaagSHYA="
+											},
+											"font": "Arial;13;0",
+											"left": 789,
+=======
+											"_type": "LabelView",
+											"_id": "AAAAAAFuaqRXTaVTvHU=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVSPHI="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 788,
+											"top": 62,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuaqRXTaVUAAU=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVSPHI="
+											},
+											"font": "Arial;13;1",
+											"left": 789,
+											"top": 655,
+											"width": 372.7646484375,
+											"height": 13,
+											"text": "Reservation"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuaqRXTaVVpX8=",
+											"_parent": {
+												"$ref": "AAAAAAFuaqRXTaVSPHI="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 788,
+											"top": 62,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
 										},
 										{
 											"_type": "LabelView",
@@ -519,7 +1232,7 @@
 											"top": 708,
 											"width": 372.7646484375,
 											"height": 13,
-											"text": "-endTime: datetime",
+											"text": "-endTime: integer",
 											"horizontalAlignment": 0
 										},
 										{
@@ -533,6 +1246,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 789,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"top": 723,
 											"width": 372.7646484375,
 											"height": 13,
@@ -587,7 +1301,11 @@
 											"top": 761,
 											"width": 372.7646484375,
 											"height": 26,
+<<<<<<< HEAD
 											"text": "+Reservation (d: Driver, ps: ParkingSpace, startTime: datetime, endTime: datetime)",
+=======
+											"text": "+Reservation(d: Driver, ps: ParkingSpace, startTime: datetime, endTime: datetime)",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"horizontalAlignment": 0,
 											"wordWrap": true
 										},
@@ -829,9 +1547,15 @@
 											"font": "Arial;13;0",
 											"left": 862,
 											"top": 1034,
+<<<<<<< HEAD
 											"width": 113.40087890625,
 											"height": 13,
 											"text": "(from Core System)"
+=======
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 										},
 										{
 											"_type": "LabelView",
@@ -1127,7 +1851,11 @@
 											"top": 1273,
 											"width": 343,
 											"height": 26,
+<<<<<<< HEAD
 											"text": "+UpdateProfile (name: string, email: string, mobile: string, plateNum: string, plateState: string)",
+=======
+											"text": "+UpdateProfile(name: string, email: string, mobile: string, plateNum: string, plateState: string)",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 											"horizontalAlignment": 0,
 											"wordWrap": true
 										},
@@ -1353,9 +2081,15 @@
 										"$ref": "AAAAAAFuaquCnqmlS9E="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 958,
 									"top": 912,
 									"width": 6.5,
+=======
+									"left": 959,
+									"top": 912,
+									"width": 5.05908203125,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1627,9 +2361,15 @@
 										"$ref": "AAAAAAFuaqxnNKti7rU="
 									},
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 983,
 									"top": 619,
 									"width": 6.5,
+=======
+									"left": 984,
+									"top": 619,
+									"width": 5.05908203125,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1831,9 +2571,15 @@
 											"font": "Arial;13;0",
 											"left": 176,
 											"top": 176,
+<<<<<<< HEAD
 											"width": 81.630859375,
 											"height": 13,
 											"text": "(from Facade)"
+=======
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 										},
 										{
 											"_type": "LabelView",
@@ -2148,13 +2894,37 @@
 											"height": 13,
 											"text": "+CancelReservation(resvID: integer)",
 											"horizontalAlignment": 0
+<<<<<<< HEAD
+=======
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFuauD4bu2WyXs=",
+											"_parent": {
+												"$ref": "AAAAAAFuasptismGs9g="
+											},
+											"model": {
+												"$ref": "AAAAAAFuauD4Je2KVM0="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 627,
+											"width": 327,
+											"height": 13,
+											"text": "+BuyCigarettes()",
+											"horizontalAlignment": 0
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 232,
 									"top": 371,
 									"width": 337,
+<<<<<<< HEAD
 									"height": 259
+=======
+									"height": 274
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -2194,7 +2964,11 @@
 							"left": 232,
 							"top": 336,
 							"width": 337,
+<<<<<<< HEAD
 							"height": 294,
+=======
+							"height": 577,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"nameCompartment": {
 								"$ref": "AAAAAAFuasptismA9o4="
 							},
@@ -2232,8 +3006,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 720,
 									"top": 441,
+=======
+									"left": 716,
+									"top": 504,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2253,8 +3032,13 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 719,
 									"top": 426,
+=======
+									"left": 712,
+									"top": 490,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2274,8 +3058,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 721,
 									"top": 470,
+=======
+									"left": 725,
+									"top": 533,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2295,8 +3084,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 593,
 									"top": 449,
+=======
+									"left": 589,
+									"top": 543,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -2316,8 +3110,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 595,
 									"top": 436,
+=======
+									"left": 587,
+									"top": 530,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -2337,8 +3136,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 591,
 									"top": 477,
+=======
+									"left": 593,
+									"top": 571,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -2358,8 +3162,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 846,
 									"top": 433,
+=======
+									"left": 843,
+									"top": 465,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -2378,8 +3187,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 843,
 									"top": 420,
+=======
+									"left": 837,
+									"top": 453,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -2398,8 +3212,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 852,
 									"top": 460,
+=======
+									"left": 856,
+									"top": 490,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -2448,7 +3267,11 @@
 								"$ref": "AAAAAAFuasptisl/29Q="
 							},
 							"lineStyle": 1,
+<<<<<<< HEAD
 							"points": "569:472;873:453",
+=======
+							"points": "569:572;873:478",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFuauGH8O9DiRc="
@@ -2505,8 +3328,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 682,
 									"top": 601,
+=======
+									"left": 679,
+									"top": 674,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2526,8 +3354,13 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 689,
 									"top": 588,
+=======
+									"left": 683,
+									"top": 659,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2547,8 +3380,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 669,
 									"top": 628,
+=======
+									"left": 672,
+									"top": 703,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2568,8 +3406,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 598,
 									"top": 559,
+=======
+									"left": 597,
+									"top": 653,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -2589,8 +3432,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 607,
 									"top": 548,
+=======
+									"left": 603,
+									"top": 641,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -2610,8 +3458,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 582,
 									"top": 581,
+=======
+									"left": 586,
+									"top": 679,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -2631,8 +3484,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 766,
 									"top": 644,
+=======
+									"left": 761,
+									"top": 696,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -2651,8 +3509,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 770,
 									"top": 631,
+=======
+									"left": 762,
+									"top": 682,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -2672,7 +3535,11 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 758,
+<<<<<<< HEAD
 									"top": 671,
+=======
+									"top": 723,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -2717,7 +3584,11 @@
 								"$ref": "AAAAAAFuasptisl/29Q="
 							},
 							"lineStyle": 1,
+<<<<<<< HEAD
 							"points": "569:567;783:676",
+=======
+							"points": "569:668;783:723",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFuauKxF/Owyds="
@@ -2774,8 +3645,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 698,
 									"top": 818,
+=======
+									"left": 706,
+									"top": 897,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2795,8 +3671,13 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 710,
 									"top": 809,
+=======
+									"left": 716,
+									"top": 886,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2816,8 +3697,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 675,
 									"top": 837,
+=======
+									"left": 685,
+									"top": 918,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2837,8 +3723,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 549,
 									"top": 634,
+=======
+									"left": 598,
+									"top": 790,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -2858,8 +3749,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 560,
 									"top": 628,
+=======
+									"left": 608,
+									"top": 782,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -2879,8 +3775,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 524,
 									"top": 648,
+=======
+									"left": 575,
+									"top": 807,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -2900,8 +3801,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 849,
 									"top": 1003,
+=======
+									"left": 815,
+									"top": 1004,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -2920,7 +3826,11 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 858,
+=======
+									"left": 823,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"top": 993,
 									"height": 13,
 									"alpha": -0.7853981633974483,
@@ -2940,8 +3850,13 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+<<<<<<< HEAD
 									"left": 830,
 									"top": 1024,
+=======
+									"left": 799,
+									"top": 1026,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -2988,7 +3903,11 @@
 								"$ref": "AAAAAAFuasptisl/29Q="
 							},
 							"lineStyle": 1,
+<<<<<<< HEAD
 							"points": "521:630;854:1039",
+=======
+							"points": "569:789;824:1039",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFuauLgevS+ebw="
@@ -3025,12 +3944,18 @@
 							}
 						},
 						{
+<<<<<<< HEAD
 							"_type": "UMLClassView",
 							"_id": "AAAAAAFuavJOdC098x8=",
+=======
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFuauRZjwDPjq4=",
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 							"_parent": {
 								"$ref": "AAAAAAFF+qBtyKM79qY="
 							},
 							"model": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuavJOdC07R9Q="
 							},
 							"subViews": [
@@ -3307,16 +4232,123 @@
 									"font": "Arial;13;0",
 									"left": 120,
 									"top": 447,
+=======
+								"$ref": "AAAAAAFuauRZjwDLNIU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuauRZjwDQnOs=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDLNIU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 723,
+									"top": 351,
 									"height": 13,
-									"alpha": 0.7853981633974483,
-									"distance": 40,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
 									"hostEdge": {
-										"$ref": "AAAAAAFuavJtGC38ex8="
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuauRZjwDRwxc=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDLNIU="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 714,
+									"top": 339,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuauRZjwDSFeU=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDLNIU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 742,
+									"top": 374,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuauRZkADTZRk=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDMUWQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 580,
+									"top": 461,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuauRZkADUo7o=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDMUWQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 574,
+									"top": 449,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+<<<<<<< HEAD
+										"$ref": "AAAAAAFuavJtGC38ex8="
+=======
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4CRqc=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3328,16 +4360,34 @@
 									"font": "Arial;13;0",
 									"left": 113,
 									"top": 488,
+=======
+									"_id": "AAAAAAFuauRZkADVcqU=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDMUWQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 593,
+									"top": 485,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuavJtGC38ex8="
+=======
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									},
 									"edgePosition": 2
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4DpMg=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3349,15 +4399,33 @@
 									"font": "Arial;13;0",
 									"left": 205,
 									"top": 461,
+=======
+									"_id": "AAAAAAFuauRZkADWj6Q=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDNjJY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 867,
+									"top": 241,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuavJtGC38ex8="
+=======
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4EW9g=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3369,15 +4437,33 @@
 									"font": "Arial;13;0",
 									"left": 202,
 									"top": 447,
+=======
+									"_id": "AAAAAAFuauRZkADXpQw=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDNjJY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 857,
+									"top": 232,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuavJtGC38ex8="
+=======
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "EdgeLabelView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4Fu78=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3389,15 +4475,33 @@
 									"font": "Arial;13;0",
 									"left": 209,
 									"top": 488,
+=======
+									"_id": "AAAAAAFuauRZkADYj0M=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDNjJY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 887,
+									"top": 261,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
 									"hostEdge": {
+<<<<<<< HEAD
 										"$ref": "AAAAAAFuavJtGC38ex8="
+=======
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									}
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4GbAI=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3407,11 +4511,25 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFuauRZkADZg5o=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDMUWQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 272,
+									"top": 104,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
+<<<<<<< HEAD
 									"_id": "AAAAAAFuavJtGC4HZVM=",
 									"_parent": {
 										"$ref": "AAAAAAFuavJtGC38ex8="
@@ -3421,12 +4539,26 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+=======
+									"_id": "AAAAAAFuauRZkADaFr4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauRZjwDPjq4="
+									},
+									"model": {
+										"$ref": "AAAAAAFuauRZjwDNjJY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 272,
+									"top": 104,
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"head": {
+<<<<<<< HEAD
 								"$ref": "AAAAAAFuasptisl/29Q="
 							},
 							"tail": {
@@ -3942,11 +5074,595 @@
 									"type": "integer"
 								}
 							]
+=======
+								"$ref": "AAAAAAFuapgT+aMwOQk="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuasptisl/29Q="
+							},
+							"lineStyle": 1,
+							"points": "569:495;897:244",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFuauRZjwDQnOs="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFuauRZjwDRwxc="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFuauRZjwDSFeU="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFuauRZkADTZRk="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFuauRZkADUo7o="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFuauRZkADVcqU="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFuauRZkADWj6Q="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFuauRZkADXpQw="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFuauRZkADYj0M="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFuauRZkADZg5o="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFuauRZkADaFr4="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFuavJOdC098x8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFuavJOdC07R9Q="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFuavJOdS0+Lu0=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJOdC098x8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJOdC07R9Q="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuavJOdS0/S1k=",
+											"_parent": {
+												"$ref": "AAAAAAFuavJOdS0+Lu0="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"top": 112,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuavJOdS1AN3Y=",
+											"_parent": {
+												"$ref": "AAAAAAFuavJOdS0+Lu0="
+											},
+											"font": "Arial;13;1",
+											"left": 29,
+											"top": 607,
+											"width": 41.919921875,
+											"height": 13,
+											"text": "GUI"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuavJOdS1BGDw=",
+											"_parent": {
+												"$ref": "AAAAAAFuavJOdS0+Lu0="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"top": 112,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuavJOdS1CEpw=",
+											"_parent": {
+												"$ref": "AAAAAAFuavJOdS0+Lu0="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"top": 112,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 24,
+									"top": 600,
+									"width": 51.919921875,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuavJOdS0/S1k="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFuavJOdS1AN3Y="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFuavJOdS1BGDw="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuavJOdS1CEpw="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFuavJOdS1D2OA=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJOdC098x8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJOdC07R9Q="
+									},
+									"font": "Arial;13;0",
+									"left": 24,
+									"top": 625,
+									"width": 51.919921875,
+									"height": 10
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFuavJOdS1EQbg=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJOdC098x8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJOdC07R9Q="
+									},
+									"font": "Arial;13;0",
+									"left": 24,
+									"top": 635,
+									"width": 51.919921875,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFuavJOdS1FrHk=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJOdC098x8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJOdC07R9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 56,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFuavJOdS1Ghts=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJOdC098x8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJOdC07R9Q="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"top": 56,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 24,
+							"top": 600,
+							"width": 51.919921875,
+							"height": 45,
+							"nameCompartment": {
+								"$ref": "AAAAAAFuavJOdS0+Lu0="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFuavJOdS1D2OA="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFuavJOdS1EQbg="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFuavJOdS1FrHk="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFuavJOdS1Ghts="
+							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAFuavJtGC38ex8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFuavJtFy347Js="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC39m7c=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy347Js="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 153,
+									"top": 601,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC3+idM=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy347Js="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 153,
+									"top": 586,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC3/+7s=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy347Js="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 152,
+									"top": 630,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4AzVY=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy35fK0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 102,
+									"top": 601,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4BRZ4=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy35fK0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 104,
+									"top": 587,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4CRqc=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy35fK0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 97,
+									"top": 628,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4DpMg=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy36SWs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 205,
+									"top": 601,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4EW9g=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy36SWs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 202,
+									"top": 588,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFuavJtGC4Fu78=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy36SWs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 209,
+									"top": 629,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									}
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuavJtGC4GbAI=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy35fK0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAFuavJtGC4HZVM=",
+									"_parent": {
+										"$ref": "AAAAAAFuavJtGC38ex8="
+									},
+									"model": {
+										"$ref": "AAAAAAFuavJtFy36SWs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFuasptisl/29Q="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuavJOdC098x8="
+							},
+							"lineStyle": 1,
+							"points": "76:622;231:623",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAFuavJtGC39m7c="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAFuavJtGC3+idM="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAFuavJtGC3/+7s="
+							},
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAFuavJtGC4AzVY="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAFuavJtGC4BRZ4="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAFuavJtGC4CRqc="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAFuavJtGC4DpMg="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAFuavJtGC4EW9g="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAFuavJtGC4Fu78="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAFuavJtGC4GbAI="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAFuavJtGC4HZVM="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFuavWcQjWryZg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 232,
+							"width": 71.30810546875,
+							"height": 129,
+							"text": "Data returning to GUI from Facade renders as a JSON string"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFuavYd3DagEZ4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFuasptisl/29Q="
+							},
+							"tail": {
+								"$ref": "AAAAAAFuavWcQjWryZg="
+							},
+							"lineStyle": 1,
+							"points": "103:332;231:458"
 						}
 					]
 				},
 				{
 					"_type": "UMLClass",
+					"_id": "AAAAAAFuapgT96MurcU=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ParkingLot",
+					"stereotype": "",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaphAnKNY6qI=",
+							"_parent": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"name": "name",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqKHc6SnTis=",
+							"_parent": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "integer",
+							"isID": true
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaqco66aJaKk=",
+							"_parent": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"name": "ParkingLot",
+							"stereotype": "",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasE8j8JIYUs=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqco66aJaKk="
+									},
+									"name": "l",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuapj4RKNqcvw=",
+							"_parent": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"name": "GetAvailableSpaces"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatB44NUUrTA=",
+							"_parent": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							},
+							"name": "LoadInfo",
+							"visibility": "private"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+<<<<<<< HEAD
 					"_id": "AAAAAAFuavJOdC07R9Q=",
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
@@ -4385,10 +6101,527 @@
 									},
 									"name": "SaveInfo",
 									"visibility": "private"
+=======
+					"_id": "AAAAAAFuapl++KNztAo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ParkingSpace",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuaqEqu6O6RM0=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaqEqu6O7Ln8=",
+								"_parent": {
+									"$ref": "AAAAAAFuaqEqu6O6RM0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuapl++KNztAo="
+								},
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaqEqu6O8DG0=",
+								"_parent": {
+									"$ref": "AAAAAAFuaqEqu6O6RM0="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuapgT96MurcU="
+								},
+								"aggregation": "composite"
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuap9KoaOdDa0=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "locationDescription",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqAA5KOnVgA=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "occupied",
+							"visibility": "private",
+							"type": "boolean"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqC/kqOwiRY=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "locationCoordinates",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqL0UaT1aQE=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "integer",
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqSsW6Wfi4g=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "parkingLot",
+							"stereotype": "",
+							"visibility": "private",
+							"type": {
+								"$ref": "AAAAAAFuapgT96MurcU="
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaqWHYqYb4F8=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "ParkingSpace",
+							"stereotype": "",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasU6mcRggoE=",
+									"_parent": {
+										"$ref": "AAAAAAFuaqWHYqYb4F8="
+									},
+									"name": "id",
+									"type": "integer"
 								}
 							]
 						},
 						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaqHzwaRR/cA=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "GetCoordinates"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatOAKNlahGk=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "SetOccupied",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuatPYdtnNRxw=",
+									"_parent": {
+										"$ref": "AAAAAAFuatOAKNlahGk="
+									},
+									"name": "o",
+									"type": "boolean"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatD7BtWsWf0=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "LoadInfo",
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatI/Z9gEOrU=",
+							"_parent": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							},
+							"name": "SaveInfo",
+							"visibility": "private"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFuaqQmYaVDf+g=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Reservation",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuaquCjqmkK80=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaquCnqmlS9E=",
+								"_parent": {
+									"$ref": "AAAAAAFuaquCjqmkK80="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuaqQmYaVDf+g="
+								},
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaquCnqmmlow=",
+								"_parent": {
+									"$ref": "AAAAAAFuaquCjqmkK80="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuaqrE2aieNtI="
+								},
+								"aggregation": "shared"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuaqxnNKthShk=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaqxnNKti7rU=",
+								"_parent": {
+									"$ref": "AAAAAAFuaqxnNKthShk="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuaqQmYaVDf+g="
+								},
+								"multiplicity": "*"
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuaqxnNKtjDlk=",
+								"_parent": {
+									"$ref": "AAAAAAFuaqxnNKthShk="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuapl++KNztAo="
+								},
+								"aggregation": "shared"
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqgH+KbjrrI=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "integer",
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqkY1adqjHs=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "startTime",
+							"visibility": "private",
+							"type": "datetime"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaql/JaevhU4=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "endTime",
+							"visibility": "private",
+							"type": "integer"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqoPaagSHYA=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "parkingSpace",
+							"visibility": "private",
+							"type": {
+								"$ref": "AAAAAAFuapl++KNztAo="
+							}
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqp07ahgTuI=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "driver",
+							"visibility": "private",
+							"type": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaq02gK332kU=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "Reservation",
+							"stereotype": "",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasfVoMfiAHU=",
+									"_parent": {
+										"$ref": "AAAAAAFuaq02gK332kU="
+									},
+									"name": "d",
+									"type": {
+										"$ref": "AAAAAAFuaqrE2aieNtI="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasf33chCNNo=",
+									"_parent": {
+										"$ref": "AAAAAAFuaq02gK332kU="
+									},
+									"name": "ps",
+									"type": {
+										"$ref": "AAAAAAFuapl++KNztAo="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasge7siimQo=",
+									"_parent": {
+										"$ref": "AAAAAAFuaq02gK332kU="
+									},
+									"name": "startTime",
+									"type": "datetime"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuashLc8koJac=",
+									"_parent": {
+										"$ref": "AAAAAAFuaq02gK332kU="
+									},
+									"name": "endTime",
+									"type": "datetime"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaq++abJMpIY=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "GetReservationInfo"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarCw37NhCYI=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "OccupyParkingSpace"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarElNLQUlEc=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "LeaveParkingSpace"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarFz9LSi190=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "CancelReservation"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarIoCrVoz/A=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "MakeReservation"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatT5zdshi1A=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "LoadInfo",
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatVLytu53jc=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqQmYaVDf+g="
+							},
+							"name": "SaveInfo",
+							"visibility": "private"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFuaqrE2aieNtI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Driver",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuaqzRVazx3lE=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "integer",
+							"isID": true
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuarek0rjLtL0=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "name",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuargbWLmjW9A=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "password",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuariBybp7HGg=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "mobileNum",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuarlIQbtTqoU=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "plateNum",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuarm0SbxHt3o=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "plateState",
+							"visibility": "private",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFuarxU2L9Gn/A=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "username",
+							"visibility": "private",
+							"type": "string"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuaq6nCbCqWQ0=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "Driver",
+							"stereotype": "",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuarzZh8BoGcY=",
+									"_parent": {
+										"$ref": "AAAAAAFuaq6nCbCqWQ0="
+									},
+									"name": "u",
+									"stereotype": "",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuasZaUMXiZV0=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "Driver",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasazSsZVI68=",
+									"_parent": {
+										"$ref": "AAAAAAFuasZaUMXiZV0="
+									},
+									"name": "id",
+									"type": "integer"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+								}
+							]
+						},
+						{
+<<<<<<< HEAD
 							"_type": "UMLClass",
 							"_id": "AAAAAAFuaqrE2aieNtI=",
 							"_parent": {
@@ -4624,10 +6857,339 @@
 									},
 									"name": "SaveInfo",
 									"visibility": "private"
+=======
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatvjHeUf0/w=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "GetProfile"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarpUur1olBE=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "ResetPassword"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuarsJXr32BOo=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "SendPassword"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuar3q/MFRwiQ=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "ValidatePassword",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuasCtrcHpgPA=",
+									"_parent": {
+										"$ref": "AAAAAAFuar3q/MFRwiQ="
+									},
+									"name": "p",
+									"type": "string"
 								}
 							]
 						},
 						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuas3v7s+tmLM=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "UpdateProfile",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuata+md1pqZo=",
+									"_parent": {
+										"$ref": "AAAAAAFuas3v7s+tmLM="
+									},
+									"name": "name",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuatbRUN2iQjs=",
+									"_parent": {
+										"$ref": "AAAAAAFuas3v7s+tmLM="
+									},
+									"name": "email",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuatbeat3bf/A=",
+									"_parent": {
+										"$ref": "AAAAAAFuas3v7s+tmLM="
+									},
+									"name": "mobile",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuatbp0N4UoVs=",
+									"_parent": {
+										"$ref": "AAAAAAFuas3v7s+tmLM="
+									},
+									"name": "plateNum",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuatcavd5N8SU=",
+									"_parent": {
+										"$ref": "AAAAAAFuas3v7s+tmLM="
+									},
+									"name": "plateState",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatFd9Na57uE=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "LoadInfo",
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuatIEQtdRlcs=",
+							"_parent": {
+								"$ref": "AAAAAAFuaqrE2aieNtI="
+							},
+							"name": "SaveInfo",
+							"visibility": "private"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFuasptisl96uE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Facade",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuauGH7e8+w1M=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauGH7e8/qcA=",
+								"_parent": {
+									"$ref": "AAAAAAFuauGH7e8+w1M="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuasptisl96uE="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauGH8O9AurA=",
+								"_parent": {
+									"$ref": "AAAAAAFuauGH7e8+w1M="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuapl++KNztAo="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuauKxEfOr+nM=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauKxF/OsojI=",
+								"_parent": {
+									"$ref": "AAAAAAFuauKxEfOr+nM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuasptisl96uE="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauKxF/Ot04M=",
+								"_parent": {
+									"$ref": "AAAAAAFuauKxEfOr+nM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuaqQmYaVDf+g="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuauLgevS5Tmo=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauLgevS6CsY=",
+								"_parent": {
+									"$ref": "AAAAAAFuauLgevS5Tmo="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuasptisl96uE="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauLgevS7Ei8=",
+								"_parent": {
+									"$ref": "AAAAAAFuauLgevS5Tmo="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuaqrE2aieNtI="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuauRZjwDLNIU=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauRZjwDMUWQ=",
+								"_parent": {
+									"$ref": "AAAAAAFuauRZjwDLNIU="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuasptisl96uE="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuauRZjwDNjJY=",
+								"_parent": {
+									"$ref": "AAAAAAFuauRZjwDLNIU="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuapgT96MurcU="
+								}
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauEDJO3YhdE=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "RenderJSON",
+							"visibility": "private"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauAPZelGJKs=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "ForgotPassword",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauUzsQf9X8Q=",
+									"_parent": {
+										"$ref": "AAAAAAFuauAPZelGJKs="
+									},
+									"name": "username",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauAZrumUTjs=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "CreateDriver",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauWUYwk9h84=",
+									"_parent": {
+										"$ref": "AAAAAAFuauAZrumUTjs="
+									},
+									"name": "username",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauBwu+niY5c=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "Login",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauaa5wy44AQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuauBwu+niY5c="
+									},
+									"name": "username",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuaubcPQ2P1d4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauBwu+niY5c="
+									},
+									"name": "password",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauB6Kuow8aM=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "Logout",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuaucnTg6lGH4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauB6Kuow8aM="
+									},
+									"name": "username",
+									"type": ""
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
+								}
+							]
+						},
+						{
+<<<<<<< HEAD
 							"_type": "UMLClass",
 							"_id": "AAAAAAFuapgT96MurcU=",
 							"_parent": {
@@ -4695,10 +7257,64 @@
 									},
 									"name": "LoadInfo",
 									"visibility": "private"
+=======
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauhMjRNe0Tg=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "UpdateDriverProfile",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauhMjRNfGEk=",
+									"_parent": {
+										"$ref": "AAAAAAFuauhMjRNe0Tg="
+									},
+									"name": "name",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauhMjRNgyE4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauhMjRNe0Tg="
+									},
+									"name": "email",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauhMjRNhDl4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauhMjRNe0Tg="
+									},
+									"name": "mobile",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauhMjRNiD1c=",
+									"_parent": {
+										"$ref": "AAAAAAFuauhMjRNe0Tg="
+									},
+									"name": "plateNum",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuauhMjRNjrak=",
+									"_parent": {
+										"$ref": "AAAAAAFuauhMjRNe0Tg="
+									},
+									"name": "plateState",
+									"type": "string"
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 								}
 							]
 						},
 						{
+<<<<<<< HEAD
 							"_type": "UMLClassDiagram",
 							"_id": "AAAAAAFulLIaBZufH9E=",
 							"_parent": {
@@ -7117,6 +9733,227 @@
 									}
 								}
 							]
+=======
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauCQHurMLyk=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "NavigateToSpace",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuaumPyRpP8O4=",
+									"_parent": {
+										"$ref": "AAAAAAFuauCQHurMLyk="
+									},
+									"name": "spaceID",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauCbcesayRs=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "GetParkingLots"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauCm1uto+70=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "GetCampusMap"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauC3Xuu27Ls=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "SendMessageToDriver",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuau4ylCE3/go=",
+									"_parent": {
+										"$ref": "AAAAAAFuauC3Xuu27Ls="
+									},
+									"name": "fromUser",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuau5COiG4DNE=",
+									"_parent": {
+										"$ref": "AAAAAAFuauC3Xuu27Ls="
+									},
+									"name": "toLicNum",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuau5OdCI5gmg=",
+									"_parent": {
+										"$ref": "AAAAAAFuauC3Xuu27Ls="
+									},
+									"name": "toLicState",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuau8kWyS4CE8=",
+									"_parent": {
+										"$ref": "AAAAAAFuauC3Xuu27Ls="
+									},
+									"name": "msg",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauDDlOwES1A=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "ViewAvailableSpaces",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuavB4gyaOomE=",
+									"_parent": {
+										"$ref": "AAAAAAFuauDDlOwES1A="
+									},
+									"name": "lotID",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauDNf+xSoWg=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "ShowExistingReservation",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuavFRjyf5PJQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuauDNf+xSoWg="
+									},
+									"name": "username",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauDYyuyg5W4=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "OccupySpace",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuavMBhzEXMZ8=",
+									"_parent": {
+										"$ref": "AAAAAAFuauDYyuyg5W4="
+									},
+									"name": "resvID",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauDkaOzu5AI=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "LeaveSpace",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuavO/8jNj9xY=",
+									"_parent": {
+										"$ref": "AAAAAAFuauDkaOzu5AI="
+									},
+									"name": "resvID",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauDuuu08FQE=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "CancelReservation",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFuavPMlDP3FKg=",
+									"_parent": {
+										"$ref": "AAAAAAFuauDuuu08FQE="
+									},
+									"name": "resvID",
+									"type": "integer"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFuauD4Je2KVM0=",
+							"_parent": {
+								"$ref": "AAAAAAFuasptisl96uE="
+							},
+							"name": "BuyCigarettes"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFuavJOdC07R9Q=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "GUI",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFuavJtFy347Js=",
+							"_parent": {
+								"$ref": "AAAAAAFuavJOdC07R9Q="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuavJtFy35fK0=",
+								"_parent": {
+									"$ref": "AAAAAAFuavJtFy347Js="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuavJOdC07R9Q="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFuavJtFy36SWs=",
+								"_parent": {
+									"$ref": "AAAAAAFuavJtFy347Js="
+								},
+								"reference": {
+									"$ref": "AAAAAAFuasptisl96uE="
+								}
+							}
+>>>>>>> parent of 42385aa... Merge branch 'master' of https://github.com/Curt-Collins/HandicappedDriver.git
 						}
 					]
 				}
