@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandicappedDriver", "HandicappedDriver\HandicappedDriver.csproj", "{B978B0EF-EA85-4FEF-8F1C-29B5DDBBF626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandicappedDriver.Tests", "HandicappedDriver.Tests\HandicappedDriver.Tests.csproj", "{1DBD1D3E-866F-4C68-A2F1-5E006C4D54B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B978B0EF-EA85-4FEF-8F1C-29B5DDBBF626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B978B0EF-EA85-4FEF-8F1C-29B5DDBBF626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B978B0EF-EA85-4FEF-8F1C-29B5DDBBF626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B978B0EF-EA85-4FEF-8F1C-29B5DDBBF626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DBD1D3E-866F-4C68-A2F1-5E006C4D54B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBD1D3E-866F-4C68-A2F1-5E006C4D54B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBD1D3E-866F-4C68-A2F1-5E006C4D54B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBD1D3E-866F-4C68-A2F1-5E006C4D54B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB638592-3F8D-458A-A905-664922EE32B3}
+	EndGlobalSection
+EndGlobal
