@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Data;
 //using ChoETL;
 //using Newtonsoft.Json;
-using System.Text;
 
 namespace HandicappedDriver
 {
 
- 
+
     public class JSONSerializer
     {
 
