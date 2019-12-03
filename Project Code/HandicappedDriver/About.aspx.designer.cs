@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HandicappedDriver
-{
-
-
-    public partial class About
-    {
+namespace HandicappedDriver {
+    
+    
+    public partial class About {
     }
 }
