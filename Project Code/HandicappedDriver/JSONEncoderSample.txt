@@ -1,1 +1,37 @@
-﻿
+﻿    [Serializable]
+    public class TestDataClass
+    {
+        public String Fld1 { get; set; }
+        public int Fld2 { get; set; }
+
+        public void LoadIt()
+        {
+            Fld1 = "Something String 1";
+            Fld2 = 12;
+        }
+
+        public void ClearIt()
+        {
+            Fld1 = "";
+            Fld2 = 0;
+        }
+
+    }
+
+    public class TestDriverClass
+    {
+        public void RunTest1()
+        {
+            JSONSerializer js = new JSONSerializer();
+
+            TestDataClass t = new TestDataClass();
+            t.LoadIt();
+            string res = js.Serialize<TestDataClass>(t);
+
+            TestDataClass o = new TestDataClass();
+            o.ClearIt();
+            o = js.DeSerialize<TestDataClass>(res);
+
+            int i = 0; // Just a placeholder to enable a possible breakpoint
+        }
+    }
