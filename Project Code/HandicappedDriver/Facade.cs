@@ -13,7 +13,6 @@ namespace HandicappedDriver
         public void ForgotPassword(string username)
         {
             // accepts username to create new password
-            this.username = username;
         }
 
         public void CreateDriver(string username)
