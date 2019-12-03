@@ -230,10 +230,15 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
     <Compile Include="Facade.cs" />
+    <Compile Include="CoreSystem\ParkingLot.cs" />
+    <Compile Include="CoreSystem\ParkingSpace.cs" />
+    <Compile Include="CoreSystem\Reservation.cs" />
+    <Compile Include="CoreSystem\Driver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="GUI\" />
+    <Folder Include="CoreSystem\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
