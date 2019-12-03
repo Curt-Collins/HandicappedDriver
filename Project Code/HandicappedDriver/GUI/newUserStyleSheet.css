@@ -1,0 +1,143 @@
+body{
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+.goBackBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #7abaff;
+    border: none;
+    font-size: 25px;
+}
+
+.text-muted {
+    color: white;
+    font-size: 13px;
+}
+
+.newUserForm{
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    position: center;
+    text-align: center;
+    background: #191919;
+    border-radius: 20px;
+}
+
+.newUserForm input[type="text"], .newUserForm input[type="email"], .newUserForm input[type="number"], .newUserForm input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.newUserForm input[type="text"]:focus-within, .newUserForm input[type="email"]:focus-within, .newUserForm input[type="number"]:focus-within, .newUserForm input[type="password"]:focus-within {
+    width: 320px;
+    border-color: #2ecc71;
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.form-group select {
+    font-family: 'Patrick Hand', cursive;
+    display: none;
+}
+
+#regState {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#regState {
+    width: 320px;
+    border-color: #2ecc71;
+}
+
+#regState {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 280px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.btn {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2ecc71;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #befc03;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #d39e00;
+    outline: 1px solid slategrey;
+
+}
