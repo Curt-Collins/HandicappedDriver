@@ -19,11 +19,7 @@ namespace HandicappedDriver
 
         }
 
-        // need to implement this method
-        private string deserializeJSON()
-        {
 
-        }
 
         public void ForgotPassword(string username)
         {

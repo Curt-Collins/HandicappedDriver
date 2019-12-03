@@ -1,24 +1,20 @@
 ﻿using System;
-//using ChoETL;
-//using Newtonsoft.Json;
+using System.Text;
+using System.Text.Json;
 
 namespace HandicappedDriver
 {
-
-
     public class JSONSerializer
     {
-
-        public string Serialize(object obj)
+    
+        public string Serialize<T>(T obj)
         {
-            return 
-            //return JsonConvert.SerializeObject(obj);
+            return JsonSerializer.Serialize<T>(obj);
         }
 
-        public object DeSerialize(String s)
+        public T DeSerialize<T>(String s)
         {
-            return JsonConvert.DeserializeObject(s);
-            // return JsonConvert.DeserializeObject<DataTable>(s);
+            return JsonSerializer.Deserialize<T>(s);
         }
 
     }
