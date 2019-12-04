@@ -14,7 +14,7 @@ namespace HandicappedDriver.Bridge
         public string eMailAddress { get; set; }
         public string licensePlateState { get; set; }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         protected void LoadDriver()
         {
             String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
@@ -28,7 +28,7 @@ namespace HandicappedDriver.Bridge
             if (Connect())
             {
                 Adapter.Fill(driver, "Driver");
-=======
+//=======
         public DriverData() { }
 
         public DriverData(int driverID)
@@ -51,13 +51,12 @@ namespace HandicappedDriver.Bridge
                 this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
                 Adapter.Fill(ds);
                 DataTable driver = ds.Tables[0];
->>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 
                 if (driver.Rows.Count == 1)
                 {
                     this.Id = (int)driver.Rows[0]["ID"];
                     this.fullName = (string)driver.Rows[0]["FullName"];
-<<<<<<< HEAD
+
                     this.fullName = (string)driver.Rows[0]["LicensePlateNum"];
                     this.fullName = (string)driver.Rows[0]["State"];
                     this.fullName = (string)driver.Rows[0]["MobileNumber"];
@@ -76,7 +75,6 @@ namespace HandicappedDriver.Bridge
             LoadDriver();
         }
 
-=======
                     this.licensePlateNum = (string)driver.Rows[0]["LicensePlateNum"];
                     this.licensePlateState = (string)driver.Rows[0]["State"];
                     this.mobileNumber = (string)driver.Rows[0]["MobileNumber"];
@@ -115,7 +113,5 @@ namespace HandicappedDriver.Bridge
                 this.Connection.Close();
             }
         }
->>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
-
     }
 }
