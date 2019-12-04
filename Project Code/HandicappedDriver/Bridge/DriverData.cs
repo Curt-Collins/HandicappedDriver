@@ -4,30 +4,32 @@ using System.Data.OleDb;
 
 namespace HandicappedDriver.Bridge
 {
-    public class DriverData: HandicappedDriverTableData
-    {
-        public int Id { get; set; }
-        public string fullName { get; set; }
-        public string password { get; set; }
-        public string mobileNumber { get; set; }
-        public string licensePlateNum { get; set; }
-        public string eMailAddress { get; set; }
-        public string licensePlateState { get; set; }
+	public class DriverData : HandicappedDriverTableData
+	{
+		public int Id { get; set; }
+		public string fullName { get; set; }
+		public string password { get; set; }
+		public string mobileNumber { get; set; }
+		public string licensePlateNum { get; set; }
+		public string eMailAddress { get; set; }
+		public string licensePlateState { get; set; }
 
-//<<<<<<< HEAD
-        protected void LoadDriver()
-        {
-            String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
-                "d.MobileNumber, d.EMailAddress, d.Password p.State FROM " +
-                "Driver d LEFT OUTER JOIN LicensePlateState ON " +
-                "d.LicensePlateState_ID = p.ID";
+	//<<<<<<< HEAD
+	protected void LoadDriver()
+	{
+		String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
+			"d.MobileNumber, d.EMailAddress, d.Password p.State FROM " +
+			"Driver d LEFT OUTER JOIN LicensePlateState ON " +
+			"d.LicensePlateState_ID = p.ID";
 
-            this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
-            DataTable driver = new DataTable();
+		this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
+		DataTable driver = new DataTable();
 
-            if (Connect())
-            {
-                Adapter.Fill(driver, "Driver");
+		if (Connect())
+		{
+			Adapter.Fill(driver, "Driver");
+		}
+	}
 //=======
         public DriverData() { }
 
@@ -86,7 +88,7 @@ namespace HandicappedDriver.Bridge
 
             }
         }
-
+    
         public void Update()
         {
             String queryString = "UPDATE Driver SET " +
