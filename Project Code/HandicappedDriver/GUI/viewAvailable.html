@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿<!DOCTYPE html>
+=======
 <!DOCTYPE html>
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +10,78 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="viewAvailable.css">
+<<<<<<< HEAD
+    <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="show_lot_information.js"></script>
+
+=======
     <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif"/>
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <script src="calendar.js"></script>
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 </head>
 
 <body>
 
+<<<<<<< HEAD
+    <!--Logout code-->
+    <div class="logout_link">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="loginpage.html">
+                    Log out
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- logout code ends here-->
+
+    <div class="container">
+
+
+        <div id="dp"></div>
+
+        <div class="card-deck">
+
+            <div class="card" style="width: 18rem; background-color: #88D498">
+                <img src="uco campus building.png" class="card-img-top" alt="Image not found" height="270" width="70">
+                <div class="card-body">
+                    <h5 class="card-title">Campus Map</h5>
+                    <p class="card-text">Click the button below to view campus map</p>
+                    <a href="https://www.uco.edu/files/maps/uco-parking-map.pdf" class="btn btn-primary">Campus map</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; background-color: #C6DABF">
+                <img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">
+                <div class="card-body">
+                    <h5 class="card-title">Reserve your spot now!</h5>
+                    <p class="card-text">Choose from the dropdown below and click the button to reserve a spot</p>
+                    <form action="useReservation.html" method="get">
+                        <select name="lot" id="myDropdown">
+                            -->
+                            <option value="mcs">Math & Computer Science building</option>
+                            <option value="nigh center">Nigh University Center</option>
+                            <option value="library">Chamber's library</option>
+                        </select>
+                        <input type="submit" class="btn-dark" value="Reserve spot">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!--<form onsubmit="generate_lot_details()">-->
+        <button id="generateSpotBtn" onclick="generate_lot_details()">Generate Spot</button>
+        
+        <div id="spot-info"></div>
+        <!--</form>-->
+
+    </div> <!-- Container-fluid ends -->
+
+    <script src="show_lot_information.js"></script>
+
+=======
 <!--Logout code-->
 <div class="logout_link">
     <ul class="nav justify-content-end">
@@ -58,6 +127,7 @@
     </div>
 
 </div> <!-- Container-fluid ends -->
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 
 
 </body>

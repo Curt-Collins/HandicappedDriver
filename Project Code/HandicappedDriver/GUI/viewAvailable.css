@@ -11,6 +11,24 @@ body {
     margin-right: 20px;
 }
 
+<<<<<<< HEAD
+#spot-info{
+    background-color: lightgreen;
+    height: 20px;
+    border-radius: 15px;
+    margin-top:10px;
+}
+
+#generateSpotBtn{
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    background-color: teal;
+    border-radius:10px;
+}
+
+=======
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 img {
     border-radius: 10px;
 }
