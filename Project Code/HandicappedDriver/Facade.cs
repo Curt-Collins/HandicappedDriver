@@ -47,6 +47,7 @@ namespace HandicappedDriver
             // string username, string password
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);
+
             // d.login();
         }
 
@@ -140,12 +141,25 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public void ViewAvailableSpaces(int lotID)
+        public string ViewAvailableSpaces(int lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
             ParkingLotData p = new ParkingLotData();
             p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
-            // p.view();
+			string spaces;
+			// p.view();
+			// 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
+
+			ParkingSpace p = new ParkingSpace();
+			Reservation reservation = new Reservation();
+
+            if(p.occupied == true)
+			{
+				spaces = "Space " + p.id + " in parking lot " + p.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
+			}
+			string spaces = p.view();
+
+			return spaces;
         }
 
         [WebMethod]
