@@ -155,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\HandicappedDriver.accdb" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -219,6 +220,14 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Bridge\DriverData.cs" />
+    <Compile Include="Bridge\Email_MessageData.cs" />
+    <Compile Include="Bridge\HandicappedDriverTableData.cs" />
+    <Compile Include="Bridge\LicensePlatesStateData.cs" />
+    <Compile Include="Bridge\ParkingLotData.cs" />
+    <Compile Include="Bridge\ParkingSpaceData.cs" />
+    <Compile Include="Bridge\ReservationData.cs" />
+    <Compile Include="Bridge\SMS_MessageData.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,9 +275,7 @@
     <Compile Include="CoreSystem\Driver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="GUI\" />
-    <Folder Include="CoreSystem\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

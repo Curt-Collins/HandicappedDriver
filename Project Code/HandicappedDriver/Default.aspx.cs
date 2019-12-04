@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Web.UI;
+using HandicappedDriver.Bridge;
 
 
 namespace HandicappedDriver
@@ -11,8 +12,7 @@ namespace HandicappedDriver
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
+            DriverData dd = new DriverData(1);
         }
     }
 }
