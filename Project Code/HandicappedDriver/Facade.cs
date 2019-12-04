@@ -149,19 +149,20 @@ namespace HandicappedDriver
             ParkingLotData p = new ParkingLotData();
             p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
 			string spaces;
-			// p.view();
-			// 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
+            // p.view();
+            // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
 
-			ParkingSpace p = new ParkingSpace();
-			Reservation reservation = new Reservation();
+            //ParkingSpace p = new ParkingSpace();
+            //Reservation reservation = new Reservation();
 
-            if(p.occupied == true)
-			{
-				spaces = "Space " + p.id + " in parking lot " + p.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
-			}
-			string spaces = p.view();
+            //         if(p.occupied == true)
+            //{
+            //	spaces = "Space " + p.id + " in parking lot " + p.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
+            //}
+            //string spaces = p.view();
 
-			return spaces;
+            //return spaces;
+            return "";
         }
 
         [WebMethod]
