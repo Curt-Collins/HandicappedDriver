@@ -7,6 +7,7 @@ namespace HandicappedDriver.CoreSystem
         public DateTime startTime;
         public DateTime endTime;
         private ParkingSpace parkingSpace;
+		private DriverData driverData;
         private Driver driver;
 
         public Reservation(Driver d, ParkingSpace ps, DateTime startTime, DateTime endTime)
@@ -15,25 +16,26 @@ namespace HandicappedDriver.CoreSystem
             this.endTime = endTime;
         }
 
-        public void GetReservationInfo()
+        public string GetReservationInfo()
         {
 
         }
 
-        public void OccupyParkingSpace()
+        public void OccupyParkingSpace(int id)
         {
-
-        }
+            
+			parkingSpace.SetOccupied(true);
+		}
 
         public void LeaveParkingSpace()
         {
-
+			parkingSpace.SetOccupied(false);
         }
 
         public void CancelReservation()
         {
-
-        }
+			
+		}
 
         public void MakeReservation()
         {
