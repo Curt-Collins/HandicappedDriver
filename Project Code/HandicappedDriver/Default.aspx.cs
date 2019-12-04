@@ -14,9 +14,14 @@ namespace HandicappedDriver
         {
             DriverData dd = new DriverData(1);
 
-            dd.mobileNumber = "(888) 974-8000";
+            dd.mobileNumber = "(888) 974-8201";
 
-            dd.Update();
+            dd.UpdateProfile();
+
+            dd = new DriverData();
+
+            dd.CreateNew("beevis@uco.edu", "passwird");
+
         }
     }
 }
