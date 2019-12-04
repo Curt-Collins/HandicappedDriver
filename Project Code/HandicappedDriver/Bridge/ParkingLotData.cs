@@ -7,5 +7,6 @@ namespace HandicappedDriver.Bridge
 {
     public class ParkingLotData
     {
+        internal object parkingLot;
     }
 }
