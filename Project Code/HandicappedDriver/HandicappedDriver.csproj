@@ -292,8 +292,15 @@
     <Compile Include="CoreSystem\ParkingSpace.cs" />
     <Compile Include="CoreSystem\Reservation.cs" />
     <Compile Include="CoreSystem\Driver.cs" />
+    <Compile Include="Driver.cs" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+  <ItemGroup>
+    <Folder Include="GUI\" />
+  </ItemGroup>
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
