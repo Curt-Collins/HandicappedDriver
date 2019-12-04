@@ -83,6 +83,8 @@ namespace HandicappedDriver
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID.ToString());
+
+			// p.getCoordinates();
         }
 
         [WebMethod]

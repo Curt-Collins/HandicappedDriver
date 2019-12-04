@@ -4,7 +4,7 @@ namespace HandicappedDriver.CoreSystem
     public class ParkingSpace
     {
         private string locationDescription;
-        private bool occupied;
+        private bool occupied = false;
         private string locationCoordinates;
         private int id;
         private ParkingLot parkingLot;
@@ -21,7 +21,7 @@ namespace HandicappedDriver.CoreSystem
 
         public void SetOccupied(bool o)
         {
-           
+			
         }
 
         private void LoadInfo()
