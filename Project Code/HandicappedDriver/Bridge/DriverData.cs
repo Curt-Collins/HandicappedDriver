@@ -65,30 +65,11 @@ namespace HandicappedDriver.Bridge
                     this.fullName = (string)driver.Rows[0]["EMailAddress"];
                     this.fullName = (string)driver.Rows[0]["Password"];
                 }
+				this.Connection.Close();
+			}
 
-            }
-        }
-
-        public DriverData() { }
-
-        public DriverData(int driverID)
-        {
-            this.Id = driverID;
-            LoadDriver();
-        }
-
-                    this.licensePlateNum = (string)driver.Rows[0]["LicensePlateNum"];
-                    this.licensePlateState = (string)driver.Rows[0]["State"];
-                    this.mobileNumber = (string)driver.Rows[0]["MobileNumber"];
-                    this.eMailAddress = (string)driver.Rows[0]["EMailAddress"];
-                    this.password = (string)driver.Rows[0]["Password"];
-                }
-
-                this.Connection.Close();
-
-            }
-        }
-    
+		}
+   
         public void Update()
         {
             String queryString = "UPDATE Driver SET " +
