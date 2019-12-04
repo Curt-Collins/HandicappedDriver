@@ -53,6 +53,8 @@ namespace HandicappedDriver
         [WebMethod]
         public void Logout(string username)
         {
+            DriverData d = new DriverData();
+            d = jSON.DeSerialize<DriverData>(username);
             // utilizes the username to log the user out of the system
         }
 
@@ -70,6 +72,8 @@ namespace HandicappedDriver
             }
             // d.update();
             // this will be called to update the driver object's info
+            driver = new Driver(d);
+            driver.UpdateProfile(d);
         }
 
         [WebMethod]
