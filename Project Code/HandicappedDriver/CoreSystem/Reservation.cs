@@ -25,7 +25,6 @@ namespace HandicappedDriver.CoreSystem
 
         public void OccupyParkingSpace(int id)
         {
-            
 			parkingSpace.SetOccupied(true);
 		}
 
