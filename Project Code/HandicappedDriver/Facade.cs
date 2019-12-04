@@ -7,6 +7,7 @@ namespace HandicappedDriver
     {
         private string username;
         JSONSerializer jSON = new JSONSerializer();
+        Driver driver = new Driver();
 
         public Facade()
         {
@@ -24,12 +25,18 @@ namespace HandicappedDriver
             // accepts username to create new driver
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
+            // d.create();
         }
 
-        public void Login(string username, string password)
+        public void Login(string info)
         {
             // utilize the given info to login to the Home Page
             // find the driver based on the correct username and password
+
+            // string username, string password
+            DriverData d = new DriverData();
+            d = jSON.DeSerialize<DriverData>(info);
+            // d.login();
         }
 
         public void Logout(string username)
@@ -49,7 +56,7 @@ namespace HandicappedDriver
                 // tell them that they need to input something other than an empty string
             }
             // d.update();
-            //this will be called to update the driver object's info
+            // this will be called to update the driver object's info
         }
         
         public void NavigateToSpace(int spaceID)
@@ -71,16 +78,16 @@ namespace HandicappedDriver
         {
             // this shows the campus map
             // called from the GUI and shows the graphic only
-           
         }
 
         public void SendMessageToDriver(string info)
         {
             // string fromUser, string toLicNum, string toLicState, string msg
             // this sends a message to a driver from a user to a certain user based on the license plate information
+            info = "{something}{yes}{thank you}";
             string s1 = info;
             string s2 = info;
-            string message;
+            string message = info;
             int j = 0;
             int k = 0;
             DriverData sendingDriver = new DriverData();
@@ -96,7 +103,7 @@ namespace HandicappedDriver
                 } else if(info[i] == '}' && j == 1)
                 {
                     s2 = info.Substring(k, i);
-                    k = i;
+                    k = i + 1;
                     j++;
                 } else if(info[i] == '}' && j == 2)
                 {
@@ -107,7 +114,7 @@ namespace HandicappedDriver
             sendingDriver = jSON.DeSerialize<DriverData>(s1);
             receivingDriver = jSON.DeSerialize<DriverData>(s2);
 
-            // take a look at this.  Maybe I just should create one driver object?
+            driver.SendMessage(sendingDriver, receivingDriver, message);
 
         }
 
@@ -116,6 +123,7 @@ namespace HandicappedDriver
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
             ParkingLotData p = new ParkingLotData();
             p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
+            // p.view();
         }
 
         public void ShowExistingReservation(string username)
@@ -131,7 +139,7 @@ namespace HandicappedDriver
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
 
-            //r.occupy(); need this to be implemented
+            // r.occupy(); need this to be implemented
         }
 
         public void LeaveSpace(int resvID)
@@ -140,7 +148,7 @@ namespace HandicappedDriver
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
 
-            //r.leave(); need this to be implemented
+            // r.leave(); need this to be implemented
         }
 
         public void CancelReservation(int resvID)
