@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project Code",
+    "\\Project Code\\HandicappedDriver",
+    "\\Project Code\\HandicappedDriver\\CoreSystem"
   ],
+  "SelectedNode": "\\Project Code\\HandicappedDriver",
   "PreviewInSolutionExplorer": false
 }
