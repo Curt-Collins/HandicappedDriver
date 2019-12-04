@@ -14,7 +14,15 @@ namespace HandicappedDriver.Bridge
         public string eMailAddress { get; set; }
         public string licensePlateState { get; set; }
 
-        protected void LoadDriver()
+        public DriverData() { }
+
+        public DriverData(int driverID)
+        {
+            this.Id = driverID;
+            LoadDriver();
+        }
+
+        public void LoadDriver()
         {
             String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
                 "d.MobileNumber, d.EMailAddress, d.Password, p.State FROM " +
@@ -45,14 +53,32 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-        public DriverData() { }
-
-        public DriverData(int driverID)
+        public void Update()
         {
-            this.Id = driverID;
-            LoadDriver();
-        }
+            String queryString = "UPDATE Driver SET " +
+                "FullName=@fullName, LicensePlateNum=@licensePlateNum, " +
+                "MobileNumber=@mobileNumber, EMailAddress=@eMailAddress, " +
+                "Password=@password, LicensePlateState_ID=" +
+                "(SELECT ID FROM LicensePlateState WHERE State=@licensePlateState) " +
+                "WHERE ID=@Id";
 
+            if (Connect())
+            {
+                OleDbCommand cmd = this.Connection.CreateCommand();
+                cmd.Parameters.Add(new OleDbParameter("@Id", Id));
+                cmd.Parameters.Add(new OleDbParameter("@licensePlateNum", licensePlateNum));
+                cmd.Parameters.Add(new OleDbParameter("@fullName", fullName));
+                cmd.Parameters.Add(new OleDbParameter("@mobileNumber", mobileNumber));
+                cmd.Parameters.Add(new OleDbParameter("@licensePlateState", licensePlateState));
+                cmd.Parameters.Add(new OleDbParameter("@password", password));
+                cmd.Parameters.Add(new OleDbParameter("@eMailAddress", eMailAddress));
+                cmd.CommandText = queryString;
+
+                cmd.ExecuteNonQuery();
+
+                this.Connection.Close();
+            }
+        }
 
     }
 }
