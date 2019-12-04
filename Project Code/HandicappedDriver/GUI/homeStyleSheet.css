@@ -1,0 +1,40 @@
+body {
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+.btn:hover {
+    height: 3em;
+    width: 8em;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.nav-link {
+    color: ghostwhite;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    font-style: oblique;
+    color: #191919;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #befc03;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #d39e00;
+    outline: 1px solid slategrey;
+
+}
