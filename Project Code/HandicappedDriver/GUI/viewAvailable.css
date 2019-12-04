@@ -11,6 +11,7 @@ body {
     margin-right: 20px;
 }
 
+<<<<<<< HEAD
 #spot-info{
     background-color: lightgreen;
     height: 20px;
@@ -26,6 +27,8 @@ body {
     border-radius:10px;
 }
 
+=======
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 img {
     border-radius: 10px;
 }
