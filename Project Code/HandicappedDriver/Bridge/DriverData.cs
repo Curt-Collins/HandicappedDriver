@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
-<<<<<<< HEAD
     public class DriverData : HandicappedDriverTableData
     {
         public int Id { get; set; }
@@ -14,35 +13,23 @@ namespace HandicappedDriver.Bridge
         public string licensePlateNum { get; set; }
         public string eMailAddress { get; set; }
         public string licensePlateState { get; set; }
-=======
-	public class DriverData : HandicappedDriverTableData
-	{
-		public int Id { get; set; }
-		public string fullName { get; set; }
-		public string password { get; set; }
-		public string mobileNumber { get; set; }
-		public string licensePlateNum { get; set; }
-		public string eMailAddress { get; set; }
-		public string licensePlateState { get; set; }
->>>>>>> 28f4648d1b458e7c5b5561d7c49d29a3df57c82c
 
-	//<<<<<<< HEAD
-	protected void LoadDriver()
-	{
-		String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
-			"d.MobileNumber, d.EMailAddress, d.Password p.State FROM " +
-			"Driver d LEFT OUTER JOIN LicensePlateState ON " +
-			"d.LicensePlateState_ID = p.ID";
 
-		this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
-		DataTable driver = new DataTable();
+	//protected void LoadDriver()
+	//{
+	//	String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
+	//		"d.MobileNumber, d.EMailAddress, d.Password p.State FROM " +
+	//		"Driver d LEFT OUTER JOIN LicensePlateState ON " +
+	//		"d.LicensePlateState_ID = p.ID";
 
-		if (Connect())
-		{
-			Adapter.Fill(driver, "Driver");
-		}
-	}
-//=======
+	//	this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
+	//	DataTable driver = new DataTable();
+
+	//	if (Connect())
+	//	{
+	//		Adapter.Fill(driver, "Driver");
+	//	}
+	//}
         public DriverData() { }
 
         public DriverData(int driverID)
@@ -66,7 +53,6 @@ namespace HandicappedDriver.Bridge
 
                 if (rdr.Read())
                 {
-<<<<<<< HEAD
                     this.Id = rdr.GetInt32(0);
                     this.fullName = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
                     this.licensePlateNum = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
@@ -81,24 +67,22 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-        public void UpdateProfile()
-=======
-                    this.Id = (int)driver.Rows[0]["ID"];
-                    this.fullName = (string)driver.Rows[0]["FullName"];
+  //      public void UpdateProfile()
+  //                  this.Id = (int)driver.Rows[0]["ID"];
+  //                  this.fullName = (string)driver.Rows[0]["FullName"];
 
-                    this.fullName = (string)driver.Rows[0]["LicensePlateNum"];
-                    this.fullName = (string)driver.Rows[0]["State"];
-                    this.fullName = (string)driver.Rows[0]["MobileNumber"];
-                    this.fullName = (string)driver.Rows[0]["EMailAddress"];
-                    this.fullName = (string)driver.Rows[0]["Password"];
-                }
-				this.Connection.Close();
-			}
+  //                  this.fullName = (string)driver.Rows[0]["LicensePlateNum"];
+  //                  this.fullName = (string)driver.Rows[0]["State"];
+  //                  this.fullName = (string)driver.Rows[0]["MobileNumber"];
+  //                  this.fullName = (string)driver.Rows[0]["EMailAddress"];
+  //                  this.fullName = (string)driver.Rows[0]["Password"];
+  //              }
+		//		this.Connection.Close();
+		//	}
 
-		}
+		//}
    
         public void Update()
->>>>>>> 28f4648d1b458e7c5b5561d7c49d29a3df57c82c
         {
             String queryString = "UPDATE [Driver] SET " +
                 "[FullName]=fullName, [LicensePlateNum]=@licensePlateNum, [MobileNumber]=@mobileNumber, " +
@@ -123,7 +107,6 @@ namespace HandicappedDriver.Bridge
                 this.Connection.Close();
             }
         }
-<<<<<<< HEAD
 
         public void CreateNew(string usr, string pwd)
         {
@@ -163,7 +146,5 @@ namespace HandicappedDriver.Bridge
                 }
             }
         }
-=======
->>>>>>> 28f4648d1b458e7c5b5561d7c49d29a3df57c82c
     }
 }
