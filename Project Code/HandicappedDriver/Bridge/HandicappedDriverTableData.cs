@@ -9,9 +9,18 @@ namespace HandicappedDriver.Bridge
 {
     public abstract class HandicappedDriverTableData
     {
+<<<<<<< HEAD
         protected string strConn =
             @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\richu\OneDrive\Documents\GitHub\HandicappedDriver\HandicappedDriver.accdb;Persist Security Info=False;";
         // C:\Users\richu\OneDrive\Documents\GitHub\HandicappedDriver
+=======
+        // Curt
+        //        protected string strConn =
+        //            @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ccollins45\source\repos\HandicappedDriver\HandicappedDriver.accdb;Persist Security Info=False;";
+        //Leif
+       protected string strConn =
+           @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ccollins45\source\repos\HandicappedDriver\HandicappedDriver.accdb;Persist Security Info=False;";
+>>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 
         protected OleDbConnection Connection { get; set; }
         protected OleDbDataAdapter Adapter { get; set; }
