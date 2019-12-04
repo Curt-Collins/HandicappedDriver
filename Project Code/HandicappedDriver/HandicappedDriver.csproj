@@ -273,6 +273,7 @@
     <Compile Include="CoreSystem\ParkingSpace.cs" />
     <Compile Include="CoreSystem\Reservation.cs" />
     <Compile Include="CoreSystem\Driver.cs" />
+    <Compile Include="Driver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI\" />
