@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Web;
+using System.Web.Services;
 using HandicappedDriver.Bridge;
+using HandicappedDriver.CoreSystem;
+
 namespace HandicappedDriver
 {
     public class Facade
@@ -13,21 +16,29 @@ namespace HandicappedDriver
         {
         }
 
-        public void ForgotPassword(string info)
+        [WebMethod]
+        public void ForgotPassword(string username)
         {
             DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(info);
+            d = jSON.DeSerialize<DriverData>(username);
+            driver = new Driver(d);
+            driver.ResetPassword(d);
+            
             // accepts username to create new password
         }
 
+        [WebMethod]
         public void CreateDriver(string username)
         {
             // accepts username to create new driver
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
+            driver = new Driver(d);
+            driver.ResetPassword(d);
             // d.create();
         }
 
+        [WebMethod]
         public void Login(string info)
         {
             // utilize the given info to login to the Home Page
@@ -39,11 +50,13 @@ namespace HandicappedDriver
             // d.login();
         }
 
+        [WebMethod]
         public void Logout(string username)
         {
             // utilizes the username to log the user out of the system
         }
 
+        [WebMethod]
         public void UpdateDriverProfile(string info)
         {
             // string name, string email, string mobile, string plateNum, string plateState
@@ -58,7 +71,8 @@ namespace HandicappedDriver
             // d.update();
             // this will be called to update the driver object's info
         }
-        
+
+        [WebMethod]
         public void NavigateToSpace(int spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
@@ -66,6 +80,7 @@ namespace HandicappedDriver
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID.ToString());
         }
 
+        [WebMethod]
         public void GetParkingLots()
         {
             // this shows the parking lots in the system in a dropdown in the GUI
@@ -74,12 +89,14 @@ namespace HandicappedDriver
             // p.show();  This will show the parking lots that are in the system
         }
 
+        [WebMethod]
         public void GetCampusMap()
         {
             // this shows the campus map
             // called from the GUI and shows the graphic only
         }
 
+        [WebMethod]
         public void SendMessageToDriver(string info)
         {
             // string fromUser, string toLicNum, string toLicState, string msg
@@ -118,6 +135,7 @@ namespace HandicappedDriver
 
         }
 
+        [WebMethod]
         public void ViewAvailableSpaces(int lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
@@ -126,6 +144,7 @@ namespace HandicappedDriver
             // p.view();
         }
 
+        [WebMethod]
         public void ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
@@ -133,6 +152,7 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(username);
         }
 
+        [WebMethod]
         public void OccupySpace(int resvID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
@@ -142,6 +162,7 @@ namespace HandicappedDriver
             // r.occupy(); need this to be implemented
         }
 
+        [WebMethod]
         public void LeaveSpace(int resvID)
         {
             // this changes the status of the space in the database to unoccupied
@@ -151,6 +172,7 @@ namespace HandicappedDriver
             // r.leave(); need this to be implemented
         }
 
+        [WebMethod]
         public void CancelReservation(int resvID)
         {
             // this removes a reservation in the database from a certain spot and user
@@ -159,6 +181,5 @@ namespace HandicappedDriver
 
             // r.cancel(); need this to be implemented
         }
-
     }
 }
