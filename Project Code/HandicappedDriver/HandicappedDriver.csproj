@@ -155,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\HandicappedDriver.accdb" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -174,6 +175,25 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="GUI\createAcc.png" />
+    <Content Include="GUI\createAccount.html" />
+    <Content Include="GUI\homePage.html" />
+    <Content Include="GUI\homeStyleSheet.css" />
+    <Content Include="GUI\show_lot_information.js" />
+    <Content Include="GUI\json_create_account_data.js" />
+    <Content Include="GUI\loginpage.html" />
+    <Content Include="GUI\loginStyleSheet.css" />
+    <Content Include="GUI\messageDriver.css" />
+    <Content Include="GUI\messageDriver.html" />
+    <Content Include="GUI\newUserStyleSheet.css" />
+    <Content Include="GUI\parking-lot.png" />
+    <Content Include="GUI\passReset.html" />
+    <Content Include="GUI\reservation.css" />
+    <Content Include="GUI\uco campus building.png" />
+    <Content Include="GUI\uco_logo.png" />
+    <Content Include="GUI\useReservation.html" />
+    <Content Include="GUI\viewAvailable.css" />
+    <Content Include="GUI\viewAvailable.html" />
     <Content Include="JSONEncoderSample.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -219,6 +239,14 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Bridge\DriverData.cs" />
+    <Compile Include="Bridge\Email_MessageData.cs" />
+    <Compile Include="Bridge\HandicappedDriverTableData.cs" />
+    <Compile Include="Bridge\LicensePlatesStateData.cs" />
+    <Compile Include="Bridge\ParkingLotData.cs" />
+    <Compile Include="Bridge\ParkingSpaceData.cs" />
+    <Compile Include="Bridge\ReservationData.cs" />
+    <Compile Include="Bridge\SMS_MessageData.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -265,11 +293,7 @@
     <Compile Include="CoreSystem\Reservation.cs" />
     <Compile Include="CoreSystem\Driver.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="GUI\" />
-    <Folder Include="CoreSystem\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />

@@ -1,0 +1,84 @@
+body {
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+.jumbotron-fluid {
+    width: 1105px;
+    height: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#spot-info{
+    background-color: lightgreen;
+    height: 20px;
+    border-radius: 15px;
+    margin-top:10px;
+}
+
+#generateSpotBtn{
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    background-color: teal;
+    border-radius:10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+.campus-map-link {
+    padding-top: 75px;
+    padding-left: 50%;
+    width: 100px;
+    height: 20px;
+    color: orangered;
+}
+
+#myDropdown {
+    font-size: 18px;
+    background-color: orchid;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #befc03;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #d39e00;
+    outline: 1px solid slategrey;
+
+}
+
+.nav-link {
+    color: ghostwhite;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    font-style: oblique;
+    color: #191919;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 5px;
+}

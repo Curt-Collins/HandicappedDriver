@@ -1,0 +1,25 @@
+body {
+    background: #036ffc;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+
+/*Set the size of the div element that contains the map*/
+#map {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 500px; /* The height is 400 pixels */
+    /*width: 100%;  !* The width is the width of the web page *!*/
+    border-radius: 10px;
+}
+
+.btn-toolbar {
+    margin-top: 20px;
+    margin-left: 39%;
+}
+
+.btn:hover {
+    background-color: #EE6C4D;
+}
