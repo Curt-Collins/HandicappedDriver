@@ -13,10 +13,10 @@ namespace HandicappedDriver
         {
         }
 
-        public void ForgotPassword(string username)
+        public void ForgotPassword(string info)
         {
             DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
+            d = jSON.DeSerialize<DriverData>(info);
             // accepts username to create new password
         }
 
