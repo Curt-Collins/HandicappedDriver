@@ -181,6 +181,7 @@ namespace HandicappedDriver
             string s = "";
             r = jSON.DeSerialize<ReservationData>(username);
             r.PullRes();
+            r.resvID = "stuff";
             if (r.resvID != "")
             {
                 s = jSON.Serialize<ReservationData>(r);
