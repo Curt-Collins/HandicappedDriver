@@ -18,33 +18,10 @@ namespace HandicappedDriver.Bridge
 
         public DriverData() { }
 
-        public DriverData(int? driverID)
+        public DriverData(int driverID)
         {
             this.Id = driverID;
             LoadDriver();
-        }
-
-        public void LoadDriver(string usr, string pwd)
-        {
-            string queryString =
-                "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
-            SqlCommand cmd;
-
-            cmd = this.Connection.CreateCommand();
-            cmd.Parameters.AddWithValue("@eMailAddress", usr);
-            cmd.Parameters.AddWithValue("@password", pwd);
-            cmd.CommandText = queryString;
-
-            Id = (int?)cmd.ExecuteScalar();
-            cmd.Dispose();
-            if (Id != 0)
-            {
-                LoadDriver();
-            }
-            else
-            {
-                Id = null;
-            }
         }
 
         public void LoadDriver()
