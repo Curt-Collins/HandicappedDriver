@@ -146,7 +146,7 @@ namespace HandicappedDriver
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
             ParkingLotData pl = new ParkingLotData();
-            p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
+            pl = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
 			string spaces = "";
             // p.view();
             // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
@@ -156,7 +156,7 @@ namespace HandicappedDriver
 
             if (ps.GetOccupied() == true)
             {
-                spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
+                //spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
             }
             //string spaces = p.view();
 
