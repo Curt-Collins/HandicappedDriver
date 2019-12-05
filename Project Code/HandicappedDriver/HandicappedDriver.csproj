@@ -228,6 +228,10 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\EMailAdapter.cs" />
+    <Compile Include="Adapters\NavigationAdapter.cs" />
+    <Compile Include="Adapters\SchedulerAdapter.cs" />
+    <Compile Include="Adapters\SMSAdapter.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
