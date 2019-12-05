@@ -23,8 +23,6 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
             driver.ResetPassword(d);
-            
-            // accepts username to create new password
         }
 
         [WebMethod]
@@ -78,11 +76,18 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public void NavigateToSpace(int spaceID)
+        public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            ParkingSpaceData p = new ParkingSpaceData();
-            p = jSON.DeSerialize<ParkingSpaceData>(spaceID.ToString());
+            ParkingSpaceData p;
+            string s = "";
+            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
+            p.LoadInfo();
+            if(!IsNullOrEmpty(p.NavInfo))
+            {
+                s = jSON.Serialize<string>(p.NavInfo);
+            }
+            return s;
 
 			// p.getCoordinates();
         }
@@ -94,13 +99,6 @@ namespace HandicappedDriver
             ParkingLotData p = new ParkingLotData();
 
             // p.show();  This will show the parking lots that are in the system
-        }
-
-        [WebMethod]
-        public void GetCampusMap()
-        {
-            // this shows the campus map
-            // called from the GUI and shows the graphic only
         }
 
         [WebMethod]
@@ -164,12 +162,22 @@ namespace HandicappedDriver
             //return "";
         }
 
+
+        // GOOD
         [WebMethod]
-        public void ShowExistingReservation(string username)
+        public string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
-            DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
+            ReservationData r;
+            string s = "";
+            r = jSON.DeSerialize<ReservationData>(username);
+            r.PullRes();
+            if (r.GetID() != "")
+            {
+                s = jSON.Serialize<ReservationData>(r);
+            }
+            
+            return s;
         }
 
         [WebMethod]
