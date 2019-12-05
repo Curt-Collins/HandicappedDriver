@@ -15,6 +15,12 @@ namespace HandicappedDriver.Bridge
         public DateTime fromTime;
         public DateTime untilTime;
 
+        public string leifman
+        {
+            get { return ""; }
+            set { }
+        }
+
         public ReservationData() { }
 
         public ReservationData(int resID)
