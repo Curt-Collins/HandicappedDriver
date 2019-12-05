@@ -1,4 +1,63 @@
-﻿function generate_lot_details() {
+﻿// https://www.encodedna.com/javascript/populate-select-dropdown-list-with-json-data-using-javascript.htm
+
+$(document).ready(function () {
+    var arr = [{
+        "LotName": "Math & Computer Science Building",
+        "lot_ID": 1
+    },
+    {
+        "LotName": "Nigh University Center",
+        "lot_ID": 2
+    },
+    {
+        "LotName": "Chamber's library",
+        "lot_ID": 3
+    }];
+
+    var dropdownList = document.getElementById('myLotDropdown');
+    for (var i = 0; i < arr.length; i++) {
+
+        dropdownList.innerHTML = dropdownList.innerHTML +
+            '<option value="' + arr[i]['lot_ID'] + '">' + arr[i]['LotName'] + '</option>';
+    }
+});
+
+//function populateSelect() {
+//    var clickCtr = 0;
+//    var arr = [{
+//            "LotName": "Math & Computer Science Building",
+//            "lot_ID": 1
+//        },
+//        {
+//            "LotName": "Nigh University Center",
+//            "lot_ID": 2
+//        },
+//        {
+//            "LotName": "Chamber's library",
+//            "lot_ID": 3
+//        }
+//    ];
+
+//    var dropdownList = document.getElementById('myLotDropdown');
+//    for (var i = 0; i < arr.length; i++) {
+//        if (clickCtr === 1) {
+//            break;
+//        }
+//        dropdownList.innerHTML = dropdownList.innerHTML +
+//            '<option value="' + arr[i]['lot_ID'] + '">' + arr[i]['LotName'] + '</option>';
+//        clickCtr++;
+//    }
+//}
+
+
+
+
+
+
+
+
+// function that gets user's selections
+function generate_lot_details() {
     //alert("function called");
     var lotContainer = document.getElementById("spot-info");
     var htmlString = "<p>";

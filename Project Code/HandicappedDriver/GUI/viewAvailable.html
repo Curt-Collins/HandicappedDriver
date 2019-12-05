@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="viewAvailable.css">
     <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="lot_details.js"></script>
 
 </head>
@@ -48,11 +49,7 @@
                         <h5 class="card-title">Reserve your spot now!</h5>
                         <p class="card-text">Choose from the dropdown below and click the button to reserve a spot</p>
                         <form action="useReservation.html" method="get">
-                            <select name="lot" id="myLotDropdown">
-                                <option value="1">Math & Computer Science building</option>
-                                <option value="2 center">Nigh University Center</option>
-                                <option value="3">Chamber's library</option>
-                            </select>
+
                             <p>
                                 <input type="datetime" id="startTime" placeholder="Start time">
                                 <label for="endTime">  </label>
@@ -60,6 +57,12 @@
                             </p>
 
                             <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
+
+                            <select name="lot" id="myLotDropdown">  <!--onclick="populateSelect()"-->
+                                <!--<option value="1">Math & Computer Science Building</option>
+                                <option value="2">Nigh University Center</option>
+                                <option value="3">Chamber's library</option>-->
+                            </select>
                         </form>
                     </div>
                 </div>
@@ -73,10 +76,35 @@
 
         </div> <!-- Container-fluid ends -->
 
+        <script>
+            
+            /*$(document).ready(function () {
+                var arr = [{
+                    "LotName": "Math & Computer Science Building",
+                    "lot_ID": 1
+                },
+                {
+                    "LotName": "Nigh University Center",
+                    "lot_ID": 2
+                },
+                {
+                    "LotName": "Chamber's library",
+                    "lot_ID": 3
+                }];
+
+                var dropdownList = document.getElementById('myLotDropdown');
+                   for (var i = 0; i < arr.length; i++) {
+        
+                    dropdownList.innerHTML = dropdownList.innerHTML +
+                        '<option value="' + arr[i]['lot_ID'] + '">' + arr[i]['LotName'] + '</option>';
+                    }
+                });*/
+
+        </script>
+
     </form>
 
-    <script src="lot_details.js">
-        
+    <script src="lot_details.js">   
     </script>
 
 

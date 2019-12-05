@@ -44,8 +44,8 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(info);
             if(!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
             {
-                //d.LoadDriver(d.eMailAddress, d.password);
-                if(!(d.Id is null))
+                d.LoadDriver(d.eMailAddress, d.password);
+                if (!(d.Id is null))
                 {
                     login = true;
                 }
