@@ -15,6 +15,7 @@ namespace HandicappedDriver.Bridge
         public DateTime fromTime;
         public DateTime untilTime;
         public int space_Id;
+        public string resvID;
 
         public ReservationData() { }
 
