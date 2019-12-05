@@ -139,7 +139,6 @@ namespace HandicappedDriver
             receivingDriver = jSON.DeSerialize<DriverData>(s2);
 
             driver.SendMessage(sendingDriver, receivingDriver, message);
-
         }
 
         [WebMethod]
