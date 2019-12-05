@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using System.Collections.Generic;
 using System.Web.Services;
 using HandicappedDriver.Bridge;
 using HandicappedDriver.CoreSystem;
@@ -89,7 +90,7 @@ namespace HandicappedDriver
         public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            ParkingSpaceData p;
+            //ParkingSpaceData p = new ParkingSpaceData(spaceID);
             string s = "";
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
             p.LoadInfo();
@@ -107,7 +108,7 @@ namespace HandicappedDriver
             string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
             ParkingLotData p = new ParkingLotData();
-            s = jSON.Serialize<string>(p.Lots); 
+            s = jSON.Serialize<List<LotInfo>>(p.Lots);
             return s;
         }
 
@@ -157,19 +158,18 @@ namespace HandicappedDriver
 			string spaces = "";
             // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
 
-            ParkingSpace ps = new ParkingSpace(lotID);
+            //ParkingSpace ps = new ParkingSpace(lotID);
             ReservationData reservation = new ReservationData();
 
-            if (ps.GetOccupied() == true)
-            {
-                spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
-            }
+            //if (ps.GetOccupied() == true)
+            //{
+            //    spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
+            //}
             //string spaces = p.view();
 
             return spaces;
             //return "";
         }
-
 
         // GOOD
         [WebMethod]
