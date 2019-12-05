@@ -17,10 +17,12 @@ namespace HandicappedDriver.Bridge
         public DateTime fromTime;
         public DateTime untilTime;
 
-        public string leifman
+        private string resvIDpriv = "";
+
+        public string resvID
         {
-            get { return ""; }
-            set { }
+            get { return resvIDpriv; }
+            set { resvIDpriv = value; }
         }
 
         public ReservationData() { }
@@ -83,20 +85,6 @@ namespace HandicappedDriver.Bridge
 
         public void CreateNew(string usr, string pwd)
         {
-        }
-
-
-
-        private string resvID = "";
-
-        private void SetID(string r)
-        {
-            resvID = r;
-        }
-
-        public string GetID()
-        {
-            return resvID;
         }
 
         public void PullRes()
