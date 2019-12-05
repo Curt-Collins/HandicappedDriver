@@ -1,11 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using HandicappedDriver.Bridge;
 
 namespace HandicappedDriver.Adapters
 {
     public class EMailAdapter
     {
+
+        public void SendMessage(DriverData dd, string msg)
+        {
+
+        }
+
     }
 }

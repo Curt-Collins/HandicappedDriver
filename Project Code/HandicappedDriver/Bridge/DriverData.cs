@@ -51,7 +51,6 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-  
         public void Update()
         {
             String queryString = "UPDATE [Driver] SET " +
@@ -116,5 +115,7 @@ namespace HandicappedDriver.Bridge
                 }
             }
         }
+
     }
+
 }
