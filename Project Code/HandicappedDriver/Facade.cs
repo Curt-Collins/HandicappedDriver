@@ -116,7 +116,6 @@ namespace HandicappedDriver
         {
             // string fromUser, string toLicNum, string toLicState, string msg
             // this sends a message to a driver from a user to a certain user based on the license plate information
-            info = "{something}{yes}{thank you}";
             string s1 = info;
             string s2 = info;
             string message = info;
