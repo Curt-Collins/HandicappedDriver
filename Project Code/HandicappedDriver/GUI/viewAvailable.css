@@ -18,6 +18,23 @@ body {
     margin-top:10px;
 }*/
 
+#startTime {
+    border-color: black;
+    background-color: #FA7921;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    width: 90px;
+}
+
+#endTime {
+    border-color: black;
+    background-color: #FA7921;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    width: 90px;
+    height: 90px;
+}
+
 #generateSpotBtn {
     margin-top: 20px;
     width: 200px;
@@ -44,12 +61,11 @@ img {
     color: orangered;
 }
 
-#myLotDropdown {
+#myLotDropdown, #mySpotDropdown {
     font-size: 18px;
-    background-color: orchid;
     text-align: center;
     border-radius: 10px;
-    width: 200px;
+    width: auto;
 }
 
 

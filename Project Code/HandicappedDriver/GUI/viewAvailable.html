@@ -35,7 +35,7 @@
 
             <div class="card-deck">
 
-                <div class="card" style="width: 18rem; background-color: #88D498">
+                <div class="card" style="width: 18rem; background-color: #FDE74C">
                     <img src="uco campus building.png" class="card-img-top" alt="Image not found" height="270" width="70">
                     <div class="card-body">
                         <h5 class="card-title">Campus Map</h5>
@@ -43,12 +43,12 @@
                         <a href="https://www.uco.edu/files/maps/uco-parking-map.pdf" class="btn btn-primary">Campus map</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem; background-color: #C6DABF">
+                <div class="card" style="width: 18rem; background-color: #9BC53D">
                     <img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">
                     <div class="card-body">
                         <h5 class="card-title">Reserve your spot now!</h5>
-                        <p class="card-text">Choose from the dropdown below and click the button to reserve a spot</p>
-                        <form action="useReservation.html" method="get">
+                        <p class="card-text">To reserve your spot first select desired lot from the dropdown below. Then select a spot from the dropdown beside the first dropdown then click 'Generate spot details' button to view unavailable time. After you have decided your reservation time, enter the start time and end time in the text box below and then click 'Reserve' button to reserve your spot.</p>
+                        <!--<form action="useReservation.html" method="get">
 
                             <p>
                                 <input type="datetime" id="startTime" placeholder="Start time">
@@ -59,11 +59,32 @@
                             <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
 
                             <select name="lot" id="myLotDropdown">
-                                <!--onclick="populateSelect()"-->
-                                <!--<option value="1">Math & Computer Science Building</option>
-                                <option value="2">Nigh University Center</option>
-                                <option value="3">Chamber's library</option>-->
+                                
                             </select>
+                        </form>-->
+                    </div>
+                </div>
+                <br />
+
+                <div class="card" style="width: 18rem; background-color: #E55934">
+                    <img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">
+                    <div class="card-body">
+                        <form action="useReservation.html" method="get">
+
+                            <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
+
+                            <select name="lot" id="myLotDropdown" class="btn-success" required>
+                                <!--<option value="-1" selected>..Select Lot..</option>-->
+                            </select>
+
+                            <select name="spot" id="mySpotDropdown" class="btn-success" required>
+                                <!--<option value="-1" selected>..Select Spot..</option>-->
+
+                            </select>
+
+                            <input type="datetime" id="startTime" placeholder="Start time" required>
+
+                            <input type="datetime" id="endTime" placeholder="End time" required>
                         </form>
                     </div>
                 </div>
