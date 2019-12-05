@@ -150,11 +150,11 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public string ViewAvailableSpaces(int lotID)
+        public string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
             ParkingLotData pl = new ParkingLotData();
-            p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
+            pl = jSON.DeSerialize<ParkingLotData>(lotID);
 			string spaces = "";
             // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
 
