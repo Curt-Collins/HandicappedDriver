@@ -23,8 +23,6 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
             driver.ResetPassword(d);
-            
-            // accepts username to create new password
         }
 
         [WebMethod]
@@ -39,24 +37,31 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public void Login(string info)
+        public bool Login(string info)
         {
-            // utilize the given info to login to the Home Page
-            // find the driver based on the correct username and password
-
-            // string username, string password
-            DriverData d = new DriverData();
+            bool login = false;
+            DriverData d;
             d = jSON.DeSerialize<DriverData>(info);
+            if(!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
+            {
+                //d.LoadDriver(d.eMailAddress, d.password);
+                if(!(d.Id is null))
+                {
+                    login = true;
+                }
+            }
 
-            // d.login();
+            return login;
         }
 
         [WebMethod]
-        public void Logout(string username)
+        public void Logout(string info)
         {
-            DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
-            // utilizes the username to log the user out of the system
+            bool logout = false;
+            DriverData d;
+            d = jSON.DeSerialize<DriverData>(info);
+            // logout the driver from the system
+            // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
         [WebMethod]
@@ -71,36 +76,38 @@ namespace HandicappedDriver
             {
                 // tell them that they need to input something other than an empty string
             }
-            // d.update();
-            // this will be called to update the driver object's info
+            
             driver = new Driver(d);
             driver.UpdateProfile(d);
+            //string p = jSON.Serialize<string>(d); need to send something back to the GUI so that the user profile is updated
         }
 
+
+        // GOOD
         [WebMethod]
-        public void NavigateToSpace(int spaceID)
+        public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            ParkingSpaceData p = new ParkingSpaceData();
-            p = jSON.DeSerialize<ParkingSpaceData>(spaceID.ToString());
-
-			// p.getCoordinates();
+            ParkingSpaceData p;
+            string s = "";
+            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
+            p.LoadInfo();
+            if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
+            {
+                s = jSON.Serialize<string>(p.GetNavInfo());
+            }
+            return s;
         }
 
+        
         [WebMethod]
-        public void GetParkingLots()
+        public string GetParkingLots()
         {
             // this shows the parking lots in the system in a dropdown in the GUI
             ParkingLotData p = new ParkingLotData();
 
-            // p.show();  This will show the parking lots that are in the system
-        }
-
-        [WebMethod]
-        public void GetCampusMap()
-        {
-            // this shows the campus map
-            // called from the GUI and shows the graphic only
+            //string s = jSON.Serialize<string>(p); this will be fixed when Curt can push to github
+            return s;
         }
 
         [WebMethod]
@@ -164,12 +171,22 @@ namespace HandicappedDriver
             //return "";
         }
 
+
+        // GOOD
         [WebMethod]
-        public void ShowExistingReservation(string username)
+        public string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
-            DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
+            ReservationData r;
+            string s = "";
+            r = jSON.DeSerialize<ReservationData>(username);
+            r.PullRes();
+            if (r.GetID() != "")
+            {
+                s = jSON.Serialize<ReservationData>(r);
+            }
+            
+            return s;
         }
 
         [WebMethod]

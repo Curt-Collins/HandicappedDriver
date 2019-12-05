@@ -15,7 +15,7 @@ namespace HandicappedDriver.Bridge
 
         public LicensePlatesStateData()
         {
-            string queryString = "";
+            string queryString = "SELECT id, State FROM LicensePlateState";
             State st;
 
             if (Connect())
