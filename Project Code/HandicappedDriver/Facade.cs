@@ -155,7 +155,6 @@ namespace HandicappedDriver
             ParkingLotData pl = new ParkingLotData();
             p = jSON.DeSerialize<ParkingLotData>(lotID.ToString());
 			string spaces = "";
-            // p.view();
             // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
 
             ParkingSpace ps = new ParkingSpace(lotID);
