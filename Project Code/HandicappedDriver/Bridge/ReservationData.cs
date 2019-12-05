@@ -129,6 +129,22 @@ namespace HandicappedDriver.Bridge
                     LoadDriver();
                 }
             }
+
+        private string resvID = "";
+
+        private void SetID(string r)
+        {
+            resvID = r;
+        }
+
+        public string GetID()
+        {
+            return resvID;
+        }
+
+        public void PullRes()
+        {
+
         }
 
     }
