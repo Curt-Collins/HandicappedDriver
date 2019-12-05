@@ -7,5 +7,10 @@ namespace HandicappedDriver.Bridge
 {
     public class ReservationData
     {
+        public void PullRes()
+        {
+
+        }
+
     }
 }
