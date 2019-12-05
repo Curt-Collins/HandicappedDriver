@@ -37,24 +37,31 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public void Login(string info)
+        public bool Login(string info)
         {
-            // utilize the given info to login to the Home Page
-            // find the driver based on the correct username and password
-
-            // string username, string password
-            DriverData d = new DriverData();
+            bool login = false;
+            DriverData d;
             d = jSON.DeSerialize<DriverData>(info);
+            if(!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
+            {
+                //d.LoadDriver(d.eMailAddress, d.password);
+                if(!(d.Id is null))
+                {
+                    login = true;
+                }
+            }
 
-            // d.login();
+            return login;
         }
 
         [WebMethod]
-        public void Logout(string username)
+        public void Logout(string info)
         {
-            DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
-            // utilizes the username to log the user out of the system
+            bool logout = false;
+            DriverData d;
+            d = jSON.DeSerialize<DriverData>(info);
+            // logout the driver from the system
+            // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
         [WebMethod]
@@ -69,10 +76,10 @@ namespace HandicappedDriver
             {
                 // tell them that they need to input something other than an empty string
             }
-            // d.update();
-            // this will be called to update the driver object's info
+            
             driver = new Driver(d);
             driver.UpdateProfile(d);
+            //string p = jSON.Serialize<string>(d); need to send something back to the GUI so that the user profile is updated
         }
 
 
@@ -90,18 +97,17 @@ namespace HandicappedDriver
                 s = jSON.Serialize<string>(p.GetNavInfo());
             }
             return s;
-
-			// p.getCoordinates();
         }
 
-
+        
         [WebMethod]
-        public void GetParkingLots()
+        public string GetParkingLots()
         {
             // this shows the parking lots in the system in a dropdown in the GUI
             ParkingLotData p = new ParkingLotData();
 
-            // p.show();  This will show the parking lots that are in the system
+            //string s = jSON.Serialize<string>(p); this will be fixed when Curt can push to github
+            return s;
         }
 
         [WebMethod]
