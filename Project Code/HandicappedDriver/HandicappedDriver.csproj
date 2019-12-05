@@ -177,7 +177,8 @@
     <Content Include="GUI\createAccount.html" />
     <Content Include="GUI\homePage.html" />
     <Content Include="GUI\homeStyleSheet.css" />
-    <Content Include="GUI\show_lot_information.js" />
+    <Content Include="GUI\message_driver.js" />
+    <Content Include="GUI\lot_details.js" />
     <Content Include="GUI\json_create_account_data.js" />
     <Content Include="GUI\loginpage.html" />
     <Content Include="GUI\loginStyleSheet.css" />

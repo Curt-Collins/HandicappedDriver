@@ -11,24 +11,21 @@ body {
     margin-right: 20px;
 }
 
-<<<<<<< HEAD
-#spot-info{
+/*#spot-info{
     background-color: lightgreen;
-    height: 20px;
+    height: 500px;
     border-radius: 15px;
     margin-top:10px;
-}
+}*/
 
-#generateSpotBtn{
+#generateSpotBtn {
     margin-top: 20px;
     width: 200px;
     height: auto;
     background-color: teal;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-=======
->>>>>>> 2f86e39ba6e93c29d486d00e3ecac4ddb8c2485e
 img {
     border-radius: 10px;
 }
@@ -38,6 +35,7 @@ img {
     border-radius: 10px;
     width: 250px;
 }
+
 .campus-map-link {
     padding-top: 75px;
     padding-left: 50%;
@@ -46,7 +44,7 @@ img {
     color: orangered;
 }
 
-#myDropdown {
+#myLotDropdown {
     font-size: 18px;
     background-color: orchid;
     text-align: center;
@@ -68,7 +66,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #d39e00;
     outline: 1px solid slategrey;
-
 }
 
 .nav-link {
@@ -76,10 +73,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-.nav-link:hover {
-    font-style: oblique;
-    color: #191919;
-}
+    .nav-link:hover {
+        font-style: oblique;
+        color: #191919;
+    }
 
 input {
     margin-top: 5px;
