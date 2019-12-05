@@ -31,7 +31,7 @@ namespace HandicappedDriver.Bridge
                 {
                     l = new LotInfo();
                     l.id = rdr.GetInt32(0);
-                    l.name = rdr.GetString(1);
+                    l.name = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
                     Lots.Add(l);
                 }
 
@@ -39,5 +39,5 @@ namespace HandicappedDriver.Bridge
                 this.Connection.Close();
             }
         }
-    }
+     }
 }

@@ -3,8 +3,6 @@ using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
-
-    // hello this is Leif, please work
     public class ReservationData : HandicappedDriverTableData
     {
         public int? Id;
@@ -16,12 +14,7 @@ namespace HandicappedDriver.Bridge
         public string navigation;
         public DateTime fromTime;
         public DateTime untilTime;
-
-        public string leifman
-        {
-            get { return ""; }
-            set { }
-        }
+        public int space_Id;
 
         public ReservationData() { }
 
@@ -37,6 +30,10 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
+        //
+        // TODO: Change SQL view to OUTER JOIN to show all spaces regardless of the existence of a RESERVATION
+        // TODO: Change SQL view to replace NULL StatusDesc with 'AVAILABLE'
+        //
         public void LoadReservation()
         {
             String queryString = "";
@@ -44,14 +41,14 @@ namespace HandicappedDriver.Bridge
             if (Id != null)
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress FROM SpaceReservation WHERE StatusDesc = 'ACTIVE' AND " +
-                    "ID=" + Id.ToString();
+                    "Navigation, EMailAddress, Space_ID FROM SpaceReservation " + "" +
+                    "WHERE StatusDesc = 'ACTIVE' AND ID=" + Id.ToString();
             }
             else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress FROM SpaceReservation WHERE  StatusDesc = 'ACTIVE' AND " + 
-                    "EMailAddress" + eMailAddress;
+                    "Navigation, EMailAddress, Space_ID FROM SpaceReservation " +
+                    "WHERE StatusDesc = 'ACTIVE' AND ID=" + eMailAddress;
             }
 
             if (Connect())
@@ -70,7 +67,8 @@ namespace HandicappedDriver.Bridge
                     this.untilTime = rdr.GetDateTime(5);
                     this.navigation = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
                     this.eMailAddress = rdr.IsDBNull(7) ? "" : rdr.GetString(7);
-                
+                    this.space_Id = rdr.GetInt32(8);
+
                     rdr.Close();
                     this.Connection.Close();
                 }
@@ -83,20 +81,6 @@ namespace HandicappedDriver.Bridge
 
         public void CreateNew(string usr, string pwd)
         {
-        }
-
-
-
-        private string resvID = "";
-
-        private void SetID(string r)
-        {
-            resvID = r;
-        }
-
-        public string GetID()
-        {
-            return resvID;
         }
 
         public void PullRes()
