@@ -178,7 +178,8 @@
     <Content Include="GUI\createAccount.html" />
     <Content Include="GUI\homePage.html" />
     <Content Include="GUI\homeStyleSheet.css" />
-    <Content Include="GUI\show_lot_information.js" />
+    <Content Include="GUI\message_driver.js" />
+    <Content Include="GUI\lot_details.js" />
     <Content Include="GUI\json_create_account_data.js" />
     <Content Include="GUI\loginpage.html" />
     <Content Include="GUI\loginStyleSheet.css" />
@@ -292,9 +293,7 @@
     <Compile Include="CoreSystem\Reservation.cs" />
     <Compile Include="CoreSystem\Driver.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
