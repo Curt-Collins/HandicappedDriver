@@ -36,6 +36,7 @@ namespace HandicappedDriver
             // d.create();
         }
 
+        // GOOD
         [WebMethod]
         public bool Login(string info)
         {
@@ -103,10 +104,10 @@ namespace HandicappedDriver
         [WebMethod]
         public string GetParkingLots()
         {
+            string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
             ParkingLotData p = new ParkingLotData();
-
-            //string s = jSON.Serialize<string>(p); this will be fixed when Curt can push to github
+            s = jSON.Serialize<string>(p.Lots); 
             return s;
         }
 
@@ -180,7 +181,7 @@ namespace HandicappedDriver
             string s = "";
             r = jSON.DeSerialize<ReservationData>(username);
             r.PullRes();
-            if (r.GetID() != "")
+            if (r.resvID != "")
             {
                 s = jSON.Serialize<ReservationData>(r);
             }
