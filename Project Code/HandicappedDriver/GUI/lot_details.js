@@ -2,31 +2,133 @@
 
 $(document).ready(function () {
 
+
+    var lotObj = [{
+        "LotName": "Math & Computer Science Building",
+        "lot_ID": 1,
+        "Spot": [{
+            "SpotName": "Spot 1",
+            "spot_ID": 1
+        },
+        {
+            "SpotName": "Spot 2",
+            "spot_ID": 2
+        },
+        ]
+    },
+    {
+        "LotName": "Nigh University Center",
+        "lot_ID": 2,
+        "Spot": [{
+            "SpotName": "Spot 1",
+            "spot_ID": 1
+        },
+        {
+            "SpotName": "Spot 2",
+            "spot_ID": 2
+        },
+        ]
+    },
+    {
+        "LotName": "Chamber's library",
+        "lot_ID": 3,
+        "Spot": [{
+            "SpotName": "Spot 1",
+            "spot_ID": 1
+        },
+        {
+            "SpotName": "Spot 2",
+            "spot_ID": 2
+        },
+        ]
+    }];
+
+    // USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
+
+
+    var lotDropdown = document.getElementById('myLotDropdown');
+    var spotDropdown = document.getElementById('mySpotDropdown');
+    for (var i = 0; i < lotObj.length; i++) {
+
+        lotDropdown.innerHTML = lotDropdown.innerHTML +
+            '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
+
+
+        for (var j = 0; j < lotObj[2].length; j++) {
+
+            spotDropdown.innerHTML = spotDropdown.innerHTML +
+                '<option value="' + lotObj[i].Spot[j].spot_ID + '">' + lotObj[i].Spot[j].SpotName + '</option>';
+        }
+
+        //lotDropdown.innerHTML = lotDropdown.innerHTML +
+        //    '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
+    }
+
+
     PageMethods.GetParkingLots(onSucess, onError);
     function onSucess(result) {
-        var lotObj = JSON.parde(result);
+        //var lotObj = JSON.parde(result);
+
         //var lotObj = [{
         //    "LotName": "Math & Computer Science Building",
-        //    "lot_ID": 1
+        //    "lot_ID": 1,
+        //    "Spot":[{
+        //            "SpotName":"Spot 1",
+        //            "spot_ID": 1
+        //        },
+        //        {
+        //            "SpotName": "Spot 2",
+        //            "spot_ID": 2
+        //        },
+        //        ]
         //},
         //{
         //    "LotName": "Nigh University Center",
-        //    "lot_ID": 2
+        //    "lot_ID": 2,
+        //    "Spot":[{
+        //            "SpotName":"Spot 1",
+        //            "spot_ID": 1
+        //        },
+        //        {
+        //            "SpotName": "Spot 2",
+        //            "spot_ID": 2
+        //        },
+        //        ]
         //},
         //{
         //    "LotName": "Chamber's library",
-        //    "lot_ID": 3
+        //    "lot_ID": 3,
+        //    "Spot":[{
+        //            "SpotName":"Spot 1",
+        //            "spot_ID": 1
+        //        },
+        //        {
+        //            "SpotName": "Spot 2",
+        //            "spot_ID": 2
+        //        },
+        //        ]
         //}];
 
-        // USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
+        //// USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
 
 
-        var dropdownList = document.getElementById('myLotDropdown');
-        for (var i = 0; i < lotObj.length; i++) {
+        //var lotDropdown = document.getElementById('myLotDropdown');
+        //var spotDropdown = document.getElementById('mySpotDropdown');
+        //for (var i = 0; i < lotObj.length; i++) {
 
-            dropdownList.innerHTML = dropdownList.innerHTML +
-                '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
-        }
+        //    lotDropdown.innerHTML = lotDropdown.innerHTML +
+        //        '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
+
+
+        //    for (var j = 0; j < lotObj[2].length; j++) {
+
+        //        spotDropdown.innerHTML = spotDropdown.innerHTML +
+        //            '<option value="' + lotObj[i].Spot[j].spot_ID + '">' + lotObj[i].Spot[j].SpotName + '</option>';
+        //    }
+
+        //    //lotDropdown.innerHTML = lotDropdown.innerHTML +
+        //    //    '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
+        //}
 
     }
 
