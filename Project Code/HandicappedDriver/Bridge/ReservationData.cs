@@ -36,12 +36,14 @@ namespace HandicappedDriver.Bridge
             if (Id != null)
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress FROM SpaceReservation WHERE ID=" + Id.ToString();
+                    "Navigation, EMailAddress FROM SpaceReservation WHERE StatusDesc = 'ACTIVE' AND " +
+                    "ID=" + Id.ToString();
             }
             else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress FROM SpaceReservation WHERE EMailAddress" + eMailAddress;
+                    "Navigation, EMailAddress FROM SpaceReservation WHERE  StatusDesc = 'ACTIVE' AND " + 
+                    "EMailAddress" + eMailAddress;
             }
 
             if (Connect())
