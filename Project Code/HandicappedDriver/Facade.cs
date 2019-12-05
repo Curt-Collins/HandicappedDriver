@@ -75,6 +75,8 @@ namespace HandicappedDriver
             driver.UpdateProfile(d);
         }
 
+
+        // GOOD
         [WebMethod]
         public string NavigateToSpace(string spaceID)
         {
@@ -83,14 +85,15 @@ namespace HandicappedDriver
             string s = "";
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
             p.LoadInfo();
-            if(!IsNullOrEmpty(p.NavInfo))
+            if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
             {
-                s = jSON.Serialize<string>(p.NavInfo);
+                s = jSON.Serialize<string>(p.GetNavInfo());
             }
             return s;
 
 			// p.getCoordinates();
         }
+
 
         [WebMethod]
         public void GetParkingLots()
