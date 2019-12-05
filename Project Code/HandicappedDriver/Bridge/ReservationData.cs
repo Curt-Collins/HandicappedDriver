@@ -6,16 +6,15 @@ using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
-    public class ReservationData
+    public class ReservationData : HandicappedDriverTableData
     {
         public int? Id;
-        public string EMailAddress;
-        //public string fullName { get; set; }
-        //public string password { get; set; }
-        //public string mobileNumber { get; set; }
-        //public string licensePlateNum { get; set; }
-        //public string eMailAddress { get; set; }
-        //public string licensePlateState { get; set; }
+        //public int? driver_ID;
+        public string eMailAddress;
+        public string locationDesc;
+        public string statusDesc;
+        public bool occupied;
+        public string navigation;
 
         public ReservationData() { }
 
@@ -37,11 +36,11 @@ namespace HandicappedDriver.Bridge
 
             if (Id != null)
             {
-                queryString = "SELECT * FROM SpaceReservation.ID=" + Id.ToString();
+                queryString = "SELECT ID, S FROM SpaceReservation WHERE ID=" + Id.ToString();
             }
-            else if (!(string.IsNullOrEmpty(EMailAddress)))
+            else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
-                    queryString = "SELECT * FROM SpaceReservation.EMailAddress" + EMailAddress;
+                    queryString = "SELECT * FROM SpaceReservation WHERE EMailAddress" + eMailAddress;
             }
             
             if (Connect())
