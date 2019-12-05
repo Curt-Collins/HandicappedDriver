@@ -4,7 +4,7 @@ namespace HandicappedDriver.CoreSystem
     public class ParkingLot
     {
         private string name;
-        private int id;
+        public int id;
 
         public ParkingLot(int id)
         {
