@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
@@ -15,6 +12,8 @@ namespace HandicappedDriver.Bridge
         public string statusDesc;
         public bool occupied;
         public string navigation;
+        public DateTime fromTime;
+        public DateTime untilTime;
 
         public ReservationData() { }
 
@@ -26,7 +25,7 @@ namespace HandicappedDriver.Bridge
 
         public ReservationData(string usr)
         {
-            EMailAddress = usr;
+            eMailAddress = usr;
             LoadReservation();
         }
 
@@ -36,98 +35,47 @@ namespace HandicappedDriver.Bridge
 
             if (Id != null)
             {
-                queryString = "SELECT ID, S FROM SpaceReservation WHERE ID=" + Id.ToString();
+                queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
+                    "Navigation, EMailAddress FROM SpaceReservation WHERE ID=" + Id.ToString();
             }
             else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
-                    queryString = "SELECT * FROM SpaceReservation WHERE EMailAddress" + eMailAddress;
+                queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
+                    "Navigation, EMailAddress FROM SpaceReservation WHERE EMailAddress" + eMailAddress;
             }
-            
+
             if (Connect())
+            {
+                SqlCommand cmd = Connection.CreateCommand();
+                cmd.CommandText = queryString;
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                if (rdr.Read())
                 {
-                    SqlCommand cmd = Connection.CreateCommand();
-                    cmd.CommandText = queryString;
-                    SqlDataReader rdr = cmd.ExecuteReader();
-
-                    if (rdr.Read())
-                    {
-                        this.Id = rdr.GetInt32(0);
-                        this.fullName = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
-                        this.licensePlateNum = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
-                        this.mobileNumber = rdr.IsDBNull(3) ? "" : rdr.GetString(3);
-                        this.eMailAddress = rdr.IsDBNull(4) ? "" : rdr.GetString(4);
-                        this.password = rdr.IsDBNull(5) ? "" : rdr.GetString(5);
-                        this.licensePlateState = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
-                    }
-
+                    this.Id = rdr.GetInt32(0);
+                    this.locationDesc = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
+                    this.statusDesc = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
+                    this.occupied = rdr.GetBoolean(3);
+                    this.fromTime = rdr.GetDateTime(4);
+                    this.untilTime = rdr.GetDateTime(5);
+                    this.navigation = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
+                    this.eMailAddress = rdr.IsDBNull(7) ? "" : rdr.GetString(7);
+                
                     rdr.Close();
                     this.Connection.Close();
                 }
+            }
         }
 
         public void Update()
         {
-            String queryString = "UPDATE [Driver] SET " +
-                "[FullName]=fullName, [LicensePlateNum]=@licensePlateNum, [MobileNumber]=@mobileNumber, " +
-                "[EMailAddress]=@eMailAddress, [Password]=@password, [LicensePlateState_ID]=" +
-                "(SELECT [ID] FROM LicensePlateState WHERE ([State]=@licensePlateState)) " +
-                "WHERE ([ID]=@Id)";
-
-            if (Connect())
-            {
-                SqlCommand cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@fullName", fullName);
-                cmd.Parameters.AddWithValue("@licensePlateNum", licensePlateNum);
-                cmd.Parameters.AddWithValue("@mobileNumber", mobileNumber);
-                cmd.Parameters.AddWithValue("@eMailAddress", eMailAddress);
-                cmd.Parameters.AddWithValue("@password", password);
-                cmd.Parameters.AddWithValue("@licensePlateState", licensePlateState);
-                cmd.Parameters.AddWithValue("@Id", Id);
-                cmd.CommandText = queryString;
-
-                cmd.ExecuteNonQuery();
-
-                this.Connection.Close();
-            }
         }
 
         public void CreateNew(string usr, string pwd)
         {
-            String queryString;
-            SqlCommand cmd;
+        }
 
-            if (Connect())
-            {
-                queryString =
-                    "SELECT COUNT(*) FROM Driver WHERE EMailAddress=@eMailAddress";
-                cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@eMailAddress", usr);
-                cmd.CommandText = queryString;
 
-                if ((int)cmd.ExecuteScalar() == 0)
-                {
-                    cmd.Dispose();
-
-                    queryString =
-                        "INSERT Driver (EMailAddress, Password, licensePlateState_ID) VALUES " +
-                        "(@eMailAddress, @password, -1)";
-
-                    cmd = this.Connection.CreateCommand();
-                    cmd.Parameters.AddWithValue("@eMailAddress", usr);
-                    cmd.Parameters.AddWithValue("@password", pwd);
-                    cmd.CommandText = queryString;
-
-                    cmd.ExecuteNonQuery();
-
-                    queryString =
-                        "SELECT Id FROM Driver WHERE EMailAddress=@eMailAddress";
-
-                    cmd.CommandText = queryString;
-                    this.Id = (int)cmd.ExecuteScalar();
-
-                    LoadDriver();
-                }
-            }
 
         private string resvID = "";
 
