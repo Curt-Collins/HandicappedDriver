@@ -1,4 +1,6 @@
 ﻿using System;
+using HandicappedDriver.Bridge;
+
 namespace HandicappedDriver.CoreSystem
 {
     public class Reservation
@@ -18,12 +20,11 @@ namespace HandicappedDriver.CoreSystem
 
         public string GetReservationInfo()
         {
-
+            return "";
         }
 
         public void OccupyParkingSpace(int id)
         {
-            
 			parkingSpace.SetOccupied(true);
 		}
 

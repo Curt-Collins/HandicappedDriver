@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HandicappedDriver.Bridge
+namespace HandicappedDriver.Adapters
 {
-    public class ParkingLotData
+    public class NavigationAdapter
     {
-        internal object parkingLot;
     }
 }

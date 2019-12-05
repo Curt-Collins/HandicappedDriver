@@ -14,22 +14,6 @@ namespace HandicappedDriver.Bridge
         public string eMailAddress { get; set; }
         public string licensePlateState { get; set; }
 
-
-	//protected void LoadDriver()
-	//{
-	//	String queryString = "SELECT d.ID, d.FullName, d.LicensePlateNum, " +
-	//		"d.MobileNumber, d.EMailAddress, d.Password p.State FROM " +
-	//		"Driver d LEFT OUTER JOIN LicensePlateState ON " +
-	//		"d.LicensePlateState_ID = p.ID";
-
-	//	this.Adapter = new OleDbDataAdapter(queryString, this.Connection);
-	//	DataTable driver = new DataTable();
-
-	//	if (Connect())
-	//	{
-	//		Adapter.Fill(driver, "Driver");
-	//	}
-	//}
         public DriverData() { }
 
         public DriverData(int driverID)
@@ -67,21 +51,6 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-  //      public void UpdateProfile()
-  //                  this.Id = (int)driver.Rows[0]["ID"];
-  //                  this.fullName = (string)driver.Rows[0]["FullName"];
-
-  //                  this.fullName = (string)driver.Rows[0]["LicensePlateNum"];
-  //                  this.fullName = (string)driver.Rows[0]["State"];
-  //                  this.fullName = (string)driver.Rows[0]["MobileNumber"];
-  //                  this.fullName = (string)driver.Rows[0]["EMailAddress"];
-  //                  this.fullName = (string)driver.Rows[0]["Password"];
-  //              }
-		//		this.Connection.Close();
-		//	}
-
-		//}
-   
         public void Update()
         {
             String queryString = "UPDATE [Driver] SET " +
@@ -146,5 +115,7 @@ namespace HandicappedDriver.Bridge
                 }
             }
         }
+
     }
+
 }
