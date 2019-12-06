@@ -9,9 +9,9 @@ namespace HandicappedDriver
 {
     public class Facade
     {
-        private string username;
-        JSONSerializer jSON = new JSONSerializer();
-        Driver driver = new Driver();
+        static private string username;
+        static JSONSerializer jSON = new JSONSerializer();
+        static Driver driver = new Driver();
 
         public Facade()
         {
@@ -19,7 +19,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public void ForgotPassword(string username)
+        public static void ForgotPassword(string username)
         {
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
@@ -32,7 +32,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public void CreateDriver(string username)
+        public static void CreateDriver(string username)
         {
             // accepts username to create new driver
             DriverData d = new DriverData();
@@ -47,7 +47,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public bool Login(string info)
+        public static bool Login(string info)
         {
             bool login = false;
             DriverData d;
@@ -66,7 +66,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public void Logout(string info)
+        public static void Logout(string info)
         {
             bool logout = false;
             DriverData d;
@@ -77,7 +77,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public void UpdateDriverProfile(string info)
+        public static void UpdateDriverProfile(string info)
         {
             // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
@@ -88,7 +88,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public string NavigateToSpace(string spaceID)
+        public static  string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
@@ -101,9 +101,10 @@ namespace HandicappedDriver
             return s;
         }
 
+
         // GOOD
         [WebMethod]
-        public string GetParkingLots()
+        public static  string GetParkingLots()
         {
             string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
@@ -114,7 +115,7 @@ namespace HandicappedDriver
 
         // TODO but unimportant at this point
         [WebMethod]
-        public void SendMessageToDriver(string info)
+        public static void SendMessageToDriver(string info)
         {
             // string fromUser, string toLicNum, string toLicState, string msg
             // this sends a message to a driver from a user to a certain user based on the license plate information
@@ -152,7 +153,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public string ViewAvailableSpaces(string lotID)
+        public static string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
 			string spaces = "";
@@ -166,7 +167,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public string ShowExistingReservation(string username)
+        public static  string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
             ReservationData r;
@@ -184,7 +185,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public void OccupySpace(string resvID)
+        public static void OccupySpace(string resvID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
@@ -195,7 +196,7 @@ namespace HandicappedDriver
         
         // TODO 
         [WebMethod]
-        public void LeaveSpace(string resvID)
+        public static void LeaveSpace(string resvID)
         {
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
@@ -206,7 +207,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public void CancelReservation(string resvID)
+        public static void CancelReservation(string resvID)
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
