@@ -70,24 +70,19 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public string UpdateDriverProfile(string info)
+        public void UpdateDriverProfile(string info)
         {
-            // string name, string email, string mobile, string plateNum, string plateState
-
-            // utilizes given information and pushes back into the database to update driver information
+            // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);
             driver = new Driver(d);
             driver.UpdateProfile(d);
-            string p = jSON.Serialize<DriverData>(d);
-
-            return p;
         }
 
 
         // TODO
         [WebMethod]
-        public string NavigateToSpace(string spaceID)
+        public string NavigateToSpace(int spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             //ParkingSpaceData p = new ParkingSpaceData(spaceID);
