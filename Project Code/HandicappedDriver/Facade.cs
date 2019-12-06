@@ -79,7 +79,6 @@ namespace HandicappedDriver
             driver.UpdateProfile(d);
         }
 
-
         // TODO
         [WebMethod]
         public string NavigateToSpace(string spaceID)
@@ -151,6 +150,7 @@ namespace HandicappedDriver
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
 			string spaces = "";
+
             ParkingSpaceData ps = new ParkingSpaceData();
             List<HandicappedDriver.Bridge.ParkingSpace> a =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
@@ -188,8 +188,8 @@ namespace HandicappedDriver
             r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
-
-        // TODO
+        
+        // TODO 
         [WebMethod]
         public void LeaveSpace(string resvID)
         {
@@ -206,7 +206,7 @@ namespace HandicappedDriver
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
+            r = jSON.DeSerialize<ReservationData>(resvID);
         }
     }
 }
