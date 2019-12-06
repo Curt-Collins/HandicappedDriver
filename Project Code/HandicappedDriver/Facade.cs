@@ -182,9 +182,8 @@ namespace HandicappedDriver
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.occupied = true;
+            r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
-            r.LoadReservation(); 
         }
 
         // TODO
@@ -194,9 +193,8 @@ namespace HandicappedDriver
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.occupied = false;
-            // r.occupied = false, meaning that the spot is now listed as 'available' in the database
-            r.LoadReservation();
+            r.LeaveSpace(resvID);
+            // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
 
         // TODO
