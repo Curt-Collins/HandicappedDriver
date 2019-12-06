@@ -22,9 +22,6 @@ namespace HandicappedDriver.Bridge
         public List<ResData> Avail;
     }
 
-
-
-
     public class ParkingSpaceData : HandicappedDriverTableData
     {
         public int Id;
@@ -83,12 +80,10 @@ namespace HandicappedDriver.Bridge
 
         private void InsertRes(ref ParkingSpace psp2, ref ResData r2)
         {
-
         }
 
         public void LoadInfo()
         {
-
         }
     }
 }

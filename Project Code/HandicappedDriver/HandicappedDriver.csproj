@@ -181,6 +181,7 @@
     <Content Include="GUI\createAccount.html" />
     <Content Include="GUI\homePage.html" />
     <Content Include="GUI\homeStyleSheet.css" />
+    <Content Include="GUI\login.js" />
     <Content Include="GUI\message_driver.js" />
     <Content Include="GUI\lot_details.js" />
     <Content Include="GUI\json_create_account_data.js" />
@@ -195,6 +196,7 @@
     <Content Include="GUI\uco campus building.png" />
     <Content Include="GUI\uco_logo.png" />
     <Content Include="GUI\useReservation.html" />
+    <Content Include="GUI\useReservation.js" />
     <Content Include="GUI\viewAvailable.css" />
     <Content Include="GUI\viewAvailable.html" />
     <Content Include="JSONEncoderSample.txt" />

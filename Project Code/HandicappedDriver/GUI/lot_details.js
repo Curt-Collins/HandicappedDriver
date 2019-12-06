@@ -1,200 +1,115 @@
 ﻿// https://www.encodedna.com/javascript/populate-select-dropdown-list-with-json-data-using-javascript.htm
 
+
+
 $(document).ready(function () {
+    var lotDropdown = document.getElementById('myLotDropdown');
+    var spotDropdown = document.getElementById('mySpotDropdown');
+    var lotContainer = document.getElementById("spot-info");
+    var htmlString;
 
+    var spaceObj;
+    var lotObj;
 
-    var lotObj = [{
-        "LotName": "Math & Computer Science Building",
-        "lot_ID": 1,
-        "Spot": [{
-            "SpotName": "Spot 1",
-            "spot_ID": 1
-        },
-        {
-            "SpotName": "Spot 2",
-            "spot_ID": 2
-        },
-        ]
-    },
-    {
-        "LotName": "Nigh University Center",
-        "lot_ID": 2,
-        "Spot": [{
-            "SpotName": "Spot 1",
-            "spot_ID": 1
-        },
-        {
-            "SpotName": "Spot 2",
-            "spot_ID": 2
-        },
-        ]
-    },
-    {
-        "LotName": "Chamber's library",
-        "lot_ID": 3,
-        "Spot": [{
-            "SpotName": "Spot 1",
-            "spot_ID": 1
-        },
-        {
-            "SpotName": "Spot 2",
-            "spot_ID": 2
-        },
-        ]
-    }];
+    //var lotObj = [{
+    //        "LotName": "Math & Computer Science Building",
+    //        "lot_ID": 1            
+    //    },
+
+    //    {
+    //        "LotName": "Nigh University Center",
+    //        "lot_ID": 2
+
+    //    },
+    //    {
+    //        "LotName": "Chamber's library",
+    //        "lot_ID": 3
+    //    }];
 
     // USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
 
 
-    var lotDropdown = document.getElementById('myLotDropdown');
-    var spotDropdown = document.getElementById('mySpotDropdown');
-    for (var i = 0; i < lotObj.length; i++) {
+    
 
-        lotDropdown.innerHTML = lotDropdown.innerHTML +
-            '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
-
-
-        for (var j = 0; j < lotObj[2].length; j++) {
-
-            spotDropdown.innerHTML = spotDropdown.innerHTML +
-                '<option value="' + lotObj[i].Spot[j].spot_ID + '">' + lotObj[i].Spot[j].SpotName + '</option>';
-        }
-
-        //lotDropdown.innerHTML = lotDropdown.innerHTML +
-        //    '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
-    }
-
+    // FOR 'LOT'
 
     PageMethods.GetParkingLots(onSucess, onError);
     function onSucess(result) {
-        //var lotObj = JSON.parde(result);
 
-        //var lotObj = [{
-        //    "LotName": "Math & Computer Science Building",
-        //    "lot_ID": 1,
-        //    "Spot":[{
-        //            "SpotName":"Spot 1",
-        //            "spot_ID": 1
-        //        },
-        //        {
-        //            "SpotName": "Spot 2",
-        //            "spot_ID": 2
-        //        },
-        //        ]
-        //},
-        //{
-        //    "LotName": "Nigh University Center",
-        //    "lot_ID": 2,
-        //    "Spot":[{
-        //            "SpotName":"Spot 1",
-        //            "spot_ID": 1
-        //        },
-        //        {
-        //            "SpotName": "Spot 2",
-        //            "spot_ID": 2
-        //        },
-        //        ]
-        //},
-        //{
-        //    "LotName": "Chamber's library",
-        //    "lot_ID": 3,
-        //    "Spot":[{
-        //            "SpotName":"Spot 1",
-        //            "spot_ID": 1
-        //        },
-        //        {
-        //            "SpotName": "Spot 2",
-        //            "spot_ID": 2
-        //        },
-        //        ]
-        //}];
+        lotObj = JSON.parse(result);        
+        
+        for (var i = 0; i < lotObj.length; i++) {
+            // check on the variable ( ParkingLot_ID, LotName ) name with Leif
+            lotDropdown.innerHTML = lotDropdown.innerHTML +
+                '<option value="' + lotObj[i]['ParkingLot_ID'] + '">' + lotObj[i]['LotName'] + '</option>';
 
-        //// USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
+        }
+
+        //var lotLength = lotDropdown.length;
 
 
-        //var lotDropdown = document.getElementById('myLotDropdown');
-        //var spotDropdown = document.getElementById('mySpotDropdown');
-        //for (var i = 0; i < lotObj.length; i++) {
+        // listens to check if the lot dropdown's value has been changed.
+        $(lotDropdown).change(function () {
+            var value = $(lotDropdown).val(); // get the value of currently selected option
+            $(spotDropdown).empty();    // empty the spot dropdown.
+            var lotID = parseInt(value);
 
-        //    lotDropdown.innerHTML = lotDropdown.innerHTML +
-        //        '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
+            update_spot(lotID);  // call the C# method to get the spot with the given lot ID.
+            reset_soptInfo_htmlString();
 
-
-        //    for (var j = 0; j < lotObj[2].length; j++) {
-
-        //        spotDropdown.innerHTML = spotDropdown.innerHTML +
-        //            '<option value="' + lotObj[i].Spot[j].spot_ID + '">' + lotObj[i].Spot[j].SpotName + '</option>';
-        //    }
-
-        //    //lotDropdown.innerHTML = lotDropdown.innerHTML +
-        //    //    '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
-        //}
+        });
 
     }
+
+    
 
     function onError(result) {
         alert("Error: dropdown cannot be populated");
     }
 
 
-    //var lotObj = [{
-    //    "LotName": "Math & Computer Science Building",
-    //    "lot_ID": 1
-    //},
-    //{
-    //    "LotName": "Nigh University Center",
-    //    "lot_ID": 2
-    //},
-    //{
-    //    "LotName": "Chamber's library",
-    //    "lot_ID": 3
-    //}];
-
-    //// USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
-
-
-    //var dropdownList = document.getElementById('myLotDropdown');
-    //for (var i = 0; i < lotObj.length; i++) {
-
-    //    dropdownList.innerHTML = dropdownList.innerHTML +
-    //        '<option value="' + lotObj[i].lot_ID + '">' + lotObj[i].LotName + '</option>';
-    //}
-
-
 });
+
+function update_spot(lotID) {
+
+    // FOR 'SPOT'
+
+    PageMethods.ViewAvailableSpaces(lotID, onSucess, onError);
+    function onSucess(result) {
+        spaceObj = JSON.parse(result);
+        for (var i = 0; i < spaceObj.length; i++) {
+            // check on the variable ( ParkingLot_ID, LotName ) name with Leif
+            spotDropdown.innerHTML = spotDropdown.innerHTML +
+                '<option value="' + spaceObj[i]['ParkingSpace_ID'] + '">' + "Space " +
+                spaceObj[i]['ParkingSpace_ID'] + '</option>';
+
+        }
+        generate_lot_details(spaceObj);
+    }
+
+    function onError(result) {
+        alert("Error: Couldn't fetch spot informations")
+    }
+
+
+}
 
 
 
 
 
 // function that gets user's selections
-function generate_lot_details() {
-    //alert("function called");
-    var lotContainer = document.getElementById("spot-info");
-    var htmlString = "<p>";
-    //var result = "revbjh"
-
-    // get the spot info from c# method
-    PageMethod.ViewAvailableSpaces(lot_id, onSucess, onError);
-
-
-    function onSucess(result) {
-        htmlString += result;
-        htmlString += "</p>";
-
-    }
-    function onError(result) {
-        alert("Something went wrong. Please try again");
+function generate_lot_details(spaceObj) {
+    htmlString = "<p>";
+    
+    for (var i = 0; i < spaceObj.length; i++) {
+        htmlString += spaceObj[i]['ParkingLot_ID'] + " is unavailable from " + spaceObj[i]['FromTime'] + " to " + spaceObj[i]['UntilTime'] + "</p>"
     }
     lotContainer.insertAdjacentHTML('beforeend', htmlString);
-
 }
 
-function create_lot_data() {
-    var space_ID = document.getElementById('myLotDropdown').value;
-    var start_time = document.getElementById('startTime').value;
-    var end_time = document.getElementById('endTime').value;
+function reset_soptInfo_htmlString() {
+    htmlString = "<p></p>"
+    lotContainer.insertAdjacentHTML('beforeend', htmlString);
 
-    var lot_data_object = "{" + "\"space_ID\"" + space_ID + "," + "\"FromTime\"" + start_time + "," + "\"UntilTime\"" + end_time + "}";
-    return lot_data_object;
 }
