@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="loginStyleSheet.css">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
     <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
     <title>UCO Handicapped Parking Systemm</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <script src="login.js"></script>
 </head>
 <body>
 
@@ -54,8 +57,8 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
             </div>
-            <button type="submit" class="btn">LOGIN</button>
-
+            <button type="submit" onclick="store_username_on_localStorage()" class="btn">LOGIN</button>
+            
         </div>
 
     </form>
