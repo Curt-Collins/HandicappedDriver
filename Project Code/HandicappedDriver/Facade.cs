@@ -37,7 +37,9 @@ namespace HandicappedDriver
             driver = new Driver(d);
             string pass = driver.ResetPassword(d);
             d.CreateNew(username, pass);
-            
+            string message = "Welcome to the Handicapped Parking System at UCO!  Your username is " + username + " and your password is " + pass + ".  " +
+                "You can change this password at any time on the Update Profile page.  Thank you for choosing the Handicapped Parking System!";
+            d.SendMessage(message);
         }
 
         // GOOD
@@ -167,12 +169,12 @@ namespace HandicappedDriver
             ReservationData r;
             string s = "";
             r = jSON.DeSerialize<ReservationData>(username);
-            r.PullRes();
-            r.resvID = "stuff";
-            if (r.resvID != "")
-            {
-                s = jSON.Serialize<ReservationData>(r);
-            }
+            //r.PullRes();
+            //r.resvID = "stuff";
+            //if (r.resvID != "")
+            //{
+            //    s = jSON.Serialize<ReservationData>(r);
+            //}
             
             return s;
         }
