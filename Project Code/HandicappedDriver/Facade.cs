@@ -85,7 +85,6 @@ namespace HandicappedDriver
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
-            p.Id = Int32.Parse(spaceID);
             string s = "";
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
             p.LoadInfo();
@@ -106,7 +105,7 @@ namespace HandicappedDriver
             return s;
         }
 
-        // TODO
+        // TODO but unimportant at this point
         [WebMethod]
         public void SendMessageToDriver(string info)
         {
@@ -150,12 +149,10 @@ namespace HandicappedDriver
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
 			string spaces = "";
-
             ParkingSpaceData ps = new ParkingSpaceData();
             List<HandicappedDriver.Bridge.ParkingSpace> a =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
-            spaces = 
-                jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
+            spaces = jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
 
             return spaces;
         }

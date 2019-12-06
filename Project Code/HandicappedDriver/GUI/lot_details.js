@@ -30,32 +30,6 @@ $(document).ready(function () {
 
 
     
-    
-
-    function update_spot(lotID) {
-
-        // FOR 'SPOT'
-
-        PageMethods.ViewAvailableSpaces(lotID, onSucess, onError);
-        function onSucess(result) {
-            spaceObj = JSON.parse(result);
-            for (var i = 0; i < spaceObj.length; i++) {
-                // check on the variable ( ParkingLot_ID, LotName ) name with Leif
-                spotDropdown.innerHTML = spotDropdown.innerHTML +
-                    '<option value="' + spaceObj[i]['ParkingSpace_ID'] + '">' + "Space " +
-                    spaceObj[i]['ParkingSpace_ID'] + '</option>';
-
-            }
-            generate_lot_details(spaceObj);
-        }
-
-        function onError(result) {
-            alert("Error: Couldn't fetch spot informations")
-        }
-
-
-    }
-
 
     // FOR 'LOT'
 
@@ -95,6 +69,30 @@ $(document).ready(function () {
 
 
 });
+
+function update_spot(lotID) {
+
+    // FOR 'SPOT'
+
+    PageMethods.ViewAvailableSpaces(lotID, onSucess, onError);
+    function onSucess(result) {
+        spaceObj = JSON.parse(result);
+        for (var i = 0; i < spaceObj.length; i++) {
+            // check on the variable ( ParkingLot_ID, LotName ) name with Leif
+            spotDropdown.innerHTML = spotDropdown.innerHTML +
+                '<option value="' + spaceObj[i]['ParkingSpace_ID'] + '">' + "Space " +
+                spaceObj[i]['ParkingSpace_ID'] + '</option>';
+
+        }
+        generate_lot_details(spaceObj);
+    }
+
+    function onError(result) {
+        alert("Error: Couldn't fetch spot informations")
+    }
+
+
+}
 
 
 
