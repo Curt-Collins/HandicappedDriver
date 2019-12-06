@@ -21,6 +21,9 @@ namespace HandicappedDriver
             s = js.Serialize<List<LotInfo>>(p.Lots);
 
             s = "";
+
+
+
         }
     }
 }

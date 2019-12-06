@@ -39,6 +39,13 @@ namespace HandicappedDriver.Bridge
             // need to figure out how to change the reservation status to available at this juncture
         }
 
+        public void CancelRes(string spaceID)
+        {
+            this.Id = Int32.Parse(spaceID);
+            Cancel();
+            // need to figure out how to change the reservation status to available at this juncture
+        }
+
         public ReservationData(string usr)
         {
             eMailAddress = usr;
