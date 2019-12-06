@@ -191,6 +191,7 @@
     <Content Include="GUI\uco campus building.png" />
     <Content Include="GUI\uco_logo.png" />
     <Content Include="GUI\useReservation.html" />
+    <Content Include="GUI\useReservation.js" />
     <Content Include="GUI\viewAvailable.css" />
     <Content Include="GUI\viewAvailable.html" />
     <Content Include="JSONEncoderSample.txt" />
