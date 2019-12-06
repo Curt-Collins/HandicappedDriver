@@ -15,14 +15,6 @@ namespace HandicappedDriver.Bridge
     {
         public int Id;
         
-        public ParkingSpaceData(string ps_id)
-        {
-        }
-
-        public void LoadInfo()
-        {
-        }
-
         public AvailableSpaces LoadAvailableSpaces(int lotID)
         {
             string queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +

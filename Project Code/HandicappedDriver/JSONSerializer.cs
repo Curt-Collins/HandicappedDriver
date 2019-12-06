@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace HandicappedDriver
 {
     public class JSONSerializer
     {
-    
         public string Serialize<T>(T obj)
         {
-            return JsonSerializer.Serialize<T>(obj);
+            return JsonConvert.SerializeObject(obj);
         }
 
         public T DeSerialize<T>(String s)
         {
-            return JsonSerializer.Deserialize<T>(s);
+            return JsonConvert.DeserializeObject<T>(s);
         }
 
     }
