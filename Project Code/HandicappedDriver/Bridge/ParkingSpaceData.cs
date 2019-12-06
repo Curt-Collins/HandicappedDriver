@@ -1,11 +1,25 @@
 ﻿using System.Data.SqlClient;
 using System.Collections.Generic;
+using System;
 
 namespace HandicappedDriver.Bridge
 {
-    public class AvailableSpaces
+    public class ResData
     {
-        public List<ReservationData> Avail;
+        public int Res_Id;
+        public string StatusDesc;
+        public DateTime FromTime;
+        public DateTime UntilTime;
+        public string EMailAddr;
+    }
+
+    public class ParkingSpace
+    {
+        public int Space_Id;
+        public string LocationDesc;
+        public string NavigationString;
+        public Boolean Occupied;
+        public List<ResData> Avail;
     }
 
 
@@ -14,23 +28,14 @@ namespace HandicappedDriver.Bridge
     public class ParkingSpaceData : HandicappedDriverTableData
     {
         public int Id;
-        
-        public ParkingSpaceData(string ps_id)
-        {
-        }
 
-        public void LoadInfo()
+        public List<ParkingSpace> LoadAvailableSpaces(int lotID)
         {
-        }
+            string queryString = "SELECT Res_ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
+                "Navigation, EMailAddress, Space_ID FROM SpaceReservations " +
+                "WHERE ParkingLot_Id=" + lotID.ToString() + " ORDER BY Space_ID, FromTime";
 
-        public AvailableSpaces LoadAvailableSpaces(string lotID)
-        {
-            string queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                "Navigation, EMailAddress, Space_ID FROM SpaceReservation " +
-                "WHERE Space_Id=" + lotID.ToString(); 
-            
-            AvailableSpaces a = new AvailableSpaces();
-            a.Avail = new List<ReservationData>();
+            List<ParkingSpace> listSpaces = new List<ParkingSpace>();
 
             if (Connect())
             {
@@ -38,29 +43,47 @@ namespace HandicappedDriver.Bridge
                 cmd.CommandText = queryString;
                 SqlDataReader rdr = cmd.ExecuteReader();
 
+                ParkingSpace psp = new ParkingSpace();
+                ResData r;
+                int curSpaceID = -1;
+                int prevSpaceID = -1;
+
                 while (rdr.Read())
                 {
-                    ReservationData r = new ReservationData();
+                    if (prevSpaceID != rdr.GetInt32(8))
+                    {
+                        curSpaceID = rdr.GetInt32(8);
+                        psp = new ParkingSpace();
+                        psp.Space_Id = curSpaceID;
+                        psp.LocationDesc = rdr.GetString(1);
+                        psp.NavigationString = rdr.GetString(6);
+                        psp.Occupied = rdr.GetBoolean(3);
+                        psp.Avail = new List<ResData>();
+                        listSpaces.Add(psp);
+                    }
 
-                    r.Id = rdr.GetInt32(0);
-                    r.locationDesc = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
-                    r.statusDesc = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
-                    r.occupied = rdr.GetBoolean(3);
-                    r.fromTime = rdr.GetDateTime(4);
-                    r.untilTime = rdr.GetDateTime(5);
-                    r.navigation = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
-                    r.eMailAddress = rdr.IsDBNull(7) ? "" : rdr.GetString(7);
-                    r.space_Id = rdr.GetInt32(8);
-
-                    a.Avail.Add(r);
+                    if (!(rdr.IsDBNull(0)))
+                    {
+                        r = new ResData();
+                        r.Res_Id = rdr.GetInt32(0);
+                        r.StatusDesc = rdr.GetString(2);
+                        r.FromTime = rdr.GetDateTime(4);
+                        r.UntilTime = rdr.GetDateTime(5);
+                        r.EMailAddr = rdr.GetString(7);
+                        listSpaces[listSpaces.IndexOf(psp)].Avail.Add(r);
+                    }
                 }
 
                 rdr.Close();
                 this.Connection.Close();
             }
 
-            return a;
+            return listSpaces;
         }
 
+        private void InsertRes(ref ParkingSpace psp2, ref ResData r2)
+        {
+
+        }
     }
 }
