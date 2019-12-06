@@ -139,6 +139,30 @@ namespace HandicappedDriver.Bridge
             }
         }
 
+        public void SendMessage(string msg)
+        {
+            String queryString;
+            SqlCommand cmd;
+
+            if (Connect())
+            {
+                queryString =
+                    "INSERT EMail_Message (Receiver_ID, Status_ID, SentTime, MessageText, Msg_Type) " +
+                    "VALUES (@id, 1, @senttime, @msg, 'NEWPASSWORD')";
+
+                cmd = this.Connection.CreateCommand();
+                cmd.Parameters.AddWithValue("@id", Id);
+                cmd.Parameters.AddWithValue("@senttime", DateTime.Now);
+                cmd.Parameters.AddWithValue("@msg", msg);
+                cmd.CommandText = queryString;
+
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                this.Connection.Close();
+
+            }
+        }
+
     }
 
 }
