@@ -17,6 +17,7 @@ namespace HandicappedDriver
         {
         }
 
+        // GOOD
         [WebMethod]
         public void ForgotPassword(string username)
         {
@@ -26,6 +27,7 @@ namespace HandicappedDriver
             driver.ResetPassword(d);
         }
 
+        // GOOD
         [WebMethod]
         public void CreateDriver(string username)
         {
@@ -34,7 +36,6 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
             driver.ResetPassword(d);
-            // d.create();
         }
 
         // GOOD
@@ -56,6 +57,7 @@ namespace HandicappedDriver
             return login;
         }
 
+        // TODO
         [WebMethod]
         public void Logout(string info)
         {
@@ -66,8 +68,9 @@ namespace HandicappedDriver
             // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
+        // TODO
         [WebMethod]
-        public void UpdateDriverProfile(string info)
+        public string UpdateDriverProfile(string info)
         {
             // string name, string email, string mobile, string plateNum, string plateState
 
@@ -81,26 +84,29 @@ namespace HandicappedDriver
             
             driver = new Driver(d);
             driver.UpdateProfile(d);
-            //string p = jSON.Serialize<string>(d); need to send something back to the GUI so that the user profile is updated
+            string p = jSON.Serialize<DriverData>(d);
+
+            return p;
         }
 
 
-        // GOOD
+        // TODO
         [WebMethod]
         public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            ParkingSpaceData p = new ParkingSpaceData(spaceID);
+            //ParkingSpaceData p = new ParkingSpaceData(spaceID);
             string s = "";
-            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
-            p.LoadInfo();
-            if (String.IsNullOrEmpty(p.GetNavInfo()) == false)
-            {
-                s = jSON.Serialize<string>(p.GetNavInfo());
-            }
+            //p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
+            //p.LoadInfo();
+            //if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
+            //{
+            //    s = jSON.Serialize<string>(p.GetNavInfo());
+            //}
             return s;
         }
-        
+
+        // GOOD
         [WebMethod]
         public string GetParkingLots()
         {
@@ -111,6 +117,7 @@ namespace HandicappedDriver
             return s;
         }
 
+        // TODO
         [WebMethod]
         public void SendMessageToDriver(string info)
         {
@@ -148,6 +155,7 @@ namespace HandicappedDriver
             driver.SendMessage(sendingDriver, receivingDriver, message);
         }
 
+        // GOOD
         [WebMethod]
         public string ViewAvailableSpaces(int lotID)
         {
@@ -158,7 +166,6 @@ namespace HandicappedDriver
             spaces = jSON.Serialize<List<ReservationData>>(a.Avail);
 
             return spaces;
-            //return "";
         }
 
         // GOOD
@@ -179,6 +186,7 @@ namespace HandicappedDriver
             return s;
         }
 
+        // TODO
         [WebMethod]
         public void OccupySpace(int resvID)
         {
@@ -189,6 +197,7 @@ namespace HandicappedDriver
             // r.occupy(); need this to be implemented
         }
 
+        // TODO
         [WebMethod]
         public void LeaveSpace(int resvID)
         {
@@ -199,6 +208,7 @@ namespace HandicappedDriver
             // r.leave(); need this to be implemented
         }
 
+        // TODO
         [WebMethod]
         public void CancelReservation(int resvID)
         {
