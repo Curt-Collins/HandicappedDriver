@@ -67,20 +67,23 @@
                 <br />
 
                 <div class="card" style="width: 18rem; background-color: #E55934">
-                    <img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">
+                    <!--<img src="parking-lot.png" class="card-img-top" alt="Image not found" height="270" width="70">-->
                     <div class="card-body">
                         <form action="useReservation.html" method="get">
 
                             <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
 
-                            <select name="lot" id="myLotDropdown" class="btn-success" required>
+                            <select name="lot" id="myLotDropdown" required>
                                 <!--<option value="-1" selected>..Select Lot..</option>-->
                             </select>
 
-                            <select name="spot" id="mySpotDropdown" class="btn-success" required>
+                            <p></p>
+
+                            <select name="spot" id="mySpotDropdown" required>
                                 <!--<option value="-1" selected>..Select Spot..</option>-->
 
                             </select>
+                            <p></p>
 
                             <input type="datetime" id="startTime" placeholder="Start time" required>
 
