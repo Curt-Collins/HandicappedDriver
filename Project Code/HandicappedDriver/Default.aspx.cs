@@ -14,7 +14,7 @@ namespace HandicappedDriver
             JSONSerializer js = new JSONSerializer();
             string s;
             Facade f = new Facade();
-            f.ViewAvailableSpaces("1");
+            f.ViewAvailableSpaces(1);
             ParkingLotData p = new ParkingLotData();
             s = js.Serialize<List<LotInfo>>(p.Lots);
             s = "";
