@@ -4,8 +4,6 @@ using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
-
-    // Richu. This is a test. I have the overloaded functions
     public class DriverData : HandicappedDriverTableData
     {
         public int? Id { get; set; }
@@ -79,7 +77,7 @@ namespace HandicappedDriver.Bridge
         public void Update()
         {
             String queryString = "UPDATE [Driver] SET " +
-                "[FullName]=fullName, [LicensePlateNum]=@licensePlateNum, [MobileNumber]=@mobileNumber, " +
+                "[FullName]=@fullName, [LicensePlateNum]=@licensePlateNum, [MobileNumber]=@mobileNumber, " +
                 "[EMailAddress]=@eMailAddress, [Password]=@password, [LicensePlateState_ID]=" +
                 "(SELECT [ID] FROM LicensePlateState WHERE ([State]=@licensePlateState)) " +
                 "WHERE ([ID]=@Id)";

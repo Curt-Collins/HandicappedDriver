@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web;
+using System.Collections.Generic;
 using System.Web.Services;
 using HandicappedDriver.Bridge;
 using HandicappedDriver.CoreSystem;
@@ -16,6 +17,7 @@ namespace HandicappedDriver
         {
         }
 
+        // GOOD
         [WebMethod]
         public void ForgotPassword(string username)
         {
@@ -25,6 +27,7 @@ namespace HandicappedDriver
             driver.ResetPassword(d);
         }
 
+        // GOOD
         [WebMethod]
         public void CreateDriver(string username)
         {
@@ -33,7 +36,6 @@ namespace HandicappedDriver
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
             driver.ResetPassword(d);
-            // d.create();
         }
 
         // GOOD
@@ -55,6 +57,7 @@ namespace HandicappedDriver
             return login;
         }
 
+        // TODO
         [WebMethod]
         public void Logout(string info)
         {
@@ -65,52 +68,45 @@ namespace HandicappedDriver
             // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
+        // TODO
         [WebMethod]
         public void UpdateDriverProfile(string info)
         {
-            // string name, string email, string mobile, string plateNum, string plateState
-
-            // utilizes given information and pushes back into the database to update driver information
+            // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);
-            if(d.eMailAddress == "")
-            {
-                // tell them that they need to input something other than an empty string
-            }
-            
             driver = new Driver(d);
             driver.UpdateProfile(d);
-            //string p = jSON.Serialize<string>(d); need to send something back to the GUI so that the user profile is updated
         }
 
-
-        // GOOD
+        // TODO
         [WebMethod]
         public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            ParkingSpaceData p;
+            ParkingSpaceData p = new ParkingSpaceData();
+            p.Id = Int32.Parse(spaceID);
             string s = "";
             p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
             p.LoadInfo();
-            if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
-            {
-                s = jSON.Serialize<string>(p.GetNavInfo());
-            }
+
+            //s = jSON.Serialize<ParkingSpaceData>(p.NavString);
+
             return s;
         }
 
-        
+        // GOOD
         [WebMethod]
         public string GetParkingLots()
         {
             string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
             ParkingLotData p = new ParkingLotData();
-            s = jSON.Serialize<string>(p.Lots); 
+            s = jSON.Serialize<List<LotInfo>>(p.Lots);
             return s;
         }
 
+        // TODO
         [WebMethod]
         public void SendMessageToDriver(string info)
         {
@@ -148,75 +144,72 @@ namespace HandicappedDriver
             driver.SendMessage(sendingDriver, receivingDriver, message);
         }
 
+        // GOOD
         [WebMethod]
         public string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
-            ParkingLotData pl = new ParkingLotData();
-            pl = jSON.DeSerialize<ParkingLotData>(lotID);
 			string spaces = "";
-            // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
 
-            ParkingSpace ps = new ParkingSpace(lotID);
-            ReservationData reservation = new ReservationData();
-
-            if (ps.GetOccupied() == true)
-            {
-                spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
-            }
-            //string spaces = p.view();
+            ParkingSpaceData ps = new ParkingSpaceData();
+            List<HandicappedDriver.Bridge.ParkingSpace> a =
+                ps.LoadAvailableSpaces(Int32.Parse(lotID));
+            spaces = 
+                jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
 
             return spaces;
-            //return "";
         }
-
 
         // GOOD
         [WebMethod]
         public string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
-            ReservationData r;
             string s = "";
+            ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(username);
-            r.PullRes();
-            r.resvID = "stuff";
-            if (r.resvID != "")
+            r.LoadReservation();
+
+            if (r.Id.HasValue)
             {
                 s = jSON.Serialize<ReservationData>(r);
-            }
-            
+            }      
             return s;
         }
 
+        // TODO
         [WebMethod]
-        public void OccupySpace(int resvID)
+        public void OccupySpace(string resvID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.occupy(); need this to be implemented
+            r.LoadReservation();
+            r.ParkInSpace(resvID);
+            // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
-
+        
+        // TODO 
         [WebMethod]
-        public void LeaveSpace(int resvID)
+        public void LeaveSpace(string resvID)
         {
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.leave(); need this to be implemented
+            r.LoadReservation();
+            r.LeaveSpace(resvID);
+            // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
 
+        // TODO
         [WebMethod]
-        public void CancelReservation(int resvID)
+        public void CancelReservation(string resvID)
         {
-            // this removes a reservation in the database from a certain spot and user
+            // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.cancel(); need this to be implemented
+            r.LoadReservation();
+            r.CancelRes(resvID);
         }
     }
 }

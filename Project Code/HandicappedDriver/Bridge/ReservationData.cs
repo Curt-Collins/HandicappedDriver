@@ -6,7 +6,7 @@ namespace HandicappedDriver.Bridge
     public class ReservationData : HandicappedDriverTableData
     {
         public int? Id;
-        //public int? driver_ID;
+        public int? driver_ID;
         public string eMailAddress;
         public string locationDesc;
         public string statusDesc;
@@ -15,6 +15,7 @@ namespace HandicappedDriver.Bridge
         public DateTime fromTime;
         public DateTime untilTime;
         public int space_Id;
+        //public string resvID;
 
         public ReservationData() { }
 
@@ -24,17 +25,34 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
+        public void ParkInSpace(string spaceID)
+        {
+            this.Id = Int32.Parse(spaceID);
+            Park();
+            // need to figure out how to change the reservation status to unavailable at this juncture
+        }
+
+        public void LeaveSpace(string spaceID)
+        {
+            this.Id = Int32.Parse(spaceID);
+            Leave();
+            // need to figure out how to change the reservation status to available at this juncture
+        }
+
+        public void CancelRes(string spaceID)
+        {
+            this.Id = Int32.Parse(spaceID);
+            Cancel();
+            // need to figure out how to change the reservation status to available at this juncture
+        }
+
         public ReservationData(string usr)
         {
             eMailAddress = usr;
             LoadReservation();
         }
 
-        //
-        // TODO: Change SQL view to OUTER JOIN to show all spaces regardless of the existence of a RESERVATION
-        // TODO: Change SQL view to replace NULL StatusDesc with 'AVAILABLE'
-        //
-        public void LoadReservation()
+       public void LoadReservation()
         {
             String queryString = "";
 
@@ -42,13 +60,13 @@ namespace HandicappedDriver.Bridge
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
                     "Navigation, EMailAddress, Space_ID FROM SpaceReservation " + "" +
-                    "WHERE StatusDesc = 'ACTIVE' AND ID=" + Id.ToString();
+                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND ID=" + Id.ToString();
             }
             else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
                 queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress, Space_ID FROM SpaceReservation " +
-                    "WHERE StatusDesc = 'ACTIVE' AND ID=" + eMailAddress;
+                    "Navigation, EMailAddress, Space_ID, Driver_ID FROM SpaceReservation " +
+                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND EMailAddress" + eMailAddress;
             }
 
             if (Connect())
@@ -68,6 +86,7 @@ namespace HandicappedDriver.Bridge
                     this.navigation = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
                     this.eMailAddress = rdr.IsDBNull(7) ? "" : rdr.GetString(7);
                     this.space_Id = rdr.GetInt32(8);
+                    this.driver_ID = rdr.GetInt32(9);
 
                     rdr.Close();
                     this.Connection.Close();
@@ -77,15 +96,76 @@ namespace HandicappedDriver.Bridge
 
         public void Update()
         {
+            String queryString1 = "UPDATE [Reservation] SET " +
+                "[Status_ID]=" +
+                    "(SELECT ID FROM [ReservationStatus] WHERE [StatusDesc]=@statusDesc), " +
+                "WHERE ([ID]=@Id)";
+
+            if (Connect())
+            {
+                SqlCommand cmd = this.Connection.CreateCommand();
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.Parameters.AddWithValue("@statusDesc", statusDesc);
+                cmd.CommandText = queryString1;
+
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                this.Connection.Close();
+            }
         }
 
         public void CreateNew(string usr, string pwd)
         {
+            string queryString1 = "INSERT INTO [Reservation] " +
+                "(driver_id, parkingspace_id, fromtime, untiltime, status_id) VALUES " +
+                "(@driver_id, @parkingspace_id, @fromtime, @untiltime, 4)";
+
+            string queryString2 = "SELECT res_id FROM [Reservation] WHERE " +
+                "driver_id=@driver_id AND parkingspace_id=@parkingspace_id AND status_id=4";
+
+            SqlCommand cmd;
+
+            if (Connect())
+            {
+                cmd = this.Connection.CreateCommand();
+                cmd.Parameters.AddWithValue("@driver_id", driver_ID);
+                cmd.Parameters.AddWithValue("@parkingspace_id", space_Id);
+                cmd.Parameters.AddWithValue("@fromTime", fromTime);
+                cmd.Parameters.AddWithValue("@untilTime", untilTime);
+                cmd.CommandText = queryString1;
+
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+
+                cmd = this.Connection.CreateCommand();
+                cmd.Parameters.AddWithValue("@driver_id", driver_ID);
+                cmd.Parameters.AddWithValue("@parkingspace_id", space_Id);
+                cmd.Parameters.AddWithValue("@fromTime", fromTime);
+                cmd.CommandText = queryString2;
+
+                Id = Int32.Parse(cmd.ExecuteScalar().ToString());
+                cmd.Dispose();
+
+                this.Connection.Close();
+            }
         }
 
-        public void PullRes()
+        public void Park()
         {
+            statusDesc = "ACTIVE";
+            Update();
+        }
 
+        public void Leave()
+        {
+            statusDesc = "COMPLETED";
+            Update();
+        }
+
+        public void Cancel()
+        {
+            statusDesc = "CANCELLED";
+            Update();
         }
 
     }
