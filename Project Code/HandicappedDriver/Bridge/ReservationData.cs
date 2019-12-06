@@ -25,6 +25,22 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
+        public void ParkInSpace(string spaceID)
+        {
+            int spID = Int32.Parse(spaceID);
+            ReservationData r = new ReservationData(spID);
+            r.occupied = true;
+            // need to figure out how to change the reservation status to unavailable at this juncture
+        }
+
+        public void LeaveSpace(string spaceID)
+        {
+            int spID = Int32.Parse(spaceID);
+            ReservationData r = new ReservationData(spID);
+            r.occupied = false;
+            // need to figure out how to change the reservation status to available at this juncture
+        }
+
         public ReservationData(string usr)
         {
             eMailAddress = usr;
