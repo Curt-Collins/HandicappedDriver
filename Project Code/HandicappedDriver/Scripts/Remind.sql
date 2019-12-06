@@ -1,3 +1,7 @@
+/*
+RESERVATIONTYPES : ACTIVE(1), CANCELLED(2), COMPLETED(3), PENDING(4)
+*/
+
 USE [HandicappedDriver]
 GO
 
@@ -22,7 +26,7 @@ BEGIN
 	select Driver_id AS reciever_id, 1 AS status_id, GETDATE() AS senttime, 
 		  Fullname + @txt + CAST(FromTime AS VARCHAR(20)) as MessageText, Reservation.id, 'REMINDAPPT' from reservation
 				INNER JOIN reservationstatus ON reservation.Status_ID = ReservationStatus.id 
-				INNER JOIN driver ON reservation.Driver_ID = driver_id
+				INNER JOIN driver ON reservation.Driver_ID = driver.ID
 		  where statusdesc = 'PENDING' AND DATEDIFF(MINUTE, GETDATE(), FromTime) < 15 AND 
 				Reservation.id NOT IN 
 				  (SELECT em2.Res_ID FROM EMail_Message em2 WHERE NOT 
@@ -36,7 +40,7 @@ BEGIN
 	select Driver_id AS reciever_id, 1 AS status_id, GETDATE() AS senttime, 
 	  Fullname + @txt + CAST(FromTime AS VARCHAR(20)) as MessageText, Reservation.id, 'REMINDPARK'  from reservation
 			INNER JOIN reservationstatus ON reservation.Status_ID = ReservationStatus.id 
-			INNER JOIN driver ON reservation.Driver_ID = driver_id
+			INNER JOIN driver ON reservation.Driver_ID = driver.ID
 	  where statusdesc = 'PENDING' AND DATEDIFF(MINUTE, GETDATE(), FromTime) > 15 AND 
 				Reservation.id NOT IN 
 				  (SELECT em2.Res_ID FROM EMail_Message em2 WHERE NOT 
@@ -48,7 +52,7 @@ BEGIN
 	select Driver_id AS reciever_id, 1 AS status_id, GETDATE() AS senttime, 
 	  Fullname + @txt + CAST(FromTime AS VARCHAR(20)) as MessageText, Reservation.id, 'CANCELLED' from reservation
 			INNER JOIN reservationstatus ON reservation.Status_ID = ReservationStatus.id 
-			INNER JOIN driver ON reservation.Driver_ID = driver_id
+			INNER JOIN driver ON reservation.Driver_ID = driver.ID
 	  where statusdesc = 'PENDING' AND DATEDIFF(MINUTE, GETDATE(), FromTime) > 30 AND 
 				Reservation.id NOT IN 
 				  (SELECT em2.Res_ID FROM EMail_Message em2 WHERE NOT 
@@ -65,7 +69,7 @@ BEGIN
 	select Driver_id AS reciever_id, 1 AS status_id, GETDATE() AS senttime, 
 	  Fullname + @txt + CAST(FromTime AS VARCHAR(20)) as MessageText, Reservation.id, 'REMINDVACATE' from reservation
 			INNER JOIN reservationstatus ON reservation.Status_ID = ReservationStatus.id 
-			INNER JOIN driver ON reservation.Driver_ID = driver_id
+			INNER JOIN driver ON reservation.Driver_ID = driver.ID
 	  where statusdesc = 'ACTIVE' AND DATEDIFF(MINUTE, GETDATE(), UntilTime) > 15 AND 
 				Reservation.id NOT IN 
 				  (SELECT em2.Res_ID FROM EMail_Message em2 WHERE NOT 
@@ -77,7 +81,7 @@ SET @txt = 'Your parking reservation at UCO was flagged as overextended.  You we
 	select Driver_id AS reciever_id, 1 AS status_id, GETDATE() AS senttime, 
 	  Fullname + @txt + CAST(FromTime AS VARCHAR(20)) as MessageText, Reservation.id, 'OVEREXTENDED' from reservation
 			INNER JOIN reservationstatus ON reservation.Status_ID = ReservationStatus.id 
-			INNER JOIN driver ON reservation.Driver_ID = driver_id
+			INNER JOIN driver ON reservation.Driver_ID = driver.ID
 	  where statusdesc = 'ACTIVE' AND DATEDIFF(MINUTE, GETDATE(), UntilTime) > 30 AND 
 				Reservation.id NOT IN 
 				  (SELECT em2.Res_ID FROM EMail_Message em2 WHERE NOT 
