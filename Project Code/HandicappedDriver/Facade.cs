@@ -149,22 +149,13 @@ namespace HandicappedDriver
         }
 
         [WebMethod]
-        public string ViewAvailableSpaces(string lotID)
+        public string ViewAvailableSpaces(int lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
-            ParkingLotData pl = new ParkingLotData();
-            pl = jSON.DeSerialize<ParkingLotData>(lotID);
 			string spaces = "";
-            // 'spaceID' and 'lotID' is unavailable from "startTime" to "endTime".  Append this info to spaces.
-
-            //ParkingSpace ps = new ParkingSpace(lotID);
-            ReservationData reservation = new ReservationData();
-
-            //if (ps.GetOccupied() == true)
-            //{
-            //    spaces = "Space " + ps.id + " in parking lot " + ps.parkingLot.id + " is unavailable from " + reservation.startTime + " to " + reservation.endTime;
-            //}
-            //string spaces = p.view();
+            ParkingSpaceData ps = new ParkingSpaceData("");
+            AvailableSpaces a = ps.LoadAvailableSpaces(lotID);
+            spaces = jSON.Serialize<List<ReservationData>>(a.Avail);
 
             return spaces;
             //return "";
