@@ -29,43 +29,60 @@ $(document).ready(function () {
     // USE JSON.parse() TO CONVERT JSON string to JSON OBJECT
 
 
-    
+
 
     // FOR 'LOT'
 
-    PageMethods.GetParkingLots(onSucess, onError);
-    function onSucess(result) {
+    //PageMethods.GetParkingLots(onSucess, onError);
+    //function onSucess(result) {
+    //    alert("function called");
+    //    lotObj = JSON.parse(result);        
 
-        lotObj = JSON.parse(result);        
-        
-        for (var i = 0; i < lotObj.length; i++) {
-            // check on the variable ( ParkingLot_ID, LotName ) name with Leif
-            lotDropdown.innerHTML = lotDropdown.innerHTML +
-                '<option value="' + lotObj[i]['ParkingLot_ID'] + '">' + lotObj[i]['LotName'] + '</option>';
+    //    for (var i = 0; i < lotObj.length; i++) {
+    //        // check on the variable ( ParkingLot_ID, LotName ) name with Leif
+    //        lotDropdown.innerHTML = lotDropdown.innerHTML +
+    //            '<option value="' + lotObj[i]['ParkingLot_ID'] + '">' + lotObj[i]['LotName'] + '</option>';
 
-        }
+    //    }
 
-        //var lotLength = lotDropdown.length;
+    //    //var lotLength = lotDropdown.length;
 
 
-        // listens to check if the lot dropdown's value has been changed.
-        $(lotDropdown).change(function () {
-            var value = $(lotDropdown).val(); // get the value of currently selected option
-            $(spotDropdown).empty();    // empty the spot dropdown.
-            var lotID = parseInt(value);
+    //    // listens to check if the lot dropdown's value has been changed.
+    //    $(lotdropdown).change(function () {
+    //        var value = $(lotdropdown).val(); // get the value of currently selected option
+    //        $(spotdropdown).empty();    // empty the spot dropdown.
+    //        var lotid = parseint(value);
 
-            update_spot(lotID);  // call the C# method to get the spot with the given lot ID.
-            reset_soptInfo_htmlString();
+    //        update_spot(lotid);  // call the c# method to get the spot with the given lot id.
+    //        reset_soptinfo_htmlstring();
 
-        });
+    //    });
 
-    }
+    //}
 
     
 
-    function onError(result) {
-        alert("Error: dropdown cannot be populated");
-    }
+
+
+    $.ajax({
+        type: "POST",
+        URL: 'Facade.cs/GetParkingLots',
+        data: "",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        sucess: alert("sucess"),
+        
+        error: alert("failed"),
+        
+    });
+
+
+    
+
+    //function onError(result) {
+    //    alert("Error: dropdown cannot be populated");
+    //}
 
 
 });
