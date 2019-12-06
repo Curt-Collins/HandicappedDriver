@@ -100,7 +100,6 @@ namespace HandicappedDriver
             //}
             return s;
         }
-
         
         [WebMethod]
         public string GetParkingLots()
