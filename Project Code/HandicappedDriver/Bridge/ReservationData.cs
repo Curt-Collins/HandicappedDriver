@@ -15,6 +15,7 @@ namespace HandicappedDriver.Bridge
         public DateTime fromTime;
         public DateTime untilTime;
         public int space_Id;
+        public string resvID;
 
         public ReservationData() { }
 
@@ -30,11 +31,7 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
-        //
-        // TODO: Change SQL view to OUTER JOIN to show all spaces regardless of the existence of a RESERVATION
-        // TODO: Change SQL view to replace NULL StatusDesc with 'AVAILABLE'
-        //
-        public void LoadReservation()
+       public void LoadReservation()
         {
             String queryString = "";
 

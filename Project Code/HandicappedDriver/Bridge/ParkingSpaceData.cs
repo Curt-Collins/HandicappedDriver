@@ -8,25 +8,13 @@ namespace HandicappedDriver.Bridge
         public List<ReservationData> Avail;
     }
 
+
+
+
     public class ParkingSpaceData : HandicappedDriverTableData
     {
-        private string NavInfo = "";
-
-        public void SetNavInfo(string n)
-        {
-            NavInfo = n;
-        }
-
-        public string GetNavInfo()
-        {
-            return NavInfo;
-        }
-
-        public void LoadInfo()
-        {
-
-        }
-
+        public int Id;
+        
         public AvailableSpaces LoadAvailableSpaces(int lotID)
         {
             string queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +

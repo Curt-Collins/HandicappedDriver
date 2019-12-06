@@ -1,29 +1,21 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Web.UI;
 using HandicappedDriver.Bridge;
 
 
 namespace HandicappedDriver
 {
-
-
     public partial class _Default : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DriverData dd = new DriverData(1);
-
-            dd.mobileNumber = "(888) 974-8201";
-
-            dd.Update();
-
-            dd = new DriverData();
-
-            dd.CreateNew("beevis@uco.edu", "passwird");
-
-            dd.Update();
-
+            JSONSerializer js = new JSONSerializer();
+            string s;
+            ParkingLotData p = new ParkingLotData();
+            s = js.Serialize<List<LotInfo>>(p.Lots);
+            s = "";
         }
     }
 }
