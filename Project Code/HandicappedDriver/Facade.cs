@@ -24,7 +24,10 @@ namespace HandicappedDriver
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
-            driver.ResetPassword(d);
+            string pass = driver.ResetPassword(d);
+            string message = "Hello " + d.fullName + "!  Your password has been changed to " + pass + ".  You can change this password at any time on the " +
+                "Update Profile page.  Thank you for choosing the Handicapped Parking System at UCO!";
+            d.SendMessage(message);
         }
 
         // GOOD
