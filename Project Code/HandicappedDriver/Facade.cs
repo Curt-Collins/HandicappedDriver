@@ -77,11 +77,6 @@ namespace HandicappedDriver
             // utilizes given information and pushes back into the database to update driver information
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);
-            if(d.eMailAddress == "")
-            {
-                // tell them that they need to input something other than an empty string
-            }
-            
             driver = new Driver(d);
             driver.UpdateProfile(d);
             string p = jSON.Serialize<DriverData>(d);
@@ -193,8 +188,8 @@ namespace HandicappedDriver
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.occupy(); need this to be implemented
+            r.occupied = true;
+            // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
 
         // TODO
@@ -204,8 +199,10 @@ namespace HandicappedDriver
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.leave(); need this to be implemented
+            r.occupied = false;
+            // r.occupied = false, meaning that the spot is now listed as 'available' in the database
+            // if the button is clicked in the GUI to leave the space, does this mean that the space is automatically updated online?
+            r.LoadReservation();
         }
 
         // TODO
@@ -215,8 +212,6 @@ namespace HandicappedDriver
             // this removes a reservation in the database from a certain spot and user
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.cancel(); need this to be implemented
         }
     }
 }
