@@ -9,7 +9,7 @@
     <link rel="icon" type="image/gif" href="http://accesssymbol.com/images/img_home.gif" />
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="lot_details.js"></script>
+    <!--<script src="lot_details.js"></script>-->
 
 </head>
 
@@ -71,7 +71,8 @@
                     <div class="card-body">
                         <form action="useReservation.html" method="get">
 
-                            <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot" onclick="create_lot_data()">
+                            
+                             <input type="submit" class="btn-dark" id="reserveSopt" value="Reserve spot">
 
                             <select name="lot" id="myLotDropdown" required>
                                 <!--<option value="-1" selected>..Select Lot..</option>-->
@@ -95,7 +96,7 @@
             </div>
 
 
-            <button type="submit" id="generateSpotBtn" onclick="generate_lot_details()">Generate Spot</button>
+            <button type="submit" id="generateSpotBtn" >Generate Spot</button>
 
             <div id="spot-info"></div>
 
