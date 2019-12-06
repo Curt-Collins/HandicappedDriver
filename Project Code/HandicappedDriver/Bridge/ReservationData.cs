@@ -85,5 +85,20 @@ namespace HandicappedDriver.Bridge
 
         }
 
+        public void Park()
+        {
+
+        }
+
+        public void Leave()
+        {
+
+        }
+
+        public void Cancel()
+        {
+
+        }
+
     }
 }
