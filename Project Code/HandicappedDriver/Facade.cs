@@ -24,7 +24,10 @@ namespace HandicappedDriver
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
-            driver.ResetPassword(d);
+            string pass = driver.ResetPassword(d);
+            string message = "Hello " + d.fullName + "!  Your password has been changed to " + pass + ".  You can change this password at any time on the " +
+                "Update Profile page.  Thank you for choosing the Handicapped Parking System at UCO!";
+            d.SendMessage(message);
         }
 
         // GOOD
@@ -35,7 +38,11 @@ namespace HandicappedDriver
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(username);
             driver = new Driver(d);
-            driver.ResetPassword(d);
+            string pass = driver.ResetPassword(d);
+            d.CreateNew(username, pass);
+            string message = "Welcome to the Handicapped Parking System at UCO!  Your username is " + username + " and your password is " + pass + ".  " +
+                "You can change this password at any time on the Update Profile page.  Thank you for choosing the Handicapped Parking System!";
+            d.SendMessage(message);
         }
 
         // GOOD
@@ -162,15 +169,16 @@ namespace HandicappedDriver
         public string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
+            ReservationData r;
             string s = "";
-            ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(username);
-            r.LoadReservation();
-
-            if (r.Id.HasValue)
-            {
-                s = jSON.Serialize<ReservationData>(r);
-            }      
+            //r.PullRes();
+            //r.resvID = "stuff";
+            //if (r.resvID != "")
+            //{
+            //    s = jSON.Serialize<ReservationData>(r);
+            //}
+            
             return s;
         }
 
@@ -181,7 +189,6 @@ namespace HandicappedDriver
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.LoadReservation();
             r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
@@ -193,7 +200,6 @@ namespace HandicappedDriver
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.LoadReservation();
             r.LeaveSpace(resvID);
             // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
@@ -204,9 +210,7 @@ namespace HandicappedDriver
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.LoadReservation();
-            r.CancelRes(resvID);
+            r = jSON.DeSerialize<ReservationData>(resvID);
         }
     }
 }
