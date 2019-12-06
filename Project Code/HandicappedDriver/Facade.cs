@@ -149,9 +149,6 @@ namespace HandicappedDriver
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
 			string spaces = "";
-            ParkingSpaceData ps = new ParkingSpaceData("");
-            AvailableSpaces a = ps.LoadAvailableSpaces(lotID);
-            spaces = jSON.Serialize<List<ReservationData>>(a.Avail);
 
             return spaces;
         }
