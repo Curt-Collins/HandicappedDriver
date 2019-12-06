@@ -90,14 +90,14 @@ namespace HandicappedDriver
         public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            //ParkingSpaceData p = new ParkingSpaceData(spaceID);
+            ParkingSpaceData p = new ParkingSpaceData(spaceID);
             string s = "";
-            //p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
-            //p.LoadInfo();
-            //if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
-            //{
-            //    s = jSON.Serialize<string>(p.GetNavInfo());
-            //}
+            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
+            p.LoadInfo();
+            if (String.IsNullOrEmpty(p.GetNavInfo()) == false)
+            {
+                s = jSON.Serialize<string>(p.GetNavInfo());
+            }
             return s;
         }
         
