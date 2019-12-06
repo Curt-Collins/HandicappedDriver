@@ -80,10 +80,12 @@ namespace HandicappedDriver.Bridge
 
         private void InsertRes(ref ParkingSpace psp2, ref ResData r2)
         {
+
         }
 
         public void LoadInfo()
         {
+
         }
     }
 }

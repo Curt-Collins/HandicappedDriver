@@ -41,7 +41,7 @@ namespace HandicappedDriver.CoreSystem
 
         }
 
-        public void ResetPassword(DriverData driver)
+        public string ResetPassword(DriverData driver)
         {
             string[] p = {"a", "b", "c", "d", "e", "f", "g", "!", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
             string password = "";
@@ -49,12 +49,14 @@ namespace HandicappedDriver.CoreSystem
             {
                 password = password + p[rand.Next(17)];
             }
-            driver.password = password;
+
+            return password;
             // driver.UpdateProfile();  this will be implemented by Curt in the DriverData class
-            string message = "Thanks for choosing Handicapped Driver! Your password is " + password + ".  Please like us on Facebook!";
+            //string message = "Thanks for choosing Handicapped Driver! Your password is " + password + ".  Please like us on Facebook!";
             // the two following lines of code will work once the MailAdapter class and send() method in that class are 
-            // MailAdapter m = new MailAdapter();
-            // m.send(driver, message);
+
+            //MailAdapter m = new MailAdapter();
+            //m.send(driver, message);
         }
 
         public void ValidatePassword(string p)
