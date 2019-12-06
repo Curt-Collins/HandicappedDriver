@@ -85,5 +85,10 @@ namespace HandicappedDriver.Bridge
         {
 
         }
+
+        public void LoadInfo()
+        {
+
+        }
     }
 }

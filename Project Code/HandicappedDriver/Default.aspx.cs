@@ -14,7 +14,7 @@ namespace HandicappedDriver
             JSONSerializer js = new JSONSerializer();
             string s;
             Facade f = new Facade();
-            s = f.ViewAvailableSpaces(1);
+            s = f.ViewAvailableSpaces("1");
             s = "";
         }
     }
