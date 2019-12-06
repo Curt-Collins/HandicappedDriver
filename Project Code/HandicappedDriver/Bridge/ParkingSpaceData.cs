@@ -22,9 +22,13 @@ namespace HandicappedDriver.Bridge
         public List<ResData> Avail;
     }
 
+
+
+
     public class ParkingSpaceData : HandicappedDriverTableData
     {
         public int Id;
+
         public List<ParkingSpace> LoadAvailableSpaces(int lotID)
         {
             string queryString = "SELECT Res_ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +

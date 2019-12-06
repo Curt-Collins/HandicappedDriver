@@ -70,23 +70,13 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public string UpdateDriverProfile(string info)
+        public void UpdateDriverProfile(string info)
         {
-            // string name, string email, string mobile, string plateNum, string plateState
-
-            // utilizes given information and pushes back into the database to update driver information
+            // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);
-            if(d.eMailAddress == "")
-            {
-                // tell them that they need to input something other than an empty string
-            }
-            
             driver = new Driver(d);
             driver.UpdateProfile(d);
-            string p = jSON.Serialize<DriverData>(d);
-
-            return p;
         }
 
 
@@ -95,14 +85,13 @@ namespace HandicappedDriver
         public string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
-            //ParkingSpaceData p = new ParkingSpaceData(spaceID);
+            ParkingSpaceData p = new ParkingSpaceData(spaceID);
             string s = "";
-            //p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
-            //p.LoadInfo();
-            //if(String.IsNullOrEmpty(p.GetNavInfo()) == false) 
-            //{
-            //    s = jSON.Serialize<string>(p.GetNavInfo());
-            //}
+            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
+            p.LoadInfo();
+
+            //s = jSON.Serialize<ParkingSpaceData>(p.NavString);
+
             return s;
         }
 
@@ -157,7 +146,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public string ViewAvailableSpaces(int lotID)
+        public string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
 			string spaces = "";
@@ -188,35 +177,33 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public void OccupySpace(int resvID)
+        public void OccupySpace(string resvID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.occupy(); need this to be implemented
+            r.ParkInSpace(resvID);
+            // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
 
         // TODO
         [WebMethod]
-        public void LeaveSpace(int resvID)
+        public void LeaveSpace(string resvID)
         {
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.leave(); need this to be implemented
+            r.LeaveSpace(resvID);
+            // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
 
         // TODO
         [WebMethod]
-        public void CancelReservation(int resvID)
+        public void CancelReservation(string resvID)
         {
-            // this removes a reservation in the database from a certain spot and user
+            // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-
-            // r.cancel(); need this to be implemented
         }
     }
 }
