@@ -22,9 +22,6 @@ namespace HandicappedDriver.Bridge
         public List<ResData> Avail;
     }
 
-
-
-
     public class ParkingSpaceData : HandicappedDriverTableData
     {
         public int Id;

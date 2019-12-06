@@ -42,12 +42,12 @@
             // resource(s) for map direction
             // https://jsfiddle.net/vgrem/51nkmncd/
 
-            function showMap(latitude, longitude) {
-                //var lat = "35.654066";
-                //var lng = "-97.473176";
-                var lat = "" + latitude;
-                var lng = "" + longitude;
-                var url = "https://maps.google.com/?q=" + lat + "," + lng;
+            function showMap() {
+                var lat = "35.654066";
+                var lng = "-97.473176";
+                //var lat = "" + latitude;
+                //var lng = "" + longitude;
+                var url = "https://www.google.com/maps/" + "@35.657325,-97.4740617,3a,75y,198.1h,90t/data=!3m8!1e1!3m6!1sAF1QipOuEN8ZwORzAxskE85CyNgOzeMsZU88ST842Ml8!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOuEN8ZwORzAxskE85CyNgOzeMsZU88ST842Ml8%3Dw203-h100-k-no-pi-1.8420564-ya127.39394-ro2.036682-fo100!7i5376!8i2688";
                 window.open(url);
             }
 
