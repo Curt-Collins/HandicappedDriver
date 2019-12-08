@@ -9,21 +9,19 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript">
         function search() {
-            //alert("something");
             $.ajax({
                 type: 'POST',
                 url: 'Facade.asmx/HelloWorld',
-//                data: '',
-                contentType: 'application/text; charset=utf-8',
-//                dataType: 'json',
-                success: function () {
-                    alert(request.statusText);
+                data: '',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (msg) {
+                    alert(JSON.stringify(msg));
                 },
                     error: function (xhr, status, error) {
-                        alert(xhr.responseText);
+                        alert("Error");
                 }
             });
-            alert("after");
         }
     </script>
 </body>
