@@ -68,3 +68,6 @@ C:\Users\richu\source\repos\HandicappedParking\HandicappedParking\obj\Debug\Hand
 C:\Users\richu\source\repos\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.csproj.CopyComplete
 C:\Users\richu\source\repos\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.dll
 C:\Users\richu\source\repos\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.pdb
+C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.dll
+C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.pdb
