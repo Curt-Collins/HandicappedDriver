@@ -7,6 +7,7 @@ using HandicappedDriver.CoreSystem;
 
 namespace HandicappedDriver
 {
+    [WebService]
     public class Facade
     {
         static private string username;
@@ -52,7 +53,7 @@ namespace HandicappedDriver
             bool login = false;
             DriverData d;
             d = jSON.DeSerialize<DriverData>(info);
-            if(!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
+            if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
             {
                 d.LoadDriver(d.eMailAddress, d.password);
                 if (!(d.Id is null))
@@ -88,7 +89,7 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod]
-        public static  string NavigateToSpace(string spaceID)
+        public static string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
@@ -104,7 +105,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public static  string GetParkingLots()
+        public static string GetParkingLots()
         {
             string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
@@ -127,19 +128,19 @@ namespace HandicappedDriver
             DriverData sendingDriver = new DriverData();
             DriverData receivingDriver = new DriverData();
 
-            for(int i = 0; i < info.Length; i++)
+            for (int i = 0; i < info.Length; i++)
             {
-                if(info[i] == '}' && j == 0)
+                if (info[i] == '}' && j == 0)
                 {
                     s1 = info.Substring(0, i);
                     k = i;
                     j++;
-                } else if(info[i] == '}' && j == 1)
+                } else if (info[i] == '}' && j == 1)
                 {
                     s2 = info.Substring(k, i);
                     k = i + 1;
                     j++;
-                } else if(info[i] == '}' && j == 2)
+                } else if (info[i] == '}' && j == 2)
                 {
                     message = info.Substring(k, i);
                 }
@@ -156,7 +157,7 @@ namespace HandicappedDriver
         public static string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
-			string spaces = "";
+            string spaces = "";
             ParkingSpaceData ps = new ParkingSpaceData();
             List<HandicappedDriver.Bridge.ParkingSpace> a =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
@@ -167,7 +168,7 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod]
-        public static  string ShowExistingReservation(string username)
+        public static string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
             ReservationData r;
@@ -179,7 +180,7 @@ namespace HandicappedDriver
             //{
             //    s = jSON.Serialize<ReservationData>(r);
             //}
-            
+
             return s;
         }
 
@@ -193,7 +194,7 @@ namespace HandicappedDriver
             r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
-        
+
         // TODO 
         [WebMethod]
         public static void LeaveSpace(string resvID)
@@ -212,6 +213,17 @@ namespace HandicappedDriver
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID);
+        }
+
+        [WebMethod]
+        public static string StatesTest()
+        {
+            return
+                "[" + "" +
+                "{" + "name:" + "Alberta," + "abbreviation: AB" + "}," +
+                "{" + "name:" + "British Columbia," + "abbreviation: BC" + "}," +
+                "{" + "name:" + "Alberta," + "abbreviation: MN" + "}," +
+                "]";
         }
     }
 }
