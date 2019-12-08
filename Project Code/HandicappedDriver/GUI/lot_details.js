@@ -4,18 +4,6 @@ var lotObj = [
     {
         "lotName": "math & computer science building",
         "lot_ID": 1,
-        "Spot": [{
-                "spotName": "Spot 1",
-                "spotID": 1
-            },
-            {
-                "spotName": "Spot 2",
-                "spotID": 2
-            },
-            {
-                "spotName": "Spot 3",
-                "spotID": 3
-            }]
     },
 
     {
@@ -57,35 +45,10 @@ var lotObj = [
         
     }];
 
-var spotObj = [{
-    "lot_ID": 1,
-    "Spot": [{
-        "spotName": "Spot 1",
-        "spotID": 1
-    },
+var spotObj = [
     {
-        "spotName": "Spot 2",
-        "spotID": 2
-    },
-    {
-        "spotName": "Spot 3",
-        "spotID": 3
-    }]
-},
-    {
-        "lot_ID": 2,
-        "Spot": [{
-            "spotName": "Spot 1",
-            "spotID": 1
-        },
-        {
-            "spotName": "Spot 2",
-            "spotID": 2
-        }]
-    },
-    {
-        "lot_ID": 3,
-        "Spot": [{
+        "lot_ID": 1,
+        "spot":[{
             "spotName": "Spot 1",
             "spotID": 1
         },
@@ -98,8 +61,36 @@ var spotObj = [{
             "spotID": 3
         }]
     },
-    
-    ];
+    {
+        "lot_ID": 2,
+        "spot": [{
+            "spotName": "Spot 1",
+            "spotID": 1
+        },
+        {
+            "spotName": "Spot 2",
+            "spotID": 2
+        }]
+        
+    },
+    {
+        "lot_ID": 3,
+        "spot": [{
+            "spotName": "Spot 1",
+            "spotID": 1
+        },
+        {
+            "spotName": "Spot 2",
+            "spotID": 2
+        },
+        {
+            "spotName": "Spot 3",
+            "spotID": 3
+        }]
+    }
+
+]
+
 
 
 $(document).ready(function () {
@@ -120,24 +111,24 @@ $(document).ready(function () {
 
     
 
-    $(lotDropdown).change(function () {
+    $('#myLotDropdown').change(function () {
         var selectedLot = $(lotDropdown).val();
         selectedLot = parseInt(selectedLot);
         spotDropdown.clear();
 
-
-        for (var j = 0; j < spotObj[selectedLot].Spot.length; j++) {
-            //                 '<option value="' + spotObj[selectedLot].Spot.spotID + '">' + spotObj[selectedLot]['Spot']['spotName'] + '</option>';
-
-            spotDropdown.innerHTML = spotDropdown.innerHTML +
-                '<option value="' + spotObj[selectedLot].Spot.spotID + '">' + spotObj[selectedLot]['Spot']['spotName'] + '</option>';
-        
-
+        if (selectedLot == 1) {
+            for (var k = 0; k < spotObj[1].spot.length; k++) {
+                spotDropdown.innerHTML += '<option value="' +
+                    spotObj[1].spot[k].spotID + '">' + spotObj[1].spot[k].spotName + '</option>';
+            }
         }
 
-
-
+        
     });
+
+
+
+
 
 
 });
