@@ -22,8 +22,7 @@ namespace HandicappedParking
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public string HelloWorld()
         {
-            return "[{\"msg\" : \"Hello World\"}]";
-
+            return "Hello World";
         }
 
         // FROM THE ORIGINAL FACADE
