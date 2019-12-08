@@ -1,9 +1,8 @@
-﻿using System;
-using System.Web;
+﻿using HandicappedDriver.Bridge;
+using HandicappedDriver.CoreSystem;
+using System;
 using System.Collections.Generic;
 using System.Web.Services;
-using HandicappedDriver.Bridge;
-using HandicappedDriver.CoreSystem;
 
 namespace HandicappedDriver
 {
@@ -135,12 +134,14 @@ namespace HandicappedDriver
                     s1 = info.Substring(0, i);
                     k = i;
                     j++;
-                } else if (info[i] == '}' && j == 1)
+                }
+                else if (info[i] == '}' && j == 1)
                 {
                     s2 = info.Substring(k, i);
                     k = i + 1;
                     j++;
-                } else if (info[i] == '}' && j == 2)
+                }
+                else if (info[i] == '}' && j == 2)
                 {
                     message = info.Substring(k, i);
                 }
