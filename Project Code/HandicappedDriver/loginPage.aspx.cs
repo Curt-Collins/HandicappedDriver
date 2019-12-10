@@ -23,13 +23,13 @@ namespace HandicappedDriver
 
             user += "@uco.edu";
 
-            string info = "[{" +
-                "\"EMailAddress\":" + user + "," +
-                "\"Password\":" + pass +
-            "}]";
+            //string info = "[{" +
+            //    "\"EMailAddress\":" + user + "," +
+            //    "\"Password\":" + pass +
+            //"}]";
 
 
-            bool result = Facade.Login(info);
+            bool result = Facade.Login(user, pass);
             Response.Write(result);
             
         }
