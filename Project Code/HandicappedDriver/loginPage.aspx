@@ -10,7 +10,11 @@
     <form id="form1" runat="server">
         <div>
             <h1>Under Construction</h1>
-
+            <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+            <br />
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:Button ID="btnLogin" runat="server" Text="LOGIN" OnClick="btnLogin_Click" />
         </div>
     </form>
 </body>
