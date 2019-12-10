@@ -22,21 +22,20 @@ namespace HandicappedDriver.Bridge
             {
                 States = new List<State>();
 
-                SqlCommand cmd = Connection.CreateCommand();
-                cmd.CommandText = queryString;
-                SqlDataReader rdr = cmd.ExecuteReader();
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
 
-
-                while (rdr.Read())
+                while (reader.Read())
                 {
                     st = new State();
-                    st.id = rdr.GetInt32(0);
-                    st.name = rdr.GetString(1);
+                    st.id = reader.GetInt32(0);
+                    st.name = reader.GetString(1);
                     States.Add(st);
                 }
-
-                rdr.Close();
-                this.Connection.Close();
+                command.Dispose();
+                reader.Close();
+                this.connection.Close();
             }
         }
     }

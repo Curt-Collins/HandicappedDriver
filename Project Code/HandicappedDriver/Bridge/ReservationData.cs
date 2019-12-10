@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
@@ -71,25 +70,26 @@ namespace HandicappedDriver.Bridge
 
             if (Connect())
             {
-                SqlCommand cmd = Connection.CreateCommand();
-                cmd.CommandText = queryString;
-                SqlDataReader rdr = cmd.ExecuteReader();
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
 
-                if (rdr.Read())
+                if (reader.Read())
                 {
-                    this.Id = rdr.GetInt32(0);
-                    this.locationDesc = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
-                    this.statusDesc = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
-                    this.occupied = rdr.GetBoolean(3);
-                    this.fromTime = rdr.GetDateTime(4);
-                    this.untilTime = rdr.GetDateTime(5);
-                    this.navigation = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
-                    this.eMailAddress = rdr.IsDBNull(7) ? "" : rdr.GetString(7);
-                    this.space_Id = rdr.GetInt32(8);
-                    this.driver_ID = rdr.GetInt32(9);
+                    this.Id = reader.GetInt32(0);
+                    this.locationDesc = reader.IsDBNull(1) ? "" : reader.GetString(1);
+                    this.statusDesc = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                    this.occupied = reader.GetBoolean(3);
+                    this.fromTime = reader.GetDateTime(4);
+                    this.untilTime = reader.GetDateTime(5);
+                    this.navigation = reader.IsDBNull(6) ? "" : reader.GetString(6);
+                    this.eMailAddress = reader.IsDBNull(7) ? "" : reader.GetString(7);
+                    this.space_Id = reader.GetInt32(8);
+                    this.driver_ID = reader.GetInt32(9);
 
-                    rdr.Close();
-                    this.Connection.Close();
+                    reader.Close();
+                    command.Dispose();
+                    this.connection.Close();
                 }
             }
         }
@@ -103,14 +103,14 @@ namespace HandicappedDriver.Bridge
 
             if (Connect())
             {
-                SqlCommand cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@Id", Id);
-                cmd.Parameters.AddWithValue("@statusDesc", statusDesc);
-                cmd.CommandText = queryString1;
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@Id", Id);
+                command.Parameters.AddWithValue("@statusDesc", statusDesc);
+                command.CommandText = queryString1;
 
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-                this.Connection.Close();
+                command.ExecuteNonQuery();
+                command.Dispose();
+                this.connection.Close();
             }
         }
 
@@ -123,30 +123,28 @@ namespace HandicappedDriver.Bridge
             string queryString2 = "SELECT res_id FROM [Reservation] WHERE " +
                 "driver_id=@driver_id AND parkingspace_id=@parkingspace_id AND status_id=4";
 
-            SqlCommand cmd;
-
             if (Connect())
             {
-                cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@driver_id", driver_ID);
-                cmd.Parameters.AddWithValue("@parkingspace_id", space_Id);
-                cmd.Parameters.AddWithValue("@fromTime", fromTime);
-                cmd.Parameters.AddWithValue("@untilTime", untilTime);
-                cmd.CommandText = queryString1;
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@driver_id", driver_ID);
+                command.Parameters.AddWithValue("@parkingspace_id", space_Id);
+                command.Parameters.AddWithValue("@fromTime", fromTime);
+                command.Parameters.AddWithValue("@untilTime", untilTime);
+                command.CommandText = queryString1;
 
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
+                command.ExecuteNonQuery();
+                command.Dispose();
 
-                cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@driver_id", driver_ID);
-                cmd.Parameters.AddWithValue("@parkingspace_id", space_Id);
-                cmd.Parameters.AddWithValue("@fromTime", fromTime);
-                cmd.CommandText = queryString2;
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@driver_id", driver_ID);
+                command.Parameters.AddWithValue("@parkingspace_id", space_Id);
+                command.Parameters.AddWithValue("@fromTime", fromTime);
+                command.CommandText = queryString2;
 
-                Id = Int32.Parse(cmd.ExecuteScalar().ToString());
-                cmd.Dispose();
+                Id = Int32.Parse(command.ExecuteScalar().ToString());
+                command.Dispose();
 
-                this.Connection.Close();
+                this.connection.Close();
             }
         }
 

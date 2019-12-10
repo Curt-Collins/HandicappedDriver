@@ -3,36 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 
 namespace HandicappedDriver.Bridge
 {
     public abstract class HandicappedDriverTableData
     {
-
-        SqlConnection conn = new SqlConnection(
-            new SqlConnectionStringBuilder()
+        protected OleDbConnection connection = new OleDbConnection(
+            new OleDbConnectionStringBuilder()
             {
-                DataSource = "192.168.1.123",
-                InitialCatalog = "HandicappedDriver",
-                UserID = "Group1",
-                Password = "Grp1Pass!"
+                DataSource = "..\\App_Data\\HandicappedDriver.accdb",
+                Provider = "Microsoft.ACE.OLEDB.12.0",
+                PersistSecurityInfo = false
             }.ConnectionString
         );
+    
+        protected OleDbDataAdapter adapter { get; set; }
+        protected OleDbDataReader reader { get; set; }
+        protected OleDbCommand command { get; set; }
 
-        protected SqlConnection Connection = new SqlConnection();
-        protected SqlDataAdapter Adapter { get; set; }
-        protected SqlDataReader Reader { get; set; }
+        //protected SqlConnection connection = new SqlConnection(
+        //    new SqlConnectionStringBuilder()
+        //    {
+        //        DataSource = "192.168.1.123",
+        //        InitialCatalog = "HandicappedDriver",
+        //        UserID = "Group1",
+        //        Password = "Grp1Pass!"
+        //    }.ConnectionString
+        //);
 
-       protected Boolean Connect()
+        //protected SqlDataAdapter adapter { get; set; }
+        //protected SqlDataReader reader { get; set; }
+        //protected SqlCommand command { get; set; }
+
+        protected Boolean Connect()
         {
             Boolean retval = true;
-            if (!(Connection.State == ConnectionState.Open))
+            if (!(connection.State == ConnectionState.Open))
             {
                 try
                 {
-                    this.Connection = conn;
-                    Connection.Open();
+                    connection.Open();
                 }
                 catch
                 {
@@ -45,7 +57,7 @@ namespace HandicappedDriver.Bridge
 
         public void Disconnect()
         {
-            this.Connection.Close();
+            this.connection.Close();
         }
 
     }

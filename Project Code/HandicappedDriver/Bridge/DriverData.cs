@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+
 
 namespace HandicappedDriver.Bridge
 {
@@ -22,19 +22,29 @@ namespace HandicappedDriver.Bridge
             LoadDriver();
         }
 
-        public void LoadDriver(string usr, string pwd)
+        public void LoadDriver(string usr, string pwd = "")
         {
-            string queryString =
+            string queryString;
+            if (pwd == "")
+            {
+                queryString =
+                    "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress";
+            }
+            else
+            {
+                queryString =
+                    "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
+            }
+            queryString =
                 "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
-            SqlCommand cmd;
 
-            cmd = this.Connection.CreateCommand();
-            cmd.Parameters.AddWithValue("@eMailAddress", usr);
-            cmd.Parameters.AddWithValue("@password", pwd);
-            cmd.CommandText = queryString;
+            command = this.connection.CreateCommand();
+            command.Parameters.AddWithValue("@eMailAddress", usr);
+            command.Parameters.AddWithValue("@password", pwd);
+            command.CommandText = queryString;
 
-            Id = (int?)cmd.ExecuteScalar();
-            cmd.Dispose();
+            Id = (int?)command.ExecuteScalar();
+            command.Dispose();
             if (Id != 0)
             {
                 LoadDriver();
@@ -54,23 +64,23 @@ namespace HandicappedDriver.Bridge
 
             if (Connect())
             {
-                SqlCommand cmd = Connection.CreateCommand();
-                cmd.CommandText = queryString;
-                SqlDataReader rdr = cmd.ExecuteReader();
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
 
-                if (rdr.Read())
+                if (reader.Read())
                 {
-                    this.Id = rdr.GetInt32(0);
-                    this.fullName = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
-                    this.licensePlateNum = rdr.IsDBNull(2) ? "" : rdr.GetString(2);
-                    this.mobileNumber = rdr.IsDBNull(3) ? "" : rdr.GetString(3);
-                    this.eMailAddress = rdr.IsDBNull(4) ? "" : rdr.GetString(4);
-                    this.password = rdr.IsDBNull(5) ? "" : rdr.GetString(5);
-                    this.licensePlateState = rdr.IsDBNull(6) ? "" : rdr.GetString(6);
+                    this.Id = reader.GetInt32(0);
+                    this.fullName = reader.IsDBNull(1) ? "" : reader.GetString(1);
+                    this.licensePlateNum = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                    this.mobileNumber = reader.IsDBNull(3) ? "" : reader.GetString(3);
+                    this.eMailAddress = reader.IsDBNull(4) ? "" : reader.GetString(4);
+                    this.password = reader.IsDBNull(5) ? "" : reader.GetString(5);
+                    this.licensePlateState = reader.IsDBNull(6) ? "" : reader.GetString(6);
                 }
 
-                rdr.Close();
-                this.Connection.Close();
+                reader.Close();
+                this.connection.Close();
             }
         }
 
@@ -84,55 +94,54 @@ namespace HandicappedDriver.Bridge
 
             if (Connect())
             {
-                SqlCommand cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@fullName", fullName);
-                cmd.Parameters.AddWithValue("@licensePlateNum", licensePlateNum);
-                cmd.Parameters.AddWithValue("@mobileNumber", mobileNumber);
-                cmd.Parameters.AddWithValue("@eMailAddress", eMailAddress);
-                cmd.Parameters.AddWithValue("@password", password);
-                cmd.Parameters.AddWithValue("@licensePlateState", licensePlateState);
-                cmd.Parameters.AddWithValue("@Id", Id);
-                cmd.CommandText = queryString;
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@fullName", fullName);
+                command.Parameters.AddWithValue("@licensePlateNum", licensePlateNum);
+                command.Parameters.AddWithValue("@mobileNumber", mobileNumber);
+                command.Parameters.AddWithValue("@eMailAddress", eMailAddress);
+                command.Parameters.AddWithValue("@password", password);
+                command.Parameters.AddWithValue("@licensePlateState", licensePlateState);
+                command.Parameters.AddWithValue("@Id", Id);
+                command.CommandText = queryString;
 
-                cmd.ExecuteNonQuery();
-
-                this.Connection.Close();
+                command.ExecuteNonQuery();
+                command.Dispose();
+                this.connection.Close();
             }
         }
 
         public void CreateNew(string usr, string pwd)
         {
             String queryString;
-            SqlCommand cmd;
 
             if (Connect())
             {
                 queryString =
                     "SELECT COUNT(*) FROM Driver WHERE EMailAddress=@eMailAddress";
-                cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@eMailAddress", usr);
-                cmd.CommandText = queryString;
+                this.command = connection.CreateCommand();
+                command.Parameters.AddWithValue("@eMailAddress", usr);
+                command.CommandText = queryString;
 
-                if ((int)cmd.ExecuteScalar() == 0)
+                if ((int)command.ExecuteScalar() == 0)
                 {
-                    cmd.Dispose();
+                    command.Dispose();
 
                     queryString =
                         "INSERT Driver (EMailAddress, Password, licensePlateState_ID) VALUES " +
                         "(@eMailAddress, @password, -1)";
 
-                    cmd = this.Connection.CreateCommand();
-                    cmd.Parameters.AddWithValue("@eMailAddress", usr);
-                    cmd.Parameters.AddWithValue("@password", pwd);
-                    cmd.CommandText = queryString;
+                    command = this.connection.CreateCommand();
+                    command.Parameters.AddWithValue("@eMailAddress", usr);
+                    command.Parameters.AddWithValue("@password", pwd);
+                    command.CommandText = queryString;
 
-                    cmd.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
                     queryString =
                         "SELECT Id FROM Driver WHERE EMailAddress=@eMailAddress";
 
-                    cmd.CommandText = queryString;
-                    this.Id = (int)cmd.ExecuteScalar();
+                    command.CommandText = queryString;
+                    this.Id = (int)command.ExecuteScalar();
 
                     LoadDriver();
                 }
@@ -142,7 +151,6 @@ namespace HandicappedDriver.Bridge
         public void SendMessage(string msg)
         {
             String queryString;
-            SqlCommand cmd;
 
             if (Connect())
             {
@@ -150,15 +158,15 @@ namespace HandicappedDriver.Bridge
                     "INSERT EMail_Message (Receiver_ID, Status_ID, SentTime, MessageText, Msg_Type) " +
                     "VALUES (@id, 1, @senttime, @msg, 'NEWPASSWORD')";
 
-                cmd = this.Connection.CreateCommand();
-                cmd.Parameters.AddWithValue("@id", Id);
-                cmd.Parameters.AddWithValue("@senttime", DateTime.Now);
-                cmd.Parameters.AddWithValue("@msg", msg);
-                cmd.CommandText = queryString;
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@id", Id);
+                command.Parameters.AddWithValue("@senttime", DateTime.Now);
+                command.Parameters.AddWithValue("@msg", msg);
+                command.CommandText = queryString;
 
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-                this.Connection.Close();
+                command.ExecuteNonQuery();
+                command.Dispose();
+                this.connection.Close();
 
             }
         }
