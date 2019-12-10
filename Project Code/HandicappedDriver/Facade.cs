@@ -58,12 +58,12 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static bool Login(string info)
+        public static bool Login(string u, string p)
         {
             bool login = false;
-            string s = jSON.DeSerialize<string>(info);
+            //string s = jSON.DeSerialize<string>(info);
             DriverData d = new DriverData();
-            d.LoadDriver(s);
+            d.LoadDriver(u,p);
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
             {
                 d.LoadDriver(d.eMailAddress, d.password);
