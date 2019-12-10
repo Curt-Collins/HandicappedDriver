@@ -1,5 +1,4 @@
-﻿using System.Data.SqlClient;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace HandicappedDriver.Bridge
 {
@@ -22,21 +21,20 @@ namespace HandicappedDriver.Bridge
             {
                 Lots = new List<LotInfo>();
 
-                SqlCommand cmd = Connection.CreateCommand();
-                cmd.CommandText = queryString;
-                SqlDataReader rdr = cmd.ExecuteReader();
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
 
-
-                while (rdr.Read())
+                while (reader.Read())
                 {
                     l = new LotInfo();
-                    l.id = rdr.GetInt32(0);
-                    l.name = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
+                    l.id = reader.GetInt32(0);
+                    l.name = reader.IsDBNull(1) ? "" : reader.GetString(1);
                     Lots.Add(l);
                 }
-
-                rdr.Close();
-                this.Connection.Close();
+                command.Dispose();
+                reader.Close();
+                this.connection.Close();
             }
         }
      }

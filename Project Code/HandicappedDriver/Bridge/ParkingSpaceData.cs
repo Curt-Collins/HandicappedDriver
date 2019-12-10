@@ -1,5 +1,4 @@
-﻿using System.Data.SqlClient;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System;
 
 namespace HandicappedDriver.Bridge
@@ -36,43 +35,44 @@ namespace HandicappedDriver.Bridge
 
             if (Connect())
             {
-                SqlCommand cmd = Connection.CreateCommand();
-                cmd.CommandText = queryString;
-                SqlDataReader rdr = cmd.ExecuteReader();
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
 
                 ParkingSpace psp = new ParkingSpace();
                 ResData r;
                 int curSpaceID = -1;
                 int prevSpaceID = -1;
 
-                while (rdr.Read())
+                while (reader.Read())
                 {
-                    if (prevSpaceID != rdr.GetInt32(8))
+                    if (prevSpaceID != reader.GetInt32(8))
                     {
-                        curSpaceID = rdr.GetInt32(8);
+                        curSpaceID = reader.GetInt32(8);
                         psp = new ParkingSpace();
                         psp.Space_Id = curSpaceID;
-                        psp.LocationDesc = rdr.GetString(1);
-                        psp.NavigationString = rdr.GetString(6);
-                        psp.Occupied = rdr.GetBoolean(3);
+                        psp.LocationDesc = reader.GetString(1);
+                        psp.NavigationString = reader.GetString(6);
+                        psp.Occupied = reader.GetBoolean(3);
                         psp.Avail = new List<ResData>();
                         listSpaces.Add(psp);
                     }
 
-                    if (!(rdr.IsDBNull(0)))
+                    if (!(reader.IsDBNull(0)))
                     {
                         r = new ResData();
-                        r.Res_Id = rdr.GetInt32(0);
-                        r.StatusDesc = rdr.GetString(2);
-                        r.FromTime = rdr.GetDateTime(4);
-                        r.UntilTime = rdr.GetDateTime(5);
-                        r.EMailAddr = rdr.GetString(7);
+                        r.Res_Id = reader.GetInt32(0);
+                        r.StatusDesc = reader.GetString(2);
+                        r.FromTime = reader.GetDateTime(4);
+                        r.UntilTime = reader.GetDateTime(5);
+                        r.EMailAddr = reader.GetString(7);
                         listSpaces[listSpaces.IndexOf(psp)].Avail.Add(r);
                     }
                 }
 
-                rdr.Close();
-                this.Connection.Close();
+                command.Dispose();
+                reader.Close();
+                this.connection.Close();
             }
 
             return listSpaces;

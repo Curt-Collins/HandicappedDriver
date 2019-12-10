@@ -261,7 +261,6 @@
     <Compile Include="Bridge\ParkingLotData.cs" />
     <Compile Include="Bridge\ParkingSpaceData.cs" />
     <Compile Include="Bridge\ReservationData.cs" />
-    <Compile Include="Bridge\SMS_MessageData.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
