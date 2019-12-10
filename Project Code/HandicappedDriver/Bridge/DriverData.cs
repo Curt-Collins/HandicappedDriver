@@ -38,22 +38,27 @@ namespace HandicappedDriver.Bridge
             queryString =
                 "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
 
-            command = this.connection.CreateCommand();
-            command.Parameters.AddWithValue("@eMailAddress", usr);
-            command.Parameters.AddWithValue("@password", pwd);
-            command.CommandText = queryString;
+            if (Connect())
+            {
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@eMailAddress", usr);
+                command.Parameters.AddWithValue("@password", pwd);
+                command.CommandText = queryString;
 
-            Id = (int?)command.ExecuteScalar();
-            command.Dispose();
-            if (Id != 0)
-            {
-                LoadDriver();
-            }
-            else
-            {
-                Id = null;
+                Id = (int?)command.ExecuteScalar();
+                command.Dispose();
+                if (Id != 0)
+                {
+                    LoadDriver();
+                }
+                else
+                {
+                    Id = null;
+                }
             }
         }
+
+
 
         public void LoadDriver()
         {
