@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{25DECBD4-6E8C-459B-976B-A1BE8F738FF5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HandicappedParking/ParkingLotData.cs">
+    <Files>
+      <File FileName="HandicappedParking/DriverData.cs" Line="3" Column="29" />
+      <File FileName="HandicappedParking/ParkingSpaceData.cs" Line="15" Column="1" />
+      <File FileName="HandicappedParking/ReservationData.cs" Line="13" Column="30" />
+      <File FileName="HandicappedParking/Driver.cs" Line="65" Column="10" />
+      <File FileName="HandicappedParking/JSONSerializer.cs" Line="1" Column="14" />
+      <File FileName="HandicappedParking/HandicappedDriverTableData.cs" Line="45" Column="1" />
+      <File FileName="HandicappedParking/LicensePlatesStateData.cs" Line="8" Column="23" />
+      <File FileName="HandicappedParking/ParkingLotData.cs" Line="43" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HandicappedParking" expanded="True">
+            <Node name="HandicappedParking" expanded="True">
+              <Node name="Facade.asmx" expanded="True" />
+              <Node name="ParkingLotData.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HandicappedParking PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
