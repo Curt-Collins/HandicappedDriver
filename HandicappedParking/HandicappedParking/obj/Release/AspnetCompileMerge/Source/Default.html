@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input id="Button1" type="button" value="button" onclick="search();"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function search() {
+            $.ajax({
+                type: 'POST',
+                url: 'Facade.asmx/HelloWorld',
+                data: '',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (msg) {
+                    //read key
+                    document.write(msg);
+                },
+                    error: function (xhr, status, error) {
+                        window.alert("Error");
+                },
+            });
+        }
+    </script>
+</body>
+</html>

@@ -5,8 +5,8 @@
     <title></title>
 </head>
 <body>
-    <input id="Button1" type="button" value="button" onclick="search();"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <input id="Button1" type="button" value="button" onclick="search()" />
     <script type="text/javascript">
         function search() {
             $.ajax({
@@ -17,11 +17,12 @@
                 dataType: 'json',
                 success: function (msg) {
                     //read key
-                    alert("yay");
+                    //jsonData = JSON.parse(msg);
+                    console.dir(msg);
                 },
-                    error: function (xhr, status, error) {
-                        alert("Error");
-                }
+                error: function (xhr, status, error) {
+                    window.alert("Error");
+                },
             });
         }
     </script>
