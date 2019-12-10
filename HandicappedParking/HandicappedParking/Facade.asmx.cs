@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
 using Newtonsoft.Json;
+using HandicappedDriver.Bridge;
 
 // new code start - Richu
 using HandicappedParking.Bridge;
