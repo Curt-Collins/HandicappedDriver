@@ -22,10 +22,19 @@ namespace HandicappedDriver.Bridge
             LoadDriver();
         }
 
-        public void LoadDriver(string usr, string pwd)
+        public void LoadDriver(string usr, string pwd = "")
         {
-            string queryString =
-                "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
+            string queryString;
+            if (pwd == "")
+            {
+                queryString =
+                    "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress";
+            }
+            else
+            {
+                queryString =
+                    "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
+            }
             SqlCommand cmd;
 
             cmd = this.Connection.CreateCommand();
