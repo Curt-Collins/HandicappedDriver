@@ -12,7 +12,7 @@ namespace HandicappedDriver
         protected void Page_Load(object sender, EventArgs e)
         {
             // figure out how to convert JSON string into a JSON object here to populate the dropdown list 
-            string stateObj = Facade.StatesTest();
+            //string stateObj = Facade.StatesTest();
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)

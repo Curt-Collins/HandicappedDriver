@@ -3,14 +3,18 @@ using HandicappedDriver.CoreSystem;
 using System;
 using System.Collections.Generic;
 using System.Web.Services;
-using System.Windows;
+//using Newtonsoft.Json;
+using System.Web.Script.Services;
 
 namespace HandicappedDriver
 {
-    [WebService]
-    public class Facade
+    [WebService(Namespace = "HandicappedParking")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+    [System.Web.Script.Services.ScriptService]
+    public class Facade : System.Web.Services.WebService
     {
-        static private string username;
         static JSONSerializer jSON = new JSONSerializer();
         static Driver driver = new Driver();
 
@@ -18,19 +22,19 @@ namespace HandicappedDriver
         {
         }
 
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string HelloWorld()
         {
             return "Hello World!";
         }
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void ForgotPassword(string username)
         {
             DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
-            driver = new Driver(d);
+            string s = jSON.DeSerialize<string>(username);
+            driver = new Driver(s);
             string pass = driver.ResetPassword(d);
             string message = "Hello " + d.fullName + "!  Your password has been changed to " + pass + ".  You can change this password at any time on the " +
                 "Update Profile page.  Thank you for choosing the Handicapped Parking System at UCO!";
@@ -38,13 +42,13 @@ namespace HandicappedDriver
         }
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void CreateDriver(string username)
         {
             // accepts username to create new driver
             DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(username);
-            driver = new Driver(d);
+            string s = jSON.DeSerialize<string>(username);
+            driver = new Driver(s);
             string pass = driver.ResetPassword(d);
             d.CreateNew(username, pass);
             string message = "Welcome to the Handicapped Parking System at UCO!  Your username is " + username + " and your password is " + pass + ".  " +
@@ -53,12 +57,13 @@ namespace HandicappedDriver
         }
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string info)
         {
             bool login = false;
-            DriverData d;
-            d = jSON.DeSerialize<DriverData>(info);
+            string s = jSON.DeSerialize<string>(info);
+            DriverData d = new DriverData();
+            d.LoadDriver(s);
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
             {
                 d.LoadDriver(d.eMailAddress, d.password);
@@ -67,23 +72,18 @@ namespace HandicappedDriver
                     login = true;
                 }
             }
-
             return login;
         }
 
-        // TODO
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void Logout(string info)
         {
-            bool logout = false;
-            DriverData d;
-            d = jSON.DeSerialize<DriverData>(info);
             // logout the driver from the system
             // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
         // TODO
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void UpdateDriverProfile(string info)
         {
             //MessageBox.Show(info);
@@ -96,7 +96,7 @@ namespace HandicappedDriver
         }
 
         // TODO
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string NavigateToSpace(string spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
@@ -112,7 +112,7 @@ namespace HandicappedDriver
 
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string GetParkingLots()
         {
             string s = "";
@@ -123,7 +123,7 @@ namespace HandicappedDriver
         }
 
         // TODO but unimportant at this point
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void SendMessageToDriver(string info)
         {
             // string fromUser, string toLicNum, string toLicState, string msg
@@ -163,7 +163,7 @@ namespace HandicappedDriver
         }
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string ViewAvailableSpaces(string lotID)
         {
             // this shows the available spaces in a certain lot based on the lotID that is put in the method
@@ -177,7 +177,7 @@ namespace HandicappedDriver
         }
 
         // GOOD
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
@@ -195,7 +195,7 @@ namespace HandicappedDriver
         }
 
         // TODO
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void OccupySpace(string resvID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
@@ -206,7 +206,7 @@ namespace HandicappedDriver
         }
 
         // TODO 
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void LeaveSpace(string resvID)
         {
             // this changes the status of the space in the database to unoccupied
@@ -217,23 +217,12 @@ namespace HandicappedDriver
         }
 
         // TODO
-        [WebMethod]
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void CancelReservation(string resvID)
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID);
-        }
-
-        [WebMethod]
-        public static string StatesTest()
-        {
-            return
-                "[" + "" +
-                "{" + "name:" + "Alberta," + "abbreviation: AB" + "}," +
-                "{" + "name:" + "British Columbia," + "abbreviation: BC" + "}," +
-                "{" + "name:" + "Alberta," + "abbreviation: MN" + "}," +
-                "]";
         }
     }
 }
