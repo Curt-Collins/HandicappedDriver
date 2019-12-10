@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-namespace HandicappedDriver.Bridge
+// changed HandicappedDriver to HandicappedParking
+namespace HandicappedParking.Bridge
 {
     public class ReservationData : HandicappedDriverTableData
     {

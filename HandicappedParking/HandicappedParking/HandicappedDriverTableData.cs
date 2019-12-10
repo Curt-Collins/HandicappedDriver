@@ -5,7 +5,8 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace HandicappedDriver.Bridge
+// changed HandicappedDriver to HandicappedParking
+namespace HandicappedParking.Bridge
 {
     public abstract class HandicappedDriverTableData
     {

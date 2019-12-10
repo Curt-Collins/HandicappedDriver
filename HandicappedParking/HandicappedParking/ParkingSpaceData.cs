@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System;
 
-namespace HandicappedDriver.Bridge
+// changed HandicappedDriver to HandicappedParking
+namespace HandicappedParking.Bridge
 {
     public class ResData
     {

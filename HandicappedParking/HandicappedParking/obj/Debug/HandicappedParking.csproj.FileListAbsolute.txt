@@ -211,3 +211,6 @@ C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\Han
 C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Administrator\Documents\GitHub\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.csproj.CopyComplete
+C:\Users\richu\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.csprojAssemblyReference.cache
+C:\Users\richu\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.dll
+C:\Users\richu\HandicappedDriver\HandicappedParking\HandicappedParking\obj\Debug\HandicappedParking.pdb

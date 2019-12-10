@@ -1,7 +1,8 @@
 ﻿using System.Data.SqlClient;
 using System.Collections.Generic;
 
-namespace HandicappedDriver.Bridge
+// changed HandicappedDriver to HandicappedParking
+namespace HandicappedParking.Bridge
 {
     public class LotInfo
     {
