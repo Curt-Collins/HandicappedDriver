@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-// changed HandicappedDriver to HandicappedParking
-namespace HandicappedParking.Bridge
+namespace HandicappedDriver.Bridge
 {
     public class ReservationData : HandicappedDriverTableData
     {
@@ -53,7 +52,7 @@ namespace HandicappedParking.Bridge
             LoadReservation();
         }
 
-        public void LoadReservation()
+       public void LoadReservation()
         {
             String queryString = "";
 

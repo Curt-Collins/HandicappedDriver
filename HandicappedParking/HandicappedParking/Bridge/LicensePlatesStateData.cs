@@ -4,24 +4,24 @@ using System.Collections.Generic;
 // changed HandicappedDriver to HandicappedParking
 namespace HandicappedParking.Bridge
 {
-    public class LotInfo
+    public class State
     {
         public int id;
         public string name;
     }
 
-    public class ParkingLotData : HandicappedDriverTableData
+    public class LicensePlatesStateData : HandicappedDriverTableData
     {
-        public List<LotInfo> Lots;
+        public List<State> States;
 
-        public ParkingLotData()
+        public LicensePlatesStateData()
         {
-            string queryString = "SELECT id, LotName FROM ParkingLot";
-            LotInfo l;
+            string queryString = "SELECT id, State FROM LicensePlateState";
+            State st;
 
             if (Connect())
             {
-                Lots = new List<LotInfo>();
+                States = new List<State>();
 
                 SqlCommand cmd = Connection.CreateCommand();
                 cmd.CommandText = queryString;
@@ -30,10 +30,10 @@ namespace HandicappedParking.Bridge
 
                 while (rdr.Read())
                 {
-                    l = new LotInfo();
-                    l.id = rdr.GetInt32(0);
-                    l.name = rdr.IsDBNull(1) ? "" : rdr.GetString(1);
-                    Lots.Add(l);
+                    st = new State();
+                    st.id = rdr.GetInt32(0);
+                    st.name = rdr.GetString(1);
+                    States.Add(st);
                 }
 
                 rdr.Close();

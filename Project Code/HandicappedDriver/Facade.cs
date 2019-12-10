@@ -3,6 +3,7 @@ using HandicappedDriver.CoreSystem;
 using System;
 using System.Collections.Generic;
 using System.Web.Services;
+using System.Windows;
 
 namespace HandicappedDriver
 {
@@ -15,6 +16,12 @@ namespace HandicappedDriver
 
         public Facade()
         {
+        }
+
+        [WebMethod]
+        public static string HelloWorld()
+        {
+            return "Hello World!";
         }
 
         // GOOD
@@ -79,6 +86,8 @@ namespace HandicappedDriver
         [WebMethod]
         public static void UpdateDriverProfile(string info)
         {
+            //MessageBox.Show(info);
+
             // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
             d = jSON.DeSerialize<DriverData>(info);

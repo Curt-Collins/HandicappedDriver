@@ -25,7 +25,7 @@ namespace HandicappedParking.Bridge
         protected SqlDataAdapter Adapter { get; set; }
         protected SqlDataReader Reader { get; set; }
 
-        protected Boolean Connect()
+       protected Boolean Connect()
         {
             Boolean retval = true;
             if (!(Connection.State == ConnectionState.Open))

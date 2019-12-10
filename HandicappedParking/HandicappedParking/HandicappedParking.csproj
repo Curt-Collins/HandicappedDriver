@@ -177,6 +177,14 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Bridge\DriverData.cs" />
+    <Compile Include="Bridge\Email_MessageData.cs" />
+    <Compile Include="Bridge\HandicappedDriverTableData.cs" />
+    <Compile Include="Bridge\LicensePlatesStateData.cs" />
+    <Compile Include="Bridge\ParkingLotData.cs" />
+    <Compile Include="Bridge\ParkingSpaceData.cs" />
+    <Compile Include="Bridge\ReservationData.cs" />
+    <Compile Include="Bridge\SMS_MessageData.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -184,6 +192,10 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CoreSystem\Driver.cs" />
+    <Compile Include="CoreSystem\ParkingLot.cs" />
+    <Compile Include="CoreSystem\ParkingSpace.cs" />
+    <Compile Include="CoreSystem\Reservation.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
