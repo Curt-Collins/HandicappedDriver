@@ -3,7 +3,6 @@ using HandicappedDriver.CoreSystem;
 using System;
 using System.Collections.Generic;
 using System.Web.Services;
-//using Newtonsoft.Json;
 using System.Web.Script.Services;
 
 namespace HandicappedDriver
@@ -81,6 +80,24 @@ namespace HandicappedDriver
         }
 
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
+        public static int Login_GetID(string u, string p)
+        {
+            int driverID = -1;
+            DriverData d = new DriverData();
+            d.LoadDriver(u, p);
+
+            if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
+            {
+                d.LoadDriver(d.eMailAddress, d.password);
+                if (!(d.Id is null))
+                {
+                    driverID = (int)d.Id;
+                }
+            }
+            return driverID;
+        }
+
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void Logout(string info)
         {
             // logout the driver from the system
@@ -89,10 +106,8 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static bool UpdateDriverProfile(string usr)
+        public static bool UpdateDriverProfile(DriverData d)
         {
-            DriverData d = new DriverData();
-            d.LoadDriver(usr);
             d.Update();
             return true;
         }
@@ -221,5 +236,12 @@ namespace HandicappedDriver
             ReservationData r = new ReservationData();
             r = jSON.DeSerialize<ReservationData>(resvID);
         }
+
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
+        public static DriverData GetDriverFull(int uid)
+        {
+            return new DriverData(uid);
+        }
+
     }
 }

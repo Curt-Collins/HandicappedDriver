@@ -51,7 +51,7 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
-       public void LoadReservation()
+        public void LoadReservation()
         {
             String queryString = "";
 
