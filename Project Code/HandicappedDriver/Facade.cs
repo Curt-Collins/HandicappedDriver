@@ -39,7 +39,7 @@ namespace HandicappedDriver
             return true;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool CreateDriver(string username)
         {
@@ -61,7 +61,7 @@ namespace HandicappedDriver
             }
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string u, string p)
         {
@@ -83,6 +83,7 @@ namespace HandicappedDriver
             return login;
         }
 
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static int Login_GetID(string u, string p)
         {
@@ -101,6 +102,7 @@ namespace HandicappedDriver
             return driverID;
         }
 
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void Logout(string info)
         {
@@ -108,7 +110,7 @@ namespace HandicappedDriver
             // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool UpdateDriverProfile(DriverData d)
         {
@@ -116,18 +118,18 @@ namespace HandicappedDriver
             return true;
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string NavigateToSpace(string spaceID)
+        public static string NavigateToSpace(int spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
-            Bridge.ParkingSpace ps = p.LoadInfo(Int32.Parse(spaceID));
+            Bridge.ParkingSpace ps = p.LoadInfo(spaceID);
 
             return ps.NavigationString;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static List<LotInfo> GetParkingLots()
         {
@@ -136,7 +138,7 @@ namespace HandicappedDriver
             return pl.Lots;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static List<State> GetStates()
         {
@@ -185,21 +187,20 @@ namespace HandicappedDriver
             driver.SendMessage(sendingDriver, receivingDriver, message);
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string ViewAvailableSpaces(string lotID)
+        public static List<Bridge.ParkingSpace> ViewAvailableSpaces(string lotID)
         {
-            // this shows the available spaces in a certain lot based on the lotID that is put in the method
-            string spaces = "";
+            // this shows the available spaces in a certain lot 
+            // based on the lotID that is put in the method
             ParkingSpaceData ps = new ParkingSpaceData();
-            List<HandicappedDriver.Bridge.ParkingSpace> a =
+            List<Bridge.ParkingSpace> ps_list =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
-                //spaces = jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
 
-            return spaces;
+            return ps_list;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string ShowExistingReservation(string username)
         {
