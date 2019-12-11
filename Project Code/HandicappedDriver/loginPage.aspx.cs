@@ -29,7 +29,7 @@ namespace HandicappedDriver
             "}]";
 
 
-            bool result = Facade.Login(info);
+            bool result = Facade.Login(user,pass);
             Response.Write(result);
             
         }

@@ -22,15 +22,9 @@ namespace HandicappedDriver
         {
         }
 
-        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string HelloWorld()
-        {
-            return "Hello World!";
-        }
-
         // GOOD
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void ForgotPassword(string username)
+        public static bool ForgotPassword(string username)
         {
             DriverData d = new DriverData();
             string s = jSON.DeSerialize<string>(username);
@@ -43,17 +37,24 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void CreateDriver(string username)
+        public static bool CreateDriver(string username)
         {
             // accepts username to create new driver
             DriverData d = new DriverData();
-            string s = jSON.DeSerialize<string>(username);
-            driver = new Driver(s);
+            //string s = jSON.DeSerialize<string>(username);
+            driver = new Driver(username);
             string pass = driver.ResetPassword(d);
-            d.CreateNew(username, pass);
-            string message = "Welcome to the Handicapped Parking System at UCO!  Your username is " + username + " and your password is " + pass + ".  " +
-                "You can change this password at any time on the Update Profile page.  Thank you for choosing the Handicapped Parking System!";
-            d.SendMessage(message);
+            if (d.CreateNew(username, pass) == 0)
+            {
+                string message = "Welcome to the Handicapped Parking System at UCO!  Your username is " + username + " and your password is " + pass + ".  " +
+                    "You can change this password at any time on the Update Profile page.  Thank you for choosing the Handicapped Parking System!";
+                d.SendMessage(message);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // GOOD
@@ -63,7 +64,6 @@ namespace HandicappedDriver
             bool login = false;
             //string s = jSON.DeSerialize<string>(info);
             DriverData d = new DriverData();
-            d.LoadDriver(u,p);
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
             {
                 d.LoadDriver(d.eMailAddress, d.password);

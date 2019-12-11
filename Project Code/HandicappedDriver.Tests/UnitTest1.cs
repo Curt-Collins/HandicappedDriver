@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using HandicappedDriver;
+using System.Web.Services;
 
 namespace HandicappedDriver.Tests
 {
@@ -9,6 +11,7 @@ namespace HandicappedDriver.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            Facade.CreateDriver("ataylor64@uco.edu");
         }
     }
 }
