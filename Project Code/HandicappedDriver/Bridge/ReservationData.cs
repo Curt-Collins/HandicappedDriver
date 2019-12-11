@@ -47,7 +47,7 @@ namespace HandicappedDriver.Bridge
 
         public ReservationData(string usr)
         {
-            eMailAddress = usr;
+            this.eMailAddress = usr;
             LoadReservation();
         }
 

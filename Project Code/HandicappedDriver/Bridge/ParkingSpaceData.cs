@@ -83,7 +83,7 @@ namespace HandicappedDriver.Bridge
             this.Id = id;
 
             String queryString = "SELECT LocationDesc, Occupied, Navigation " +
-                    "FROM ParkingSpace WHERE d.ID=" + this.Id.ToString();
+                    "FROM ParkingSpace WHERE ID=" + this.Id.ToString();
 
             ParkingSpace ps = new ParkingSpace();
 

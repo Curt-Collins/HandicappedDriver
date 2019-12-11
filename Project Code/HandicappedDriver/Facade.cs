@@ -202,20 +202,12 @@ namespace HandicappedDriver
 
         // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string ShowExistingReservation(string username)
+        public static ReservationData ShowExistingReservation(int uid)
         {
             // this accesses the database to show any existing reservations that the user has made
-            ReservationData r;
-            string s = "";
-//            r = jSON.DeSerialize<ReservationData>(username);
-            //r.PullRes();
-            //r.resvID = "stuff";
-            //if (r.resvID != "")
-            //{
-            //    s = jSON.Serialize<ReservationData>(r);
-            //}
+            ReservationData r = new ReservationData();
 
-            return s;
+            return r;
         }
 
         // TODO
