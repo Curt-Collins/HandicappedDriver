@@ -6,6 +6,7 @@ namespace HandicappedDriver.Bridge
     public class ResData
     {
         public int Res_Id;
+        public int Space_Id;
         public string StatusDesc;
         public DateTime FromTime;
         public DateTime UntilTime;
@@ -61,6 +62,7 @@ namespace HandicappedDriver.Bridge
                     if (!(reader.IsDBNull(0)))
                     {
                         r = new ResData();
+                        r.Space_Id = curSpaceID;
                         r.Res_Id = reader.GetInt32(0);
                         r.StatusDesc = reader.GetString(2);
                         r.FromTime = reader.GetDateTime(4);
