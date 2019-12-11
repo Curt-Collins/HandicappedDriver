@@ -48,7 +48,7 @@ namespace HandicappedDriver
                 "\"Name\":" + fullName 
                 + "}]";
             //Response.Write(info);
-            Facade.UpdateDriverProfile(info);
+            Facade.UpdateDriverProfile(new Bridge.DriverData());
             Response.Redirect("homePage.aspx");
         }
     }
