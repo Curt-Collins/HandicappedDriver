@@ -11,6 +11,7 @@ namespace HandicappedDriver
     public partial class createAccount : System.Web.UI.Page
     {
         protected DriverData driver;
+        protected int usrid_pg = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,6 +31,7 @@ namespace HandicappedDriver
             if (uid > 0)
             {
                 driver = Facade.GetDriverFull(uid);
+                usrid_pg = (int)driver.Id;
             }
 
             //Now do whatever
@@ -51,7 +53,7 @@ namespace HandicappedDriver
         {
             //Data validation goes here
 
-            if (driver.Id > 0)
+            if (usrid_pg > 0)
             {
                 driver.fullName = txtName.Text;
                 driver.licensePlateNum = txtRegNumber.Text;
