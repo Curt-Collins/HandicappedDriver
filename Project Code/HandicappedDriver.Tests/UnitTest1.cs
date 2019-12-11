@@ -18,13 +18,8 @@ namespace HandicappedDriver.Tests
             Facade.CreateDriver("123");
         }
 
+        [TestMethod]
         public void TestUpdateDriver()
-        {
-            
-
-        }
-
-        public void TestMethod2()
         {
             int uid;
             uid = Facade.Login_GetID("ataylor64@uco.edu", "1dda81");
@@ -32,8 +27,34 @@ namespace HandicappedDriver.Tests
             {
                 DriverData d = Facade.GetDriverFull(uid);
                 d.mobileNumber = "888-yaygirl";
+                d.password = "1dda81";
+                d.licensePlateNum = "17-A856";
+                d.licensePlateState = "Oklahoma";
+                
                 Facade.UpdateDriverProfile(d);
+
             }
+
+        }
+
+        [TestMethod]
+        public void TestLogin()
+        {
+            int uid;
+            uid = Facade.Login_GetID("ataylor64@uco.edu", "1dda81");
+            if (uid > 0)
+            {
+                Facade.GetDriverFull(uid);
+            }
+        }
+
+        public void TestNavigateToParkingSpace()
+        {
+            Facade.NavigateToSpace(11);
+            Facade.NavigateToSpace(20);
+            Facade.NavigateToSpace(999);
+            Facade.NavigateToSpace(300);
+
         }
     }
 }
