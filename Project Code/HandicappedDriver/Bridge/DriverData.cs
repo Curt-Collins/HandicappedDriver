@@ -49,10 +49,6 @@ namespace HandicappedDriver.Bridge
                 {
                     LoadDriver();
                 }
-                else
-                {
-                    Id = null;
-                }
             }
         }
 

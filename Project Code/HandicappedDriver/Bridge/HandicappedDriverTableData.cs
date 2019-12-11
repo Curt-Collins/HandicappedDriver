@@ -13,7 +13,7 @@ namespace HandicappedDriver.Bridge
         //protected OleDbConnection connection = new OleDbConnection(
         //    new OleDbConnectionStringBuilder()
         //    {
-        //        DataSource = "..\\App_Data\\HandicappedDriver.accdb",
+        //        DataSource = "\\App_Data\\HandicappedDriver.accdb",
         //        Provider = "Microsoft.ACE.OLEDB.12.0",
         //        PersistSecurityInfo = false
         //    }.ConnectionString

@@ -27,12 +27,16 @@ namespace HandicappedDriver
         public static bool ForgotPassword(string username)
         {
             DriverData d = new DriverData();
-            string s = jSON.DeSerialize<string>(username);
-            driver = new Driver(s);
+            d.LoadDriver(username);
+            driver = new Driver();
+            //Driver class only calculates the new password, does not commit
             string pass = driver.ResetPassword(d);
+            //DriverData will commit
+            d.Update();
             string message = "Hello " + d.fullName + "!  Your password has been changed to " + pass + ".  You can change this password at any time on the " +
                 "Update Profile page.  Thank you for choosing the Handicapped Parking System at UCO!";
             d.SendMessage(message);
+            return true;
         }
 
         // GOOD
@@ -41,8 +45,8 @@ namespace HandicappedDriver
         {
             // accepts username to create new driver
             DriverData d = new DriverData();
-            //string s = jSON.DeSerialize<string>(username);
             driver = new Driver(username);
+            //Driver class only calculates the new password, does not commit
             string pass = driver.ResetPassword(d);
             if (d.CreateNew(username, pass) == 0)
             {
@@ -62,9 +66,7 @@ namespace HandicappedDriver
         public static bool Login(string u, string p)
         {
             bool login = false;
-            //string s = jSON.DeSerialize<string>(info);
             DriverData d = new DriverData();
-
             d.LoadDriver(u, p);
 
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
@@ -87,15 +89,12 @@ namespace HandicappedDriver
 
         // TODO
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void UpdateDriverProfile(string info)
+        public static bool UpdateDriverProfile(string usr)
         {
-            //MessageBox.Show(info);
-
-            // this changes what is inside the system, therefore it does not return anything to the GUI
             DriverData d = new DriverData();
-            d = jSON.DeSerialize<DriverData>(info);
-            driver = new Driver(d);
-            driver.UpdateProfile(d);
+            d.LoadDriver(usr);
+            d.Update();
+            return true;
         }
 
         // TODO
@@ -104,8 +103,6 @@ namespace HandicappedDriver
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
-            string s = "";
-            p = jSON.DeSerialize<ParkingSpaceData>(spaceID);
             p.LoadInfo();
 
             //s = jSON.Serialize<ParkingSpaceData>(p.NavString);

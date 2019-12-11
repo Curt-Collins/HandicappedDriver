@@ -83,9 +83,32 @@ namespace HandicappedDriver.Bridge
 
         }
 
-        public void LoadInfo()
+        public void LoadInfo(int id)
         {
 
+        String queryString = "SELECT LocationDesc, Occupied, Navigation " +
+                "FROM ParkingSpace WHERE d.ID=" + id.ToString();
+
+            if (Connect())
+            {
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    this.Id = reader.GetInt32(0);
+                    this.fullName = reader.IsDBNull(1) ? "" : reader.GetString(1);
+                    this.licensePlateNum = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                    this.mobileNumber = reader.IsDBNull(3) ? "" : reader.GetString(3);
+                    this.eMailAddress = reader.IsDBNull(4) ? "" : reader.GetString(4);
+                    this.password = reader.IsDBNull(5) ? "" : reader.GetString(5);
+                    this.licensePlateState = reader.IsDBNull(6) ? "" : reader.GetString(6);
+                }
+
+                reader.Close();
+                this.connection.Close();
+            }
         }
     }
 }
