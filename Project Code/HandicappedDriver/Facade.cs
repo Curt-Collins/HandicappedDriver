@@ -103,13 +103,10 @@ namespace HandicappedDriver
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
-            p.LoadInfo();
+            Bridge.ParkingSpace ps = p.LoadInfo(Int32.Parse(spaceID));
 
-            //s = jSON.Serialize<ParkingSpaceData>(p.NavString);
-
-            return s;
+            return ps.NavigationString;
         }
-
 
         // GOOD
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]

@@ -78,16 +78,14 @@ namespace HandicappedDriver.Bridge
             return listSpaces;
         }
 
-        private void InsertRes(ref ParkingSpace psp2, ref ResData r2)
+        public ParkingSpace LoadInfo(int id)
         {
+            this.Id = id;
 
-        }
+            String queryString = "SELECT LocationDesc, Occupied, Navigation " +
+                    "FROM ParkingSpace WHERE d.ID=" + this.Id.ToString();
 
-        public void LoadInfo(int id)
-        {
-
-        String queryString = "SELECT LocationDesc, Occupied, Navigation " +
-                "FROM ParkingSpace WHERE d.ID=" + id.ToString();
+            ParkingSpace ps = new ParkingSpace();
 
             if (Connect())
             {
@@ -97,18 +95,17 @@ namespace HandicappedDriver.Bridge
 
                 if (reader.Read())
                 {
-                    this.Id = reader.GetInt32(0);
-                    this.fullName = reader.IsDBNull(1) ? "" : reader.GetString(1);
-                    this.licensePlateNum = reader.IsDBNull(2) ? "" : reader.GetString(2);
-                    this.mobileNumber = reader.IsDBNull(3) ? "" : reader.GetString(3);
-                    this.eMailAddress = reader.IsDBNull(4) ? "" : reader.GetString(4);
-                    this.password = reader.IsDBNull(5) ? "" : reader.GetString(5);
-                    this.licensePlateState = reader.IsDBNull(6) ? "" : reader.GetString(6);
+                    ps.Space_Id = this.Id;
+                    ps.LocationDesc = reader.IsDBNull(0) ? "" : reader.GetString(0);
+                    ps.Occupied = reader.GetBoolean(1);
+                    ps.NavigationString = reader.IsDBNull(2) ? "" : reader.GetString(2);
                 }
 
                 reader.Close();
                 this.connection.Close();
             }
+
+            return ps;
         }
     }
 }
