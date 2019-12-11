@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Web.Services;
 using System.Web.Script.Services;
+using System.Windows;
 
 namespace HandicappedDriver
 {
@@ -14,7 +15,7 @@ namespace HandicappedDriver
     [System.Web.Script.Services.ScriptService]
     public class Facade : System.Web.Services.WebService
     {
-        static JSONSerializer jSON = new JSONSerializer();
+        //static JSONSerializer jSON = new JSONSerializer();
         static Driver driver = new Driver();
 
         public Facade()
@@ -38,7 +39,7 @@ namespace HandicappedDriver
             return true;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool CreateDriver(string username)
         {
@@ -60,12 +61,15 @@ namespace HandicappedDriver
             }
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string u, string p)
         {
+            MessageBox.Show("u=" + u + " " + "p=" + p);
+
             bool login = false;
             DriverData d = new DriverData();
+
             d.LoadDriver(u, p);
 
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
@@ -79,6 +83,7 @@ namespace HandicappedDriver
             return login;
         }
 
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static int Login_GetID(string u, string p)
         {
@@ -97,6 +102,7 @@ namespace HandicappedDriver
             return driverID;
         }
 
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static void Logout(string info)
         {
@@ -104,7 +110,7 @@ namespace HandicappedDriver
             // can the GUI just go back to the login page?  Does this need to be implemented here?
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool UpdateDriverProfile(DriverData d)
         {
@@ -112,26 +118,33 @@ namespace HandicappedDriver
             return true;
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string NavigateToSpace(string spaceID)
+        public static string NavigateToSpace(int spaceID)
         {
             // this pulls up the Navigation system to navigate to the space that the user wants to go to
             ParkingSpaceData p = new ParkingSpaceData();
-            Bridge.ParkingSpace ps = p.LoadInfo(Int32.Parse(spaceID));
+            Bridge.ParkingSpace ps = p.LoadInfo(spaceID);
 
             return ps.NavigationString;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string GetParkingLots()
+        public static List<LotInfo> GetParkingLots()
         {
-            string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
-            ParkingLotData p = new ParkingLotData();
-            s = jSON.Serialize<List<LotInfo>>(p.Lots);
-            return s;
+            ParkingLotData pl = new ParkingLotData();
+            return pl.Lots;
+        }
+
+        // Good
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
+        public static List<State> GetStates()
+        {
+            // this shows the parking lots in the system in a dropdown in the GUI
+            LicensePlatesStateData st = new LicensePlatesStateData();
+            return st.States;
         }
 
         // TODO but unimportant at this point
@@ -168,34 +181,33 @@ namespace HandicappedDriver
                 }
             }
 
-            sendingDriver = jSON.DeSerialize<DriverData>(s1);
-            receivingDriver = jSON.DeSerialize<DriverData>(s2);
+            //sendingDriver = jSON.DeSerialize<DriverData>(s1);
+            //receivingDriver = jSON.DeSerialize<DriverData>(s2);
 
             driver.SendMessage(sendingDriver, receivingDriver, message);
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string ViewAvailableSpaces(string lotID)
+        public static List<Bridge.ParkingSpace> ViewAvailableSpaces(string lotID)
         {
-            // this shows the available spaces in a certain lot based on the lotID that is put in the method
-            string spaces = "";
+            // this shows the available spaces in a certain lot 
+            // based on the lotID that is put in the method
             ParkingSpaceData ps = new ParkingSpaceData();
-            List<HandicappedDriver.Bridge.ParkingSpace> a =
+            List<Bridge.ParkingSpace> ps_list =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
-            spaces = jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
 
-            return spaces;
+            return ps_list;
         }
 
-        // GOOD
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static string ShowExistingReservation(string username)
         {
             // this accesses the database to show any existing reservations that the user has made
             ReservationData r;
             string s = "";
-            r = jSON.DeSerialize<ReservationData>(username);
+//            r = jSON.DeSerialize<ReservationData>(username);
             //r.PullRes();
             //r.resvID = "stuff";
             //if (r.resvID != "")
@@ -212,7 +224,7 @@ namespace HandicappedDriver
         {
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
+            //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
             r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
@@ -223,7 +235,7 @@ namespace HandicappedDriver
         {
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
+            //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
             r.LeaveSpace(resvID);
             // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
@@ -234,7 +246,7 @@ namespace HandicappedDriver
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID);
+            //r = jSON.DeSerialize<ReservationData>(resvID);
         }
 
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
