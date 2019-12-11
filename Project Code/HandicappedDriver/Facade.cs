@@ -65,7 +65,7 @@ namespace HandicappedDriver
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string u, string p)
         {
-            MessageBox.Show("u=" + u + " " + "p=" + p);
+            //MessageBox.Show("u=" + u + " " + "p=" + p);
 
             bool login = false;
             DriverData d = new DriverData();

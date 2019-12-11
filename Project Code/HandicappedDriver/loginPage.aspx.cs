@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows;
 
 
 namespace HandicappedDriver
@@ -29,12 +30,24 @@ namespace HandicappedDriver
             {
                 user += "@uco.edu";
             }
-
-
+            
 
             bool result = Facade.Login(user,pass);
 
-            Response.Write(result);
+            // An opinion:- if the user is new and does not exist in the database. Redirect them to create account. Pass in a parameter to denote that
+            // it is a new user. If the parameter is true, do not go to the home page unless the information has been sucessfully saved. This way we 
+            // don't have worry about disabling the buttons in other page.
+
+            /*if(Facade.CreateDriver(user) == true)
+            {
+                Response.Redirect("createAccount.aspx");
+            }
+            else */if (result)
+            {
+                Response.Redirect("homePage.aspx");
+            }
+
+            //Response.Write(result);
             
         }
     }

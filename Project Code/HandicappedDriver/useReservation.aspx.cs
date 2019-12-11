@@ -13,5 +13,21 @@ namespace HandicappedDriver
         {
 
         }
+
+        protected void btnNavigate_Click(object sender, EventArgs e)
+        {
+
+            // change space_ID to actual space id value from database.
+            int space_ID = 2;
+            var url = Facade.NavigateToSpace(space_ID);
+
+            Response.Redirect(url);
+            //Response.Write(String.Format("window.open('{0}','_blank')", ResolveUrl("https://www.facebook.com")));
+        }
+
+        protected void btnOccupy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

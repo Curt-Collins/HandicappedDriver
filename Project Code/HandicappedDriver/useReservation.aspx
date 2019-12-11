@@ -7,10 +7,20 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="useReservation" runat="server">
         <div>
-            <h1>Under construction</h1>
+            <asp:Label CssClass="lblReservation" ID="lblUserReservation" runat="server" placeholder="Your reservation" Text=""></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="btnOccupy" runat="server" Text="Occupy" OnClick="btnOccupy_Click" />
+            <asp:Button ID="btnLeave" runat="server" Text="Leave" />
+            <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+
+            <br />
+            <br />
+            <asp:Button ID="btnNavigate" runat="server" Text="Navigate" OnClick="btnNavigate_Click" />
         </div>
+        
     </form>
 </body>
 </html>
