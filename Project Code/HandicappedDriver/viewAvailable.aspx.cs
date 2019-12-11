@@ -11,8 +11,8 @@ namespace HandicappedDriver
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string s = Facade.GetParkingLots();
-            Response.Write(s);
+            //string s = Facade.GetParkingLots();
+            //Response.Write(s);
         }
 
         protected void btnCampusMap_Click(object sender, EventArgs e)

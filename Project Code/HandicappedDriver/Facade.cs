@@ -14,7 +14,7 @@ namespace HandicappedDriver
     [System.Web.Script.Services.ScriptService]
     public class Facade : System.Web.Services.WebService
     {
-        static JSONSerializer jSON = new JSONSerializer();
+        //static JSONSerializer jSON = new JSONSerializer();
         static Driver driver = new Driver();
 
         public Facade()
@@ -125,13 +125,20 @@ namespace HandicappedDriver
 
         // GOOD
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static string GetParkingLots()
+        public static List<LotInfo> GetParkingLots()
         {
-            string s = "";
             // this shows the parking lots in the system in a dropdown in the GUI
-            ParkingLotData p = new ParkingLotData();
-            s = jSON.Serialize<List<LotInfo>>(p.Lots);
-            return s;
+            ParkingLotData pl = new ParkingLotData();
+            return pl.Lots;
+        }
+
+        // GOOD
+        [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
+        public static List<State> GetStates()
+        {
+            // this shows the parking lots in the system in a dropdown in the GUI
+            LicensePlatesStateData st = new LicensePlatesStateData();
+            return st.States;
         }
 
         // TODO but unimportant at this point
@@ -168,8 +175,8 @@ namespace HandicappedDriver
                 }
             }
 
-            sendingDriver = jSON.DeSerialize<DriverData>(s1);
-            receivingDriver = jSON.DeSerialize<DriverData>(s2);
+            //sendingDriver = jSON.DeSerialize<DriverData>(s1);
+            //receivingDriver = jSON.DeSerialize<DriverData>(s2);
 
             driver.SendMessage(sendingDriver, receivingDriver, message);
         }
@@ -183,7 +190,7 @@ namespace HandicappedDriver
             ParkingSpaceData ps = new ParkingSpaceData();
             List<HandicappedDriver.Bridge.ParkingSpace> a =
                 ps.LoadAvailableSpaces(Int32.Parse(lotID));
-            spaces = jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
+                //spaces = jSON.Serialize<List<HandicappedDriver.Bridge.ParkingSpace>>(a);
 
             return spaces;
         }
@@ -195,7 +202,7 @@ namespace HandicappedDriver
             // this accesses the database to show any existing reservations that the user has made
             ReservationData r;
             string s = "";
-            r = jSON.DeSerialize<ReservationData>(username);
+//            r = jSON.DeSerialize<ReservationData>(username);
             //r.PullRes();
             //r.resvID = "stuff";
             //if (r.resvID != "")
@@ -212,7 +219,7 @@ namespace HandicappedDriver
         {
             // this accesses the database and changes the status of the corresponding space in the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
+            //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
             r.ParkInSpace(resvID);
             // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
         }
@@ -223,7 +230,7 @@ namespace HandicappedDriver
         {
             // this changes the status of the space in the database to unoccupied
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID.ToString());
+            //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
             r.LeaveSpace(resvID);
             // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
         }
@@ -234,7 +241,7 @@ namespace HandicappedDriver
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
-            r = jSON.DeSerialize<ReservationData>(resvID);
+            //r = jSON.DeSerialize<ReservationData>(resvID);
         }
 
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]

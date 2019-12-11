@@ -14,8 +14,8 @@ namespace HandicappedDriver
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // figure out how to convert JSON string into a JSON object here to populate the dropdown list 
-            //string stateObj = Facade.StatesTest();
+            List<State> states = Facade.GetStates();
+            this.drpRegState.DataSource = states;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
