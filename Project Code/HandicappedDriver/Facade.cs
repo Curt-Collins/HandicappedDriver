@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Web.Services;
 using System.Web.Script.Services;
+using System.Windows;
 
 namespace HandicappedDriver
 {
@@ -64,8 +65,11 @@ namespace HandicappedDriver
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string u, string p)
         {
+            MessageBox.Show("u=" + u + " " + "p=" + p);
+
             bool login = false;
             DriverData d = new DriverData();
+
             d.LoadDriver(u, p);
 
             if (!(String.IsNullOrEmpty(d.eMailAddress)) && !(String.IsNullOrEmpty(d.password)))
