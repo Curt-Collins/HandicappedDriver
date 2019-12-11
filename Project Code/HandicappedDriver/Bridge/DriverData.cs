@@ -35,8 +35,6 @@ namespace HandicappedDriver.Bridge
                 queryString =
                     "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
             }
-            queryString =
-                "SELECT ID FROM Driver WHERE EMailAddress=@eMailAddress AND Password=@password";
 
             if (Connect())
             {
@@ -47,18 +45,12 @@ namespace HandicappedDriver.Bridge
 
                 Id = (int?)command.ExecuteScalar();
                 command.Dispose();
-                if (Id != 0)
+                if (Id != null)
                 {
                     LoadDriver();
                 }
-                else
-                {
-                    Id = null;
-                }
             }
         }
-
-
 
         public void LoadDriver()
         {
@@ -115,7 +107,7 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-        public void CreateNew(string usr, string pwd)
+        public int CreateNew(string usr, string pwd)
         {
             String queryString;
 
@@ -149,7 +141,17 @@ namespace HandicappedDriver.Bridge
                     this.Id = (int)command.ExecuteScalar();
 
                     LoadDriver();
+
+                    return 0; //success
                 }
+                else
+                {
+                    return 1; //already exists
+                }
+            }
+            else
+            {
+                return 2; //no connection
             }
         }
 

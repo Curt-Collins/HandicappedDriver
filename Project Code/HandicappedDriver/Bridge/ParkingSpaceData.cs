@@ -78,14 +78,34 @@ namespace HandicappedDriver.Bridge
             return listSpaces;
         }
 
-        private void InsertRes(ref ParkingSpace psp2, ref ResData r2)
+        public ParkingSpace LoadInfo(int id)
         {
+            this.Id = id;
 
-        }
+            String queryString = "SELECT LocationDesc, Occupied, Navigation " +
+                    "FROM ParkingSpace WHERE d.ID=" + this.Id.ToString();
 
-        public void LoadInfo()
-        {
+            ParkingSpace ps = new ParkingSpace();
 
+            if (Connect())
+            {
+                command = connection.CreateCommand();
+                command.CommandText = queryString;
+                reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    ps.Space_Id = this.Id;
+                    ps.LocationDesc = reader.IsDBNull(0) ? "" : reader.GetString(0);
+                    ps.Occupied = reader.GetBoolean(1);
+                    ps.NavigationString = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                }
+
+                reader.Close();
+                this.connection.Close();
+            }
+
+            return ps;
         }
     }
 }

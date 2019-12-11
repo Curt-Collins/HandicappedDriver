@@ -117,11 +117,13 @@
 
     <form  id="createDriver" runat="server">
         <div>
-            <asp:TextBox CssClass="txtInput" ID="txtName" runat="server" placeholder="Full Name"></asp:TextBox>
-            <br />
+            <input id="Button1" type="button" value="button" /><asp:TextBox CssClass="txtInput" ID="txtName" runat="server" placeholder="Full Name"></asp:TextBox>
+            <input id="Button2" type="button" value="button" /><br />
             <asp:TextBox CssClass="txtInput" ID="txtUserName" runat="server" placeholder="Username"></asp:TextBox>
-            <br />
+            <input id="Button3" type="button" value="button" /><br />
             <asp:TextBox CssClass="txtInput" ID="txtPhoneNumber" runat="server" placeholder="Phone Number"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+            </asp:DropDownList>
             <br />
             <asp:DropDownList CssClass="reg-state" ID="drpRegState" runat="server"></asp:DropDownList>
             <br />

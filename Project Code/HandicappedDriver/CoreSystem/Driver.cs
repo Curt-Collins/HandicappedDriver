@@ -66,22 +66,14 @@ namespace HandicappedDriver.CoreSystem
 
         public void UpdateProfile(DriverData driver)
         {
-            // string name, string email, string mobile, string plateNum, string plateState
-            // this.name = name;
-            // username = email;
-            // mobileNum = mobile;
-            // this.plateNum = plateNum;
-            // this.plateState = plateState;
         }
 
         private void LoadInfo()
         {
-
         }
 
         private void SaveInfo()
         {
-
         }
 
         public void SendMessage(DriverData d1, DriverData d2, string message)
