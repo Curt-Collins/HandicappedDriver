@@ -9,9 +9,18 @@ namespace HandicappedDriver.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestCreateDriver()
         {
             Facade.CreateDriver("ataylor64@uco.edu");
+            Facade.CreateDriver("ataylor64-ga@uco.edu");
+            Facade.CreateDriver("");
+            Facade.CreateDriver("123");
+        }
+
+        public void TestUpdateDriver()
+        {
+            
+
         }
     }
 }
