@@ -20,8 +20,17 @@ namespace HandicappedDriver
             string user = txtUsername.Text;
             string pass = txtPassword.Text;
             Facade f = new Facade();
+            
 
-            user += "@uco.edu";
+            // check if the username contains '@uco.edu'
+            bool isFound = user.Contains("@uco.edu");
+
+            if (!isFound)
+            {
+                user += "@uco.edu";
+            }
+
+
 
             bool result = Facade.Login(user,pass);
 
