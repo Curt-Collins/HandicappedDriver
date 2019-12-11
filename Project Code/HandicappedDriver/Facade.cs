@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Web.Services;
 //using Newtonsoft.Json;
 using System.Web.Script.Services;
+using System.Windows;
 
 namespace HandicappedDriver
 {
@@ -60,9 +61,12 @@ namespace HandicappedDriver
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool Login(string u, string p)
         {
+            MessageBox.Show("u=" + u + " " + "p=" + p);
+
             bool login = false;
             //string s = jSON.DeSerialize<string>(info);
             DriverData d = new DriverData();
+            
 
             d.LoadDriver(u, p);
 
