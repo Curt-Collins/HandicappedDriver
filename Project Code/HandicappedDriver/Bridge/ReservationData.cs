@@ -24,27 +24,6 @@ namespace HandicappedDriver.Bridge
             LoadReservation();
         }
 
-        public void ParkInSpace(string spaceID)
-        {
-            this.Id = Int32.Parse(spaceID);
-            Park();
-            // need to figure out how to change the reservation status to unavailable at this juncture
-        }
-
-        public void LeaveSpace(string spaceID)
-        {
-            this.Id = Int32.Parse(spaceID);
-            Leave();
-            // need to figure out how to change the reservation status to available at this juncture
-        }
-
-        public void CancelRes(string spaceID)
-        {
-            this.Id = Int32.Parse(spaceID);
-            Cancel();
-            // need to figure out how to change the reservation status to available at this juncture
-        }
-
         public ReservationData(string usr)
         {
             this.eMailAddress = usr;

@@ -189,56 +189,56 @@ namespace HandicappedDriver
 
         // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static List<Bridge.ParkingSpace> ViewAvailableSpaces(string lotID)
+        public static List<Bridge.ParkingSpace> ViewAvailableSpaces(int lotID)
         {
             // this shows the available spaces in a certain lot 
             // based on the lotID that is put in the method
             ParkingSpaceData ps = new ParkingSpaceData();
             List<Bridge.ParkingSpace> ps_list =
-                ps.LoadAvailableSpaces(Int32.Parse(lotID));
+                ps.LoadAvailableSpaces(lotID);
 
             return ps_list;
         }
 
         // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static ReservationData ShowExistingReservation(int uid)
+        public static ReservationData ShowExistingReservation(string usr)
         {
             // this accesses the database to show any existing reservations that the user has made
-            ReservationData r = new ReservationData();
+            ReservationData r = new ReservationData(usr);
 
             return r;
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void OccupySpace(string resvID)
+        public static bool OccupySpace(int resID)
         {
             // this accesses the database and changes the status of the corresponding space in the database
-            ReservationData r = new ReservationData();
+            ReservationData r = new ReservationData(resID);
             //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.ParkInSpace(resvID);
-            // r.occupied = true, meaning that the spot is now listed as 'occupied' in the database
+            r.Park();
+            return true;
         }
 
-        // TODO 
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void LeaveSpace(string resvID)
+        public static bool LeaveSpace(int resvID)
         {
             // this changes the status of the space in the database to unoccupied
-            ReservationData r = new ReservationData();
-            //r = jSON.DeSerialize<ReservationData>(resvID.ToString());
-            r.LeaveSpace(resvID);
-            // r.occupied = false, meaning that the spot is now listed as 'unoccupied' in the database
+            ReservationData r = new ReservationData(resvID);
+            r.Leave();
+            return true;
         }
 
-        // TODO
+        // Good
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
-        public static void CancelReservation(string resvID)
+        public static bool CancelReservation(int resvID)
         {
             // this removes a reservation according to the resvID passed to the database
             ReservationData r = new ReservationData();
-            //r = jSON.DeSerialize<ReservationData>(resvID);
+            r.Cancel();
+            return true;
         }
 
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
