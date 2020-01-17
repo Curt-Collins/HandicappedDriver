@@ -81,7 +81,8 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-        public void Update()
+        // changing void to bool to check if update was successful
+        public bool Update()
         {
             String queryString = "UPDATE [Driver] SET " +
                 "[FullName]=@fullName, [LicensePlateNum]=@licensePlateNum, [MobileNumber]=@mobileNumber, " +
@@ -104,6 +105,14 @@ namespace HandicappedDriver.Bridge
                 command.ExecuteNonQuery();
                 command.Dispose();
                 this.connection.Close();
+
+                // new code
+                return true;
+            }
+            // new code
+            else
+            {
+                return false;
             }
         }
 
@@ -124,8 +133,13 @@ namespace HandicappedDriver.Bridge
                     command.Dispose();
 
                     queryString =
-                        "INSERT Driver (EMailAddress, Password, licensePlateState_ID) VALUES " +
-                        "(@eMailAddress, @password, -1)";
+                        "INSERT Driver (EMailAddress, Password, licensePlateState_ID, MobileNumber" +
+                        ",LicensePlateNum, FullName) VALUES " +
+                        "(@eMailAddress, @password, -1, SPACE(1), SPACE(1), SPACE(1))";
+
+                    //queryString =
+                    //    "INSERT Driver (EMailAddress, Password, licensePlateState_ID) VALUES " +
+                    //    "(@eMailAddress, @password, -1)";
 
                     command = this.connection.CreateCommand();
                     command.Parameters.AddWithValue("@eMailAddress", usr);

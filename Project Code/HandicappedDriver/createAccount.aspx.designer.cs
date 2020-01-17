@@ -24,15 +24,6 @@ namespace HandicappedDriver
         protected global::System.Web.UI.HtmlControls.HtmlForm createDriver;
 
         /// <summary>
-        /// txtName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
-
-        /// <summary>
         /// txtUserName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +31,15 @@ namespace HandicappedDriver
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
+
+        /// <summary>
+        /// reqUName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqUName;
 
         /// <summary>
         /// txtPhoneNumber control.
@@ -51,13 +51,13 @@ namespace HandicappedDriver
         protected global::System.Web.UI.WebControls.TextBox txtPhoneNumber;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// reqPhNum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqPhNum;
 
         /// <summary>
         /// drpRegState control.
@@ -78,6 +78,15 @@ namespace HandicappedDriver
         protected global::System.Web.UI.WebControls.TextBox txtRegNumber;
 
         /// <summary>
+        /// reqRegNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqRegNum;
+
+        /// <summary>
         /// txtPass control.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace HandicappedDriver
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPass;
+
+        /// <summary>
+        /// reqPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqPass;
 
         /// <summary>
         /// btnSubmit control.

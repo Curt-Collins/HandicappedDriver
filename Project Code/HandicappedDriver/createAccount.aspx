@@ -111,28 +111,43 @@
             border-color: #2ecc71;
         }
 
+        
     </style>
 
 
 
     <form  id="createDriver" runat="server">
         <div>
-            <input id="Button1" type="button" value="button" /><asp:TextBox CssClass="txtInput" ID="txtName" runat="server" placeholder="Full Name"></asp:TextBox>
-            <input id="Button2" type="button" value="button" /><br />
+            
             <asp:TextBox CssClass="txtInput" ID="txtUserName" runat="server" placeholder="Username"></asp:TextBox>
-            <input id="Button3" type="button" value="button" /><br />
+            <asp:RequiredFieldValidator runat="server" id="reqUName" controltovalidate="txtUserName" errormessage="This field is required" BackColor="White" BorderColor="#FF0066"/>
+
             <asp:TextBox CssClass="txtInput" ID="txtPhoneNumber" runat="server" placeholder="Phone Number"></asp:TextBox>
-            <asp:DropDownList ID="DropDownList1" runat="server">
-            </asp:DropDownList>
+            <asp:RequiredFieldValidator runat="server" id="reqPhNum" controltovalidate="txtPhoneNumber" errormessage="This field is required" BackColor="White" BorderColor="#FF0066" />
+
             <br />
             <asp:DropDownList CssClass="reg-state" ID="drpRegState" runat="server"></asp:DropDownList>
+   
             <br />
             <asp:TextBox CssClass="txtInput" ID="txtRegNumber" runat="server" placeholder="Vehicle Registration Number"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" id="reqRegNum" controltovalidate="txtRegNumber" errormessage="This field is required" BackColor="White" BorderColor="#FF0066"/>
+
+            
             <br />
             <asp:TextBox CssClass="txtInput" ID="txtPass" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" id="reqPass" controltovalidate="txtPass" errormessage="This field is required" BackColor="White" BorderColor="#FF0066"/>
+
 
             <br />
             <asp:Button CssClass="btn" ID="btnSubmit" runat="server" Text="SUBMIT" OnClick="btnSubmit_Click" />
+            <br />
+
+
+            <%--<asp:Button ID="btnLogin" runat="server" Text="LOGIN" OnClick="btnLogin_Click" style="margin-right:10px"/>
+            <asp:Button ID="btnForgotPass" runat="server" Text="Forgot password?" OnClick="btnForgotPass_Click" style="margin-left:10px; margin-right:10px;"/>
+            <asp:Button ID="btnCreate" runat="server" Text="Create" OnClick="btnCreate_Click" style="margin-left:10px;" />--%>
+
+            
         </div>
     </form>
 </body>

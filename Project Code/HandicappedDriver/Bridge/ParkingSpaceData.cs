@@ -109,5 +109,31 @@ namespace HandicappedDriver.Bridge
 
             return ps;
         }
+
+        public System.Data.DataTable LoadReservations(int lotID)
+        {
+            string queryString = "SELECT LocationDesc, FromTime, UntilTime, Res_ID, Space_ID " +
+                "FROM SpaceReservations " +
+                "WHERE ParkingLot_Id=" + lotID.ToString() + " ORDER BY LocationDesc, FromTime";
+
+            System.Data.DataTable dt = new System.Data.DataTable("Reservations");
+
+            if (Connect())
+            {
+                adapter = new System.Data.SqlClient.SqlDataAdapter(queryString, connection);
+                adapter.Fill(dt);
+            }
+
+            adapter.Dispose();
+            this.connection.Close();
+
+            return dt;
+        }
+
+
+
     }
+
+
+
 }

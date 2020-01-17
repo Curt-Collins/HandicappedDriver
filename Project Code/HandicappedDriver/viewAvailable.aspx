@@ -88,20 +88,25 @@
             
             <div>
 
-                <asp:DropDownList CssClass="txtInput" ID="drpLot" runat="server" Width="222px"></asp:DropDownList>
+                <asp:DropDownList CssClass="txtInput" ID="drpLot" runat="server" Width="222px" OnSelectedIndexChanged="drpLot_SelectedIndexChanged"></asp:DropDownList>
                 <br />
 
                 <asp:DropDownList CssClass="txtInput" ID="drpSpot" runat="server" Width="175px"></asp:DropDownList>
+                <br />
+                <asp:Button CssClass="btn" ID="btnGenerate" runat="server" Text="Generate spots" OnClick="btnGenerate_Click" />
                 <br />
             
                 <asp:TextBox  CssClass="txtInput" ID="txtStartTime" runat="server" placeholder="Start time" TextMode="DateTime"></asp:TextBox>
                 <br />
             
-                <asp:TextBox  CssClass="txtInput" ID="txtEndTime" runat="server" placeholder="End time" TextMode="DateTime"></asp:TextBox>
+                <asp:TextBox  CssClass="txtInput" ID="txtEndTime" runat="server" placeholder="End time" TextMode="DateTime">
+                </asp:TextBox>
                 <br />
                 <br />
 
-                <asp:Table ID="tblAvailableSpots" CssClass="txtInput" runat="server"></asp:Table>
+               <%-- <asp:Table ID="tblAvailableSpots" CssClass="txtInput" runat="server">
+                </asp:Table>--%>
+                <asp:GridView ID="grdRes" runat="server"></asp:GridView>
                 <asp:Button CssClass="btn" ID="btnReserve" runat="server" Text="Reserve now" OnClick="btnReserve_Click" />
 
             </div>

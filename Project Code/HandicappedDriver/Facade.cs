@@ -114,8 +114,8 @@ namespace HandicappedDriver
         [WebMethod, ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = false)]
         public static bool UpdateDriverProfile(DriverData d)
         {
-            d.Update();
-            return true;
+            return d.Update();
+            //return true;
         }
 
         // Good

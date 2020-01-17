@@ -13,8 +13,8 @@
             <br />
             <br />
             <asp:Button ID="btnOccupy" runat="server" Text="Occupy" OnClick="btnOccupy_Click" />
-            <asp:Button ID="btnLeave" runat="server" Text="Leave" />
-            <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+            <asp:Button ID="btnLeave" runat="server" Text="Leave" OnClick="btnLeave_Click" />
+            <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
 
             <br />
             <br />

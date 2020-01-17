@@ -36,15 +36,15 @@ namespace HandicappedDriver.Bridge
 
             if (Id != null)
             {
-                queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress, Space_ID FROM SpaceReservation " + "" +
-                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND ID=" + Id.ToString();
+                queryString = "SELECT Res_ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
+                    "Navigation, EMailAddress, Space_ID, Driver_ID FROM SpaceReservations " + "" +
+                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND Res_ID=" + Id.ToString();
             }
             else if (!(string.IsNullOrEmpty(eMailAddress)))
             {
-                queryString = "SELECT ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
-                    "Navigation, EMailAddress, Space_ID, Driver_ID FROM SpaceReservation " +
-                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND EMailAddress" + eMailAddress;
+                queryString = "SELECT Res_ID, LocationDesc, StatusDesc, Occupied, FromTime, UntilTime, " +
+                    "Navigation, EMailAddress, Space_ID, Driver_ID FROM SpaceReservations " +
+                    "WHERE (StatusDesc='ACTIVE' OR StatusDesc='PENDING') AND EMailAddress='" + eMailAddress + "'";
             }
 
             if (Connect())
@@ -77,7 +77,7 @@ namespace HandicappedDriver.Bridge
         {
             String queryString1 = "UPDATE [Reservation] SET " +
                 "[Status_ID]=" +
-                    "(SELECT ID FROM [ReservationStatus] WHERE [StatusDesc]=@statusDesc), " +
+                    "(SELECT ID FROM [ReservationStatus] WHERE [StatusDesc]=@statusDesc) " +
                 "WHERE ([ID]=@Id)";
 
             if (Connect())
@@ -93,37 +93,52 @@ namespace HandicappedDriver.Bridge
             }
         }
 
-        public void CreateNew(string usr, string pwd)
+        public int CreateNew(string uname, int spid, DateTime fromT, DateTime untilT)
         {
+
+            int uid;
+
             string queryString1 = "INSERT INTO [Reservation] " +
                 "(driver_id, parkingspace_id, fromtime, untiltime, status_id) VALUES " +
                 "(@driver_id, @parkingspace_id, @fromtime, @untiltime, 4)";
 
-            string queryString2 = "SELECT res_id FROM [Reservation] WHERE " +
+            string queryString2 = "SELECT id FROM [Reservation] WHERE " +
                 "driver_id=@driver_id AND parkingspace_id=@parkingspace_id AND status_id=4";
 
             if (Connect())
             {
                 command = this.connection.CreateCommand();
-                command.Parameters.AddWithValue("@driver_id", driver_ID);
-                command.Parameters.AddWithValue("@parkingspace_id", space_Id);
-                command.Parameters.AddWithValue("@fromTime", fromTime);
-                command.Parameters.AddWithValue("@untilTime", untilTime);
+                command.CommandText = "SELECT id FROM Driver WHERE EMailAddress=@email";
+                command.Parameters.AddWithValue("@email", uname);
+                uid = Int32.Parse(command.ExecuteScalar().ToString());
+                command.Dispose();
+
+                command = this.connection.CreateCommand();
+                command.Parameters.AddWithValue("@driver_id", uid);
+                command.Parameters.AddWithValue("@parkingspace_id", spid);
+                command.Parameters.AddWithValue("@fromTime", fromT);
+                command.Parameters.AddWithValue("@untilTime", untilT);
                 command.CommandText = queryString1;
 
                 command.ExecuteNonQuery();
                 command.Dispose();
 
                 command = this.connection.CreateCommand();
-                command.Parameters.AddWithValue("@driver_id", driver_ID);
-                command.Parameters.AddWithValue("@parkingspace_id", space_Id);
-                command.Parameters.AddWithValue("@fromTime", fromTime);
+                command.Parameters.AddWithValue("@driver_id", uid);
+                command.Parameters.AddWithValue("@parkingspace_id", spid);
+                command.Parameters.AddWithValue("@fromTime", fromT);
                 command.CommandText = queryString2;
 
                 Id = Int32.Parse(command.ExecuteScalar().ToString());
                 command.Dispose();
 
                 this.connection.Close();
+
+                return (int)Id;
+            }
+            else
+            {
+                return 0;
             }
         }
 
